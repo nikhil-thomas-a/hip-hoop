@@ -1,0 +1,35 @@
+# SECRETS — never commit this
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data — raw game logs can be large, regenerate with notebook 01
+data/raw/game_logs/
+data/raw/lyrics_cache.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Keep processed outputs (results.json powers the HTML)
+!data/processed/

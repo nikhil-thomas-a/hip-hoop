@@ -1,0 +1,34 @@
+# Hip Hoop — Data Science Pipeline
+# Compatible with Python 3.13 on Windows
+
+# NBA data
+nba_api
+
+# Data manipulation
+pandas
+numpy
+
+# Statistics
+scipy
+statsmodels
+scikit-learn
+pingouin
+
+# NLP / Sentiment
+vaderSentiment
+lyricsgenius
+
+# Visualization (notebooks)
+matplotlib
+seaborn
+plotly
+
+# Jupyter
+jupyter
+ipykernel
+nbformat
+
+# Utilities
+python-dotenv
+tqdm
+requests

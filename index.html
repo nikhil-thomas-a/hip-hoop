@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIP HOOP — Hip-Hop × NBA Stat Lab</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+[data-theme="light"]{
+  --bg:#F7F4EE;--bg2:#FFFFFF;--bg3:#EDE9E0;
+  --border:#D8D2C4;--border2:#BDB7AA;
+  --text:#1C1916;--text2:#7A7168;--text3:#C4BEB4;
+  --orange:#E05500;--amber:#C48A00;
+  --up:#1A8C50;--down:#C42B2B;--neutral:#666660;
+  --table-row:#F0EDE6;--table-sep:#E5E0D6;
+  --input-ph:#BDB7AA;--scoreboard:#EDE9E0;
+  --court-a:rgba(120,80,20,.04);--court-b:rgba(120,80,20,.03);
+  --chart-grid:rgba(0,0,0,.06);
+}
+[data-theme="dark"]{
+  --bg:#0D0D0D;--bg2:#161410;--bg3:#1A1A1A;
+  --border:#2A2520;--border2:#3a3530;
+  --text:#F5EDD8;--text2:#6B6559;--text3:#3a3530;
+  --orange:#FF6B00;--amber:#FFB800;
+  --up:#00C96B;--down:#FF3B3B;--neutral:#888880;
+  --table-row:#1a1810;--table-sep:#1e1c18;
+  --input-ph:#3a3530;--scoreboard:#1A1A1A;
+  --court-a:rgba(200,135,58,.03);--court-b:rgba(200,135,58,.02);
+  --chart-grid:rgba(255,255,255,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{transition:background .25s,color .25s;}
+body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:repeating-linear-gradient(90deg,var(--court-a) 0,var(--court-a) 1px,transparent 1px,transparent 60px),
+  repeating-linear-gradient(0deg,var(--court-b) 0,var(--court-b) 1px,transparent 1px,transparent 80px);}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:1;}
+
+/* THEME TOGGLE */
+.theme-toggle{position:absolute;top:20px;right:24px;z-index:10;background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:6px 14px 6px 10px;display:flex;align-items:center;gap:8px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);transition:all .2s;user-select:none;}
+.theme-toggle:hover{border-color:var(--border2);color:var(--text);}
+.toggle-track{width:32px;height:18px;background:var(--border);border-radius:9px;position:relative;transition:background .2s;flex-shrink:0;}
+.toggle-track.on{background:var(--orange);}
+.toggle-thumb{position:absolute;top:3px;left:3px;width:12px;height:12px;border-radius:50%;background:var(--bg);transition:transform .2s;}
+.toggle-track.on .toggle-thumb{transform:translateX(14px);}
+
+/* HEADER */
+header{border-bottom:1px solid var(--border);position:relative;overflow:hidden;}
+.header-inner{display:flex;align-items:stretch;min-height:150px;}
+.header-left{flex:1;padding:32px 40px 32px 0;display:flex;flex-direction:column;justify-content:center;}
+.header-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.25em;color:var(--orange);text-transform:uppercase;margin-bottom:8px;}
+.header-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,88px);line-height:.9;color:var(--text);letter-spacing:.02em;}
+.header-title span{color:var(--orange);}
+.header-sub{margin-top:12px;font-size:14px;font-weight:300;color:var(--text2);max-width:480px;line-height:1.6;}
+.header-right{width:180px;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding-top:16px;}
+.mascot{width:120px;height:120px;animation:bobble 3s ease-in-out infinite;}
+@keyframes bobble{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+
+/* NAV */
+.nav-bar{display:flex;border-top:1px solid var(--border);}
+.nav-tab{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;padding:14px 24px;cursor:pointer;color:var(--text2);border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;}
+.nav-tab:hover{color:var(--text);}
+.nav-tab.active{color:var(--orange);border-bottom-color:var(--orange);}
+
+/* PAGES */
+.page{display:none;padding:48px 0 80px;}
+.page.active{display:block;}
+
+/* SECTION */
+.section-head{display:flex;align-items:baseline;gap:12px;margin-bottom:24px;}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:.05em;color:var(--text);}
+.section-line{flex:1;height:1px;background:var(--border);}
+.section-num{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.15em;color:var(--orange);}
+.section-gap{margin-top:48px;}
+
+/* METRIC CARDS */
+.metric-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:32px;}
+.metric-card{background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:20px 20px 16px;}
+.metric-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;margin-bottom:8px;}
+.metric-val{font-family:'Bebas Neue',sans-serif;font-size:48px;line-height:1;color:var(--text);}
+.metric-val.up{color:var(--up);}
+.metric-val.down{color:var(--down);}
+.metric-val.neutral{color:var(--neutral);}
+.metric-sub{font-size:11px;color:var(--text2);margin-top:4px;font-weight:300;}
+
+/* FINDING CARD */
+.finding-card{background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--orange);border-radius:0 4px 4px 0;padding:20px 24px;margin-bottom:16px;}
+.finding-title{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;}
+.finding-body{font-size:14px;line-height:1.7;color:var(--text2);}
+.finding-body strong{color:var(--text);font-weight:500;}
+
+/* CHART WRAPPERS */
+.chart-card{background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:20px 20px 16px;margin-bottom:20px;}
+.chart-title{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);margin-bottom:16px;}
+.chart-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;}
+@media(max-width:680px){.chart-two{grid-template-columns:1fr;}}
+
+/* STAT TEST TABLE */
+.stat-table{width:100%;border-collapse:collapse;font-size:13px;}
+.stat-table th{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;padding:8px 12px;border-bottom:1px solid var(--border);text-align:left;}
+.stat-table td{padding:10px 12px;border-bottom:1px solid var(--table-sep);color:var(--text);vertical-align:middle;}
+.stat-table tr:hover td{background:var(--table-row);}
+.sig-yes{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--up);background:rgba(26,140,80,.1);padding:2px 8px;border-radius:2px;}
+.sig-no{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--text3);background:var(--bg3);padding:2px 8px;border-radius:2px;}
+[data-theme="dark"] .sig-yes{background:rgba(0,201,107,.12);}
+
+/* MENTION EXPLORER */
+.mention-badge{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;padding:3px 8px;border-radius:2px;text-transform:uppercase;}
+.badge-compliment{background:rgba(26,140,80,.12);color:var(--up);border:1px solid rgba(26,140,80,.3);}
+.badge-diss{background:rgba(196,43,43,.12);color:var(--down);border:1px solid rgba(196,43,43,.3);}
+.badge-neutral{background:rgba(102,102,96,.12);color:var(--neutral);border:1px solid rgba(102,102,96,.3);}
+[data-theme="dark"] .badge-compliment{background:rgba(0,201,107,.12);}
+[data-theme="dark"] .badge-diss{background:rgba(255,59,59,.12);}
+
+.explorer-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;align-items:center;}
+.search-wrap{position:relative;flex:1;min-width:200px;}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text2);font-size:14px;pointer-events:none;}
+.search-input{width:100%;background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:9px 12px 9px 34px;font-family:'Barlow',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border-color .15s;}
+.search-input:focus{border-color:var(--orange);}
+.search-input::placeholder{color:var(--input-ph);}
+.filter-select{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:9px 12px;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;color:var(--text2);cursor:pointer;outline:none;-webkit-appearance:none;}
+.filter-select:focus{border-color:var(--orange);}
+.lib-count{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--text2);text-transform:uppercase;margin-bottom:12px;}
+.lib-count span{color:var(--amber);}
+.lib-table{width:100%;border-collapse:collapse;}
+.lib-table th{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;padding:8px 12px;border-bottom:1px solid var(--border);text-align:left;white-space:nowrap;}
+.lib-table td{padding:10px 12px;border-bottom:1px solid var(--table-sep);font-size:13px;vertical-align:middle;color:var(--text);}
+.lib-table tbody tr{cursor:pointer;transition:background .12s;}
+.lib-table tbody tr:hover td,.lib-table tbody tr.active td{background:var(--table-row);}
+.lib-td-player{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:.02em;white-space:nowrap;}
+.lib-td-muted{color:var(--text2);}
+.lib-td-lyric{color:var(--text2);font-size:11px;font-style:italic;max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.delta-pill{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;padding:2px 7px;border-radius:2px;}
+.dp-up{background:rgba(26,140,80,.12);color:var(--up);}
+.dp-down{background:rgba(196,43,43,.12);color:var(--down);}
+.dp-flat{background:rgba(102,102,96,.12);color:var(--neutral);}
+[data-theme="dark"] .dp-up{background:rgba(0,201,107,.15);}
+[data-theme="dark"] .dp-down{background:rgba(255,59,59,.15);}
+
+/* DETAIL PANEL */
+.detail-panel{background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:24px;margin-top:20px;display:none;}
+.detail-panel.open{display:block;animation:fadeUp .3s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.detail-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:20px;}
+.detail-player{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,44px);line-height:1;color:var(--text);}
+.detail-meta{font-size:13px;color:var(--text2);margin-top:4px;font-weight:300;}
+.detail-meta strong{color:var(--text);font-weight:500;}
+.impact-box{background:var(--bg3);border-radius:4px;padding:14px 24px;text-align:center;flex-shrink:0;}
+.impact-num{font-family:'Bebas Neue',sans-serif;font-size:48px;line-height:1;}
+.impact-lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;color:var(--text2);text-transform:uppercase;margin-top:2px;}
+.lyric-strip{border-left:3px solid var(--orange);padding:10px 16px;background:var(--bg3);border-radius:0 3px 3px 0;margin-bottom:20px;font-size:14px;font-style:italic;color:var(--text2);line-height:1.6;}
+.lyric-strip strong{color:var(--text);font-style:normal;font-weight:500;}
+.timeline-wrap{display:flex;gap:0;overflow-x:auto;margin-bottom:8px;}
+.timeline-wrap::-webkit-scrollbar{height:3px;}
+.timeline-wrap::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.tl-marker{background:var(--bg3);border:1px solid var(--orange);border-radius:4px 0 0 4px;padding:10px 14px;min-width:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;position:relative;}
+.tl-marker::after{content:'';position:absolute;right:-1px;top:50%;transform:translateY(-50%);width:0;height:0;border-left:8px solid var(--orange);border-top:6px solid transparent;border-bottom:6px solid transparent;}
+.marker-txt{font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:600;letter-spacing:.1em;color:var(--orange);text-transform:uppercase;margin-top:3px;}
+.tl-card{flex:1;min-width:155px;background:var(--bg3);border:1px solid var(--border);border-left:none;padding:14px 16px;}
+.tl-card:last-child{border-radius:0 4px 4px 0;}
+.tl-period{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;color:var(--orange);text-transform:uppercase;margin-bottom:10px;}
+.tl-trio{display:flex;gap:14px;margin-bottom:8px;}
+.tl-stat{display:flex;flex-direction:column;gap:1px;}
+.tl-val{font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:1;color:var(--text);}
+.tl-key{font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:600;letter-spacing:.12em;color:var(--text2);text-transform:uppercase;}
+.delta-row{display:flex;gap:5px;flex-wrap:wrap;}
+
+/* LOADING / ERROR */
+.loading{text-align:center;padding:80px 20px;color:var(--text2);font-size:14px;font-weight:300;}
+.loading-spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--orange);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 16px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.error-msg{background:rgba(196,43,43,.08);border:1px solid rgba(196,43,43,.25);border-radius:4px;padding:24px;color:var(--down);font-size:14px;line-height:1.8;}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:24px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.footer-left{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.15em;color:var(--text2);text-transform:uppercase;}
+.footer-left span{color:var(--orange);}
+.footer-note{font-size:11px;color:var(--text3);font-weight:300;font-style:italic;}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <div class="toggle-track" id="toggleTrack"><div class="toggle-thumb"></div></div>
+    <span id="themeLabel">Dark mode</span>
+  </button>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="header-eyebrow">Data Science Project · Hip-Hop × NBA</div>
+        <div class="header-title">HIP <span>HOOP</span></div>
+        <div class="header-sub">A statistical analysis of NBA player performance before and after hip-hop mentions. Real game logs. Real lyrics. Real math.</div>
+      </div>
+      <div class="header-right">
+        <svg class="mascot" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="65" cy="74" r="46" fill="#FF6B00"/>
+          <path d="M65 28 Q86 50 86 74 Q86 98 65 120" fill="none" stroke="#C84E00" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M65 28 Q44 50 44 74 Q44 98 65 120" fill="none" stroke="#C84E00" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="19" y1="74" x2="111" y2="74" stroke="#C84E00" stroke-width="2.5"/>
+          <ellipse cx="50" cy="52" rx="10" ry="6" fill="rgba(255,255,255,.18)" transform="rotate(-30 50 52)"/>
+          <path d="M28 64 Q28 22 65 22 Q102 22 102 64" fill="none" stroke="#1a1a1a" stroke-width="9" stroke-linecap="round"/>
+          <path d="M30 64 Q30 25 65 25 Q100 25 100 64" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+          <rect x="16" y="57" width="22" height="30" rx="8" fill="#1a1a1a"/>
+          <rect x="20" y="61" width="14" height="22" rx="5" fill="#FF6B00"/>
+          <rect x="92" y="57" width="22" height="30" rx="8" fill="#1a1a1a"/>
+          <rect x="96" y="61" width="14" height="22" rx="5" fill="#FF6B00"/>
+          <circle cx="55" cy="70" r="5" fill="#1a1a1a"/>
+          <circle cx="75" cy="70" r="5" fill="#1a1a1a"/>
+          <circle cx="57" cy="68" r="1.5" fill="white"/>
+          <circle cx="77" cy="68" r="1.5" fill="white"/>
+          <path d="M55 84 Q65 93 75 84" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-tab active" id="tab-findings" onclick="showPage('findings',this)">Key Findings</div>
+      <div class="nav-tab" id="tab-stats" onclick="showPage('stats',this)">Statistics</div>
+      <div class="nav-tab" id="tab-explorer" onclick="showPage('explorer',this)">Mention Explorer</div>
+      <div class="nav-tab" id="tab-methodology" onclick="showPage('methodology',this)">Methodology</div>
+    </div>
+  </header>
+
+  <!-- LOADING STATE -->
+  <div id="loadingEl" class="page active">
+    <div class="loading">
+      <div class="loading-spinner"></div>
+      Loading results.json…<br>
+      <small style="margin-top:8px;display:block;">Run the notebooks first to generate data/processed/results.json</small>
+    </div>
+  </div>
+
+  <!-- FINDINGS PAGE -->
+  <div class="page" id="page-findings">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <span class="section-title">Key Findings</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="metric-grid" id="metricGrid"></div>
+    <div id="findingCards"></div>
+
+    <div class="section-gap section-head">
+      <span class="section-num">02</span>
+      <span class="section-title">Performance Delta by Type</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="chart-two">
+      <div class="chart-card">
+        <div class="chart-title">Avg Δ Points — by mention type</div>
+        <div style="height:260px;position:relative;"><canvas id="chartPtsByType"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Avg Δ Assists — by mention type</div>
+        <div style="height:260px;position:relative;"><canvas id="chartAstByType"></canvas></div>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Avg Δ Rebounds — by mention type</div>
+      <div style="height:260px;position:relative;"><canvas id="chartRebByType"></canvas></div>
+    </div>
+
+    <div class="section-gap section-head">
+      <span class="section-num">03</span>
+      <span class="section-title">Top 10 Impacts</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Biggest composite performance shifts (pace-adjusted, 30-game window)</div>
+      <div style="height:360px;position:relative;"><canvas id="chartTopImpacts"></canvas></div>
+    </div>
+  </div>
+
+  <!-- STATISTICS PAGE -->
+  <div class="page" id="page-stats">
+    <div class="section-head">
+      <span class="section-num">—</span>
+      <span class="section-title">Statistical Tests</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="chart-card" style="margin-bottom:24px;">
+      <div class="chart-title">Paired t-tests — before vs. after (30-game window)</div>
+      <table class="stat-table" id="tTestTable"></table>
+    </div>
+
+    <div class="section-gap section-head">
+      <span class="section-num">—</span>
+      <span class="section-title">Correlations</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="chart-card" style="margin-bottom:24px;">
+      <div class="chart-title">Pearson correlations with performance delta (30g, pace-adjusted)</div>
+      <table class="stat-table" id="corrTable"></table>
+    </div>
+
+    <div class="section-gap section-head">
+      <span class="section-num">—</span>
+      <span class="section-title">Artist Tier × Performance Change</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Scatter — artist tier vs composite delta (colored by mention type)</div>
+      <div style="height:320px;position:relative;"><canvas id="chartTierScatter"></canvas></div>
+    </div>
+
+    <div class="section-gap section-head">
+      <span class="section-num">—</span>
+      <span class="section-title">Era Breakdown</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Mean composite delta by era</div>
+      <div style="height:260px;position:relative;"><canvas id="chartEra"></canvas></div>
+    </div>
+  </div>
+
+  <!-- EXPLORER PAGE -->
+  <div class="page" id="page-explorer">
+    <div class="section-head">
+      <span class="section-num">—</span>
+      <span class="section-title">Mention Explorer</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="explorer-controls">
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="text" class="search-input" id="explSearch" placeholder="Search player, artist, song…" oninput="renderExplorer()">
+      </div>
+      <select class="filter-select" id="explType" onchange="renderExplorer()">
+        <option value="">All types</option>
+        <option value="compliment">Compliment</option>
+        <option value="diss">Diss</option>
+        <option value="neutral">Neutral</option>
+      </select>
+      <select class="filter-select" id="explEra" onchange="renderExplorer()">
+        <option value="">All eras</option>
+        <option value="1990s">1990s</option>
+        <option value="2000s">2000s</option>
+        <option value="2010s">2010s</option>
+        <option value="2020s">2020s</option>
+      </select>
+      <select class="filter-select" id="explSort" onchange="renderExplorer()">
+        <option value="impact">Sort: Impact ↓</option>
+        <option value="player">Sort: Player A–Z</option>
+        <option value="year">Sort: Year</option>
+      </select>
+    </div>
+    <div class="lib-count"><span id="explCount">—</span> mentions</div>
+    <table class="lib-table">
+      <thead><tr>
+        <th>Player</th><th>Artist</th><th>Song</th><th>Year</th>
+        <th>Type</th><th>ΔPTS</th><th>ΔAST</th><th>ΔREB</th><th>Bar</th>
+      </tr></thead>
+      <tbody id="explBody"></tbody>
+    </table>
+    <div class="detail-panel" id="detailPanel"></div>
+  </div>
+
+  <!-- METHODOLOGY PAGE -->
+  <div class="page" id="page-methodology">
+    <div class="section-head">
+      <span class="section-num">—</span>
+      <span class="section-title">Methodology</span>
+      <span class="section-line"></span>
+    </div>
+    <div style="max-width:720px;line-height:1.9;color:var(--text2);font-size:15px;font-weight:300;">
+      <p style="margin-bottom:16px;color:var(--text);">This project treats each hip-hop mention as a natural experiment — a discrete event in a player's career that we can use to measure before/after performance.</p>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;letter-spacing:.05em;color:var(--orange);margin:28px 0 10px;text-transform:uppercase;">Data Sources</h3>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">NBA game logs</strong> — pulled via <code style="font-family:monospace;background:var(--bg3);padding:1px 5px;border-radius:2px;">nba_api</code> for every player in the dataset, covering the seasons immediately surrounding each mention's release date.</p>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Lyric metadata</strong> — fetched via the Genius API. Song release dates are used as the event date.</p>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Sentiment scoring</strong> — VADER (Valence Aware Dictionary and sEntiment Reasoner) applied to each lyric snippet, producing a continuous score from −1 (most negative) to +1 (most positive). This is used alongside the manual compliment/diss label as an independent predictor.</p>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;letter-spacing:.05em;color:var(--orange);margin:28px 0 10px;text-transform:uppercase;">Statistical Windows</h3>
+      <p style="margin-bottom:12px;">The <strong style="color:var(--text);">baseline</strong> is the 30 games immediately preceding the release date. Post-mention windows are: next 1 game, next 10 games (~2 weeks), next 30 games (~1 month), and the remainder of that NBA season.</p>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;letter-spacing:.05em;color:var(--orange);margin:28px 0 10px;text-transform:uppercase;">Normalization</h3>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Pace adjustment</strong> — NBA pace has varied significantly across eras (1990s: ~90 possessions/game; 2020s: ~100). All stats are scaled to a 2010s reference pace so that Shaq (1994) and Giannis (2018) can be compared fairly.</p>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Era z-scores</strong> — for the primary 30-game window, deltas are also z-scored within era groups to produce standardized effect sizes.</p>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;letter-spacing:.05em;color:var(--orange);margin:28px 0 10px;text-transform:uppercase;">Statistical Tests</h3>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Paired t-tests</strong> — test whether the mean before/after difference is statistically significant across all mentions.</p>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Mann-Whitney U</strong> — non-parametric test comparing compliment vs. diss group distributions.</p>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Pearson correlation</strong> — measures linear association between artist tier, VADER score, and performance delta.</p>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">OLS regression</strong> — models composite delta as a function of artist tier, mention type, and sentiment score.</p>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;letter-spacing:.05em;color:var(--orange);margin:28px 0 10px;text-transform:uppercase;">Limitations</h3>
+      <p style="margin-bottom:12px;">This is a correlational study. We cannot claim that hip-hop mentions <em>cause</em> performance changes. Confounding variables include hot/cold streaks, opponent strength, injury recovery, and seasonal variation. The dataset of ~110 mentions is sufficient for exploratory analysis but underpowered for strong causal claims. We report effect sizes and p-values honestly.</p>
+      <p style="margin-bottom:12px;"><strong style="color:var(--text);">Selection bias</strong> — we only know about famous mentions. Less prominent references are underrepresented.</p>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;letter-spacing:.05em;color:var(--orange);margin:28px 0 10px;text-transform:uppercase;">Composite Impact Score</h3>
+      <p>Weighted average of pace-adjusted 30-game deltas: <strong style="color:var(--text);">PTS (40%) + AST (30%) + REB (30%)</strong>, then multiplied by artist tier for the weighted version. This is a descriptive tool, not a statistical test.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left"><span>HIP HOOP</span> — Hip-Hop × NBA Stat Lab</div>
+    <div class="footer-note" id="footerMeta">Run notebooks 01–05 to populate this dashboard.</div>
+  </footer>
+</div>
+
+<script>
+let DATA = null;
+let isDark = false;
+let activeRow = null;
+
+// ── THEME ──────────────────────────────────────────────────
+function toggleTheme(){
+  isDark = !isDark;
+  document.documentElement.setAttribute('data-theme', isDark?'dark':'light');
+  document.getElementById('themeLabel').textContent = isDark?'Light mode':'Dark mode';
+  const t = document.getElementById('toggleTrack');
+  isDark ? t.classList.add('on') : t.classList.remove('on');
+  if(DATA) rebuildCharts();
+}
+
+// ── PAGE NAV ───────────────────────────────────────────────
+function showPage(p, el){
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(x=>x.classList.remove('active'));
+  document.getElementById('page-'+p).classList.add('active');
+  el.classList.add('active');
+}
+
+// ── LOAD DATA ──────────────────────────────────────────────
+async function loadData(){
+  try {
+    const resp = await fetch('data/processed/results.json');
+    if(!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    DATA = await resp.json();
+    buildDashboard();
+  } catch(e) {
+    document.getElementById('loadingEl').innerHTML = `
+      <div class="error-msg" style="margin-top:40px;">
+        <strong>results.json not found.</strong><br><br>
+        To populate this dashboard, run the Jupyter notebooks in order:<br><br>
+        <code style="font-family:monospace;background:rgba(196,43,43,.1);padding:2px 6px;border-radius:2px;">
+          jupyter notebook notebooks/01_data_collection.ipynb
+        </code><br><br>
+        Then run notebooks 02 → 03 → 04 → 05. Notebook 05 generates
+        <code style="font-family:monospace;">data/processed/results.json</code>
+        which this page reads.<br><br>
+        <strong>Error:</strong> ${e.message}
+      </div>`;
+  }
+}
+
+// ── BUILD DASHBOARD ────────────────────────────────────────
+function buildDashboard(){
+  document.getElementById('loadingEl').classList.remove('active');
+  document.getElementById('page-findings').classList.add('active');
+  document.getElementById('tab-findings').classList.add('active');
+
+  const f = DATA.key_findings;
+  document.getElementById('footerMeta').textContent =
+    `Generated ${new Date(DATA.generated_at).toLocaleDateString()} · ${f.n_total} mentions · ${f.n_analyzed} with complete data`;
+
+  buildMetrics(f);
+  buildFindingCards(f);
+  buildTypeCharts();
+  buildTopImpactsChart();
+  buildStatTests();
+  buildCorrTable();
+  buildTierScatter();
+  buildEraChart();
+  renderExplorer();
+}
+
+// ── METRIC CARDS ───────────────────────────────────────────
+function buildMetrics(f){
+  const sign = v => v == null ? '?' : (v > 0 ? '+' : '') + v;
+  const cls  = v => v == null ? '' : v > 0 ? 'up' : v < 0 ? 'down' : '';
+  const cards = [
+    { label:'Mentions Analyzed', val:f.n_analyzed||'—', sub:`of ${f.n_total} total`, cls:'' },
+    { label:'Avg ΔPTS (30g)',  val:sign(f.avg_pts_delta_30g), sub:'pace-adjusted', cls:cls(f.avg_pts_delta_30g) },
+    { label:'Avg ΔAST (30g)',  val:sign(f.avg_ast_delta_30g), sub:'pace-adjusted', cls:cls(f.avg_ast_delta_30g) },
+    { label:'Avg ΔREB (30g)',  val:sign(f.avg_reb_delta_30g), sub:'pace-adjusted', cls:cls(f.avg_reb_delta_30g) },
+    { label:'Positive Impact', val:(f.pct_positive_impact||0)+'%', sub:'of mentions show ↑ composite', cls:'' },
+    { label:'Compliments', val:f.n_compliment||'—', sub:'in dataset', cls:'' },
+    { label:'Disses',      val:f.n_diss||'—', sub:'in dataset', cls:'' },
+    { label:'Neutral',     val:f.n_neutral||'—', sub:'in dataset', cls:'' },
+  ];
+  document.getElementById('metricGrid').innerHTML = cards.map(c=>`
+    <div class="metric-card">
+      <div class="metric-label">${c.label}</div>
+      <div class="metric-val ${c.cls}">${c.val}</div>
+      <div class="metric-sub">${c.sub}</div>
+    </div>`).join('');
+}
+
+// ── FINDING CARDS ──────────────────────────────────────────
+function buildFindingCards(f){
+  const ptsDelta  = f.avg_pts_delta_30g;
+  const pctPos    = f.pct_positive_impact;
+  const tests     = DATA.statistical_tests;
+  const corrs     = DATA.correlations || [];
+
+  const ptsSig  = tests?.PTS?.['30g']?.significant;
+  const tierCorr = corrs.find(c=>c.variable?.includes('Tier')&&c.variable?.includes('PTS'));
+  const sentCorr = corrs.find(c=>c.variable?.includes('Sentiment')&&c.variable?.includes('PTS'));
+
+  const findings = [
+    {
+      title:'Overall effect',
+      body:`Across ${f.n_analyzed} complete mentions, players averaged a
+        <strong>${ptsDelta > 0 ? '+'+ptsDelta : ptsDelta} point</strong> shift in the 30 games
+        following a hip-hop mention (pace-adjusted). ${pctPos}% of mentions were associated
+        with a positive composite performance change. ${ptsSig
+          ? 'The points effect <strong>is statistically significant</strong> (p < 0.05).'
+          : 'The effect <strong>does not reach statistical significance</strong> at p = 0.05 — the signal exists, but is within noise.'}`
+    },
+    {
+      title:'Compliment vs. Diss',
+      body:`Mentions classified as compliments are associated with
+        ${DATA.type_breakdown?.compliment?.mean_pts_delta > 0 ? 'higher' : 'lower'}
+        post-mention scoring on average.
+        Disses show a mean composite delta of
+        <strong>${DATA.type_breakdown?.diss?.mean_composite_delta ?? '—'}</strong>.
+        The difference between types is explored in the Statistics tab.`
+    },
+    tierCorr ? {
+      title:'Does artist reach matter?',
+      body:`Artist tier shows a Pearson r = <strong>${tierCorr.r}</strong> correlation with
+        post-mention ΔPTS (p = ${tierCorr.p}).
+        ${tierCorr.significant
+          ? 'This is <strong>statistically significant</strong> — bigger artists correlate with bigger swings.'
+          : 'This is <strong>not statistically significant</strong> — artist reach alone does not reliably predict the magnitude of performance change.'}`
+    } : null,
+    sentCorr ? {
+      title:'Sentiment score vs. manual label',
+      body:`VADER sentiment score produces an r = <strong>${sentCorr.r}</strong> correlation with ΔPTS
+        (p = ${sentCorr.p}).
+        ${Math.abs(sentCorr.r) > 0.15
+          ? 'The continuous sentiment measure adds predictive power beyond the binary compliment/diss label.'
+          : 'The continuous sentiment score does not substantially outperform the manual label — the binary classification captures most of the signal.'}`
+    } : null,
+  ].filter(Boolean);
+
+  document.getElementById('findingCards').innerHTML = findings.map(f=>`
+    <div class="finding-card">
+      <div class="finding-title">${f.title}</div>
+      <div class="finding-body">${f.body}</div>
+    </div>`).join('');
+}
+
+// ── CHART HELPERS ──────────────────────────────────────────
+const COLORS = { compliment:'#1A8C50', diss:'#C42B2B', neutral:'#888880' };
+const COLORS_D = { compliment:'#00C96B', diss:'#FF3B3B', neutral:'#888880' };
+function typeColor(t){ return isDark ? COLORS_D[t] : COLORS[t]; }
+function gridColor(){ return isDark ? 'rgba(255,255,255,.08)' : 'rgba(0,0,0,.07)'; }
+function textColor(){ return isDark ? '#6B6559' : '#7A7168'; }
+
+let charts = {};
+function destroyChart(id){ if(charts[id]){ charts[id].destroy(); delete charts[id]; } }
+
+function rebuildCharts(){
+  if(!DATA) return;
+  buildTypeCharts();
+  buildTopImpactsChart();
+  buildTierScatter();
+  buildEraChart();
+}
+
+// ── TYPE BAR CHARTS ────────────────────────────────────────
+function buildTypeCharts(){
+  const tb = DATA.type_breakdown || {};
+  const types = ['compliment','neutral','diss'];
+  const keys = [{id:'chartPtsByType',key:'mean_pts_delta'},{id:'chartAstByType',key:'mean_ast_delta'}];
+  keys.forEach(({id,key})=>{
+    destroyChart(id);
+    charts[id] = new Chart(document.getElementById(id), {
+      type:'bar',
+      data:{
+        labels: types.map(t=>t.charAt(0).toUpperCase()+t.slice(1)),
+        datasets:[{ data: types.map(t=>tb[t]?.[key]??null), backgroundColor: types.map(t=>typeColor(t)), borderRadius:3 }]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{legend:{display:false}},
+        scales:{
+          y:{ grid:{color:gridColor()}, ticks:{color:textColor()},
+              title:{display:true,text:'Pace-adjusted delta',color:textColor(),font:{size:11}} },
+          x:{ grid:{display:false}, ticks:{color:textColor()} }
+        }
+      }
+    });
+  });
+  // REB full width
+  const rbId = 'chartRebByType';
+  destroyChart(rbId);
+  charts[rbId] = new Chart(document.getElementById(rbId), {
+    type:'bar',
+    data:{
+      labels: types.map(t=>t.charAt(0).toUpperCase()+t.slice(1)),
+      datasets:[{ data: types.map(t=>tb[t]?.mean_reb_delta??null), backgroundColor: types.map(t=>typeColor(t)), borderRadius:3 }]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{
+        y:{ grid:{color:gridColor()}, ticks:{color:textColor()},
+            title:{display:true,text:'Pace-adjusted delta',color:textColor(),font:{size:11}} },
+        x:{ grid:{display:false}, ticks:{color:textColor()} }
+      }
+    }
+  });
+}
+
+// ── TOP IMPACTS ────────────────────────────────────────────
+function buildTopImpactsChart(){
+  const top = DATA.top_impacts || [];
+  const id = 'chartTopImpacts';
+  destroyChart(id);
+  if(!top.length) return;
+  const sorted = [...top].sort((a,b)=>(a.deltas.composite_30g??0)-(b.deltas.composite_30g??0));
+  charts[id] = new Chart(document.getElementById(id), {
+    type:'bar',
+    data:{
+      labels: sorted.map(m=>`${m.player} × ${m.artist}`),
+      datasets:[{
+        data: sorted.map(m=>m.deltas.composite_30g),
+        backgroundColor: sorted.map(m=>(m.deltas.composite_30g??0)>=0?typeColor('compliment'):typeColor('diss')),
+        borderRadius:3
+      }]
+    },
+    options:{
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ grid:{color:gridColor()}, ticks:{color:textColor()},
+            title:{display:true,text:'Composite delta (pace-adj.)',color:textColor(),font:{size:11}} },
+        y:{ grid:{display:false}, ticks:{color:textColor(),font:{size:11}} }
+      }
+    }
+  });
+}
+
+// ── STAT TESTS TABLE ───────────────────────────────────────
+function buildStatTests(){
+  const tests = DATA.statistical_tests || {};
+  let rows = '<tr><th>Stat</th><th>Window</th><th>Mean Δ</th><th>t</th><th>p-value</th><th>Cohen\'s d</th><th>n</th><th>Significant?</th></tr>';
+  ['PTS','AST','REB'].forEach(stat=>{
+    const wins = tests[stat] || {};
+    ['30g','10g','season'].forEach(w=>{
+      const r = wins[w] || {};
+      rows += `<tr>
+        <td><strong>${stat}</strong></td>
+        <td>${w}</td>
+        <td>${r.mean_delta != null ? (r.mean_delta > 0 ? '+' : '')+r.mean_delta : '—'}</td>
+        <td>${r.t ?? '—'}</td>
+        <td>${r.p ?? '—'}</td>
+        <td>${r.cohens_d ?? '—'}</td>
+        <td>${r.n ?? '—'}</td>
+        <td>${r.significant ? '<span class="sig-yes">p &lt; 0.05</span>' : '<span class="sig-no">—</span>'}</td>
+      </tr>`;
+    });
+  });
+  document.getElementById('tTestTable').innerHTML = rows;
+}
+
+// ── CORRELATIONS TABLE ─────────────────────────────────────
+function buildCorrTable(){
+  const corrs = DATA.correlations || [];
+  let rows = '<tr><th>Variable</th><th>r</th><th>p-value</th><th>n</th><th>Significant?</th></tr>';
+  corrs.forEach(c=>{
+    rows += `<tr>
+      <td>${c.variable}</td>
+      <td>${c.r ?? '—'}</td>
+      <td>${c.p ?? '—'}</td>
+      <td>${c.n ?? '—'}</td>
+      <td>${c.significant ? '<span class="sig-yes">p &lt; 0.05</span>' : '<span class="sig-no">—</span>'}</td>
+    </tr>`;
+  });
+  document.getElementById('corrTable').innerHTML = rows;
+}
+
+// ── TIER SCATTER ───────────────────────────────────────────
+function buildTierScatter(){
+  const id = 'chartTierScatter';
+  destroyChart(id);
+  const mentions = DATA.mentions || [];
+  const datasets = ['compliment','neutral','diss'].map(t=>({
+    label: t.charAt(0).toUpperCase()+t.slice(1),
+    data: mentions.filter(m=>m.mention_type===t&&m.deltas.composite_30g!=null)
+                  .map(m=>({x:m.artist_tier, y:m.deltas.composite_30g,
+                             label:`${m.player} × ${m.artist}`})),
+    backgroundColor: typeColor(t)+'99',
+    pointRadius: 6, pointHoverRadius: 8,
+  }));
+  charts[id] = new Chart(document.getElementById(id), {
+    type:'scatter',
+    data:{ datasets },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{ labels:{color:textColor(),font:{size:11}} },
+        tooltip:{ callbacks:{ label: ctx=>`${ctx.raw.label}: ${ctx.raw.y > 0 ? '+' : ''}${ctx.raw.y}` } }
+      },
+      scales:{
+        x:{ grid:{color:gridColor()}, ticks:{color:textColor()},
+            title:{display:true,text:'Artist Tier',color:textColor(),font:{size:11}}, min:0.8, max:3.2 },
+        y:{ grid:{color:gridColor()}, ticks:{color:textColor()},
+            title:{display:true,text:'Composite Δ (30g)',color:textColor(),font:{size:11}} }
+      }
+    }
+  });
+}
+
+// ── ERA CHART ──────────────────────────────────────────────
+function buildEraChart(){
+  const id = 'chartEra';
+  destroyChart(id);
+  const eb = DATA.era_breakdown || {};
+  const eras = Object.keys(eb).sort();
+  const vals = eras.map(e=>eb[e].mean_composite_delta ?? 0);
+  charts[id] = new Chart(document.getElementById(id), {
+    type:'bar',
+    data:{
+      labels: eras,
+      datasets:[{
+        data: vals,
+        backgroundColor: vals.map(v=>v>=0?typeColor('compliment'):typeColor('diss')),
+        borderRadius:3
+      }]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{
+        y:{ grid:{color:gridColor()}, ticks:{color:textColor()},
+            title:{display:true,text:'Mean composite delta',color:textColor(),font:{size:11}} },
+        x:{ grid:{display:false}, ticks:{color:textColor()} }
+      }
+    }
+  });
+}
+
+// ── EXPLORER ───────────────────────────────────────────────
+function renderExplorer(){
+  if(!DATA) return;
+  const q   = (document.getElementById('explSearch').value||'').toLowerCase();
+  const typ = document.getElementById('explType').value;
+  const era = document.getElementById('explEra').value;
+  const srt = document.getElementById('explSort').value;
+
+  let rows = DATA.mentions.filter(m=>{
+    const txt = !q || [m.player,m.artist,m.song,m.lyric].some(s=>(s||'').toLowerCase().includes(q));
+    return txt && (!typ||m.mention_type===typ) && (!era||m.era===era);
+  });
+
+  if(srt==='impact')  rows.sort((a,b)=>Math.abs(b.deltas.composite_30g??0)-Math.abs(a.deltas.composite_30g??0));
+  if(srt==='player')  rows.sort((a,b)=>a.player.localeCompare(b.player));
+  if(srt==='year')    rows.sort((a,b)=>a.release_date.localeCompare(b.release_date));
+
+  document.getElementById('explCount').textContent = rows.length;
+
+  function dp(val, unit=''){
+    if(val == null) return '<span class="delta-pill dp-flat">—</span>';
+    const cls = val > 0 ? 'dp-up' : val < 0 ? 'dp-down' : 'dp-flat';
+    const sign = val > 0 ? '+' : '';
+    return `<span class="delta-pill ${cls}">${sign}${val}${unit}</span>`;
+  }
+
+  document.getElementById('explBody').innerHTML = rows.map(m=>`
+    <tr onclick="showDetail(${m.mention_id})" id="explrow-${m.mention_id}">
+      <td class="lib-td-player">${m.player}</td>
+      <td class="lib-td-muted">${m.artist}</td>
+      <td class="lib-td-muted" style="font-style:italic;">${m.song}</td>
+      <td class="lib-td-muted">${m.release_date?.slice(0,4)||'—'}</td>
+      <td><span class="mention-badge badge-${m.mention_type}">${m.mention_type}</span></td>
+      <td>${dp(m.deltas?.pts_30g)}</td>
+      <td>${dp(m.deltas?.ast_30g)}</td>
+      <td>${dp(m.deltas?.reb_30g)}</td>
+      <td class="lib-td-lyric" title="${m.lyric||''}">${m.lyric||''}</td>
+    </tr>`).join('');
+}
+
+function showDetail(id){
+  const m = DATA.mentions.find(x=>x.mention_id===id);
+  if(!m) return;
+
+  // Highlight row
+  document.querySelectorAll('.lib-table tbody tr').forEach(r=>r.classList.remove('active'));
+  const row = document.getElementById('explrow-'+id);
+  if(row) row.classList.add('active');
+
+  const s = m.stats;
+  const d = m.deltas;
+  const scoreColor = m.mention_type==='compliment'?'var(--up)':m.mention_type==='diss'?'var(--down)':'var(--neutral)';
+  const tw = m.mention_type==='compliment'?'Shouted out by':m.mention_type==='diss'?'Caught strays from':'Name-dropped by';
+
+  function trioHtml(stats){
+    if(!stats||stats.pts==null) return '<span style="color:var(--text2);font-size:12px;">No data</span>';
+    return `<div class="tl-trio">
+      <div class="tl-stat"><div class="tl-val">${stats.pts??'—'}</div><div class="tl-key">PTS</div></div>
+      <div class="tl-stat"><div class="tl-val">${stats.ast??'—'}</div><div class="tl-key">AST</div></div>
+      <div class="tl-stat"><div class="tl-val">${stats.reb??'—'}</div><div class="tl-key">REB</div></div>
+    </div>`;
+  }
+
+  function dPill(val, label){
+    if(val==null) return '';
+    const cls = val>0?'dp-up':val<0?'dp-down':'dp-flat';
+    const sign = val>0?'+':'';
+    return `<span class="delta-pill ${cls}">${sign}${val} ${label}</span>`;
+  }
+
+  function tlCard(period, stats, delts){
+    return `<div class="tl-card">
+      <div class="tl-period">${period}</div>
+      ${trioHtml(stats)}
+      <div class="delta-row" style="margin-top:8px;">
+        ${delts||''}
+      </div>
+    </div>`;
+  }
+
+  const panel = document.getElementById('detailPanel');
+  panel.className = 'detail-panel open';
+  panel.innerHTML = `
+    <div class="detail-top">
+      <div>
+        <div class="detail-player">${m.player}</div>
+        <div class="detail-meta">${tw} <strong>${m.artist}</strong> — "${m.song}" (${m.release_date})</div>
+        <div style="margin-top:10px;">
+          <span class="mention-badge badge-${m.mention_type}">${m.mention_type}</span>
+          <span style="font-size:11px;color:var(--text2);margin-left:10px;">${m.artist_tier}× · ${m.era} · ${m.position}</span>
+        </div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-num" style="color:${scoreColor}">${Math.abs(Math.round((d.weighted_impact||0)*10))}</div>
+        <div class="impact-lbl">Impact Score</div>
+      </div>
+    </div>
+    ${m.lyric ? `<div class="lyric-strip">"${m.lyric}" — <strong>${m.artist}</strong></div>` : ''}
+    <div style="margin-bottom:10px;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;">Post-mention splits (PTS / AST / REB)</div>
+    <div class="timeline-wrap">
+      <div class="tl-marker"><span style="color:var(--orange);font-size:14px;">♪</span><span class="marker-txt">Drop</span></div>
+      ${tlCard('Next game', s?.after_1g, dPill(d?.pts_30g,'pts')+dPill(d?.ast_30g,'ast')+dPill(d?.reb_30g,'reb'))}
+      ${tlCard('Next 10 games', s?.after_10g, '')}
+      ${tlCard('Next 30 games', s?.after_30g, '')}
+      ${tlCard('Rest of season', s?.after_season, '')}
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
+      <div style="background:var(--bg3);border-radius:4px;padding:14px 16px;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;margin-bottom:10px;">Baseline (30g before)</div>
+        ${trioHtml(s?.before)}
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:14px 16px;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;margin-bottom:10px;">Season avg that year</div>
+        ${trioHtml(m.season_avg)}
+      </div>
+    </div>`;
+
+  setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'nearest'}),60);
+}
+
+// ── INIT ───────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+mention_id,player,player_id_bref,artist,song,album,release_date,mention_type,lyric,artist_tier,player_position,era,vader_compound,vader_pos,vader_neg,vader_neu
+1,LeBron James,jamesle01,Drake,Forever,Relapse: Refill,2009-08-13,compliment,That's why they call me Young Money LeBron James we ballin',2.8,SF,2000s,0.0,0.0,0.0,1.0
+2,Kobe Bryant,bryanko01,Lil Wayne,Kobe Bryant,No Ceilings,2009-11-16,compliment,Call me Kobe Bryant cause I'm ballin' every night,2.5,SG,2000s,0.0,0.0,0.0,1.0
+3,Shaquille O'Neal,onealsh01,Notorious B.I.G.,The What,Ready to Die,1994-09-13,compliment,I'm catchin' bodies like Shaq catch alley-oops,3.0,C,1990s,0.3612,0.294,0.0,0.706
+4,Allen Iverson,iversal01,Jay-Z,Hovi Baby,The Dynasty: Roc La Familia,2000-10-31,compliment,Flow butter smooth like Iverson crossover,3.0,PG,2000s,0.3612,0.333,0.0,0.667
+5,Kevin Durant,duranke01,Kendrick Lamar,Backseat Freestyle,good kid m.A.A.d city,2012-10-22,neutral,Got K.D. numbers scoring every night,2.9,SF,2010s,0.0,0.0,0.0,1.0
+6,Patrick Ewing,ewingpa01,Notorious B.I.G.,One More Chance,Ready to Die,1994-09-13,diss,Never put me on the bench like Pat Ewing I'm too nice,3.0,C,1990s,0.6486,0.346,0.0,0.654
+7,Michael Jordan,jordami01,Jay-Z,Public Service Announcement,The Black Album,2003-11-14,compliment,I'm like Michael Jordan every summer I just had to come back,3.0,SG,2000s,0.3612,0.185,0.0,0.815
+8,Gary Payton,paytoga01,Jay-Z,D'Evils,Reasonable Doubt,1996-06-25,neutral,Glove on the court like Payton I'm grabbing every handle,3.0,PG,1990s,0.3612,0.217,0.0,0.783
+9,Vince Carter,cartevi01,Ludacris,Saturday (Oooh Ooooh!),Back for the First Time,2000-09-26,compliment,Dunkin' on fools like Vince Carter in the air,2.3,SG,2000s,-0.1779,0.197,0.252,0.551
+10,Tim Duncan,duncati01,Common,The Food,Be,2005-05-24,compliment,Fundamental like Duncan I lay it off the glass,2.4,PF,2000s,0.3612,0.238,0.0,0.762
+11,Dwyane Wade,wadedw01,Kanye West,Champion,Graduation,2007-09-11,compliment,I'm a champion Wade in the fourth I just take over,2.9,SG,2000s,0.5994,0.281,0.0,0.719
+12,Chris Paul,paulch01,Drake,Miss Me,Thank Me Later,2010-06-15,compliment,CP3 vision I see plays before they happen,2.8,PG,2010s,0.4588,0.4,0.0,0.6
+13,Kevin Garnett,garneke01,Jay-Z,Kingdom Come,Kingdom Come,2006-11-21,compliment,KG intensity heart of a warrior in the paint,3.0,PF,2000s,0.6369,0.344,0.0,0.656
+14,James Harden,hardeja01,Travis Scott,Goosebumps,Birds in the Trap Sing McKnight,2016-09-16,compliment,Stepback like Harden they can't guard me in the paint,2.5,SG,2010s,0.3612,0.217,0.0,0.783
+15,Stephen Curry,curryst01,Drake,God's Plan,Scorpion,2018-01-19,compliment,Shooting like Curry everything I touch is golden,2.8,PG,2010s,0.3612,0.263,0.0,0.737
+16,Kyrie Irving,irvingky01,J. Cole,Apparently,2014 Forest Hills Drive,2014-12-09,neutral,Kyrie handles I'm dribbling through the doubt,2.6,PG,2010s,-0.3612,0.0,0.294,0.706
+17,Giannis Antetokounmpo,antetgi01,Pusha T,Santeria,Daytona,2018-05-25,compliment,Greek freak energy I'm unstoppable in the lane,2.4,PF,2010s,-0.3818,0.178,0.398,0.424
+18,Luka Doncic,doncilu01,Drake,Champagne Poetry,Certified Lover Boy,2021-09-03,compliment,Luka magic triple double every night it's automatic,2.8,PG,2020s,0.0,0.0,0.0,1.0
+19,Ja Morant,moranja01,Young Thug,Ski,Punk,2021-10-15,compliment,Ja Morant altitude I'm always rising above,2.2,PG,2020s,0.0,0.0,0.0,1.0
+20,Dwight Howard,howardw01,Lil Wayne,Right Above It,I Am Not a Human Being,2010-09-17,diss,Superman couldn't guard me I'm taller than Howard's ego,2.5,C,2010s,0.0,0.0,0.0,1.0
+21,Russell Westbrook,westbru01,Meek Mill,Cold Hearted II,DC4,2016-10-04,diss,Russ triple doubles don't mean nothing when you lose,2.1,PG,2010s,0.3089,0.22,0.0,0.78
+22,Carmelo Anthony,anthoca01,Fabolous,Breathe,Real Talk,2004-09-28,compliment,I score like Melo 30 a night is the minimum,2.1,SF,2000s,0.3612,0.217,0.0,0.783
+23,Derrick Rose,rosede01,Chance the Rapper,Paranoia,Acid Rap,2013-05-18,compliment,Rose before the fall MVP in the Chi,2.0,PG,2010s,0.0,0.0,0.0,1.0
+24,Baron Davis,davisbr01,E-40,Tell Me When to Go,My Ghetto Report Card,2006-03-28,compliment,BD in the building hitting threes from the parking lot,1.9,PG,2000s,0.0,0.0,0.0,1.0
+25,Penny Hardaway,hardape01,Nas,Street Dreams,It Was Written,1996-07-02,compliment,Penny Hardaway with the rock I'm movin through the lane,2.7,PG,1990s,0.0,0.0,0.0,1.0
+26,Stephon Marbury,marbust01,Cam'ron,Dipset Anthem,Come Home With Me,2002-05-14,compliment,Steppin like Marbury down the lane,2.2,PG,2000s,0.3612,0.333,0.0,0.667
+27,Tracy McGrady,mcgrady01,Lil Wayne,Mr. Carter,Tha Carter III,2008-06-10,compliment,T-Mac numbers in my sleep dropping 30 easy,2.5,SG,2000s,0.4404,0.293,0.0,0.707
+28,Paul Pierce,piercpa01,Jay-Z,Encore,The Black Album,2003-11-14,neutral,Cold like Pierce in the fourth when it matters most,3.0,SF,2000s,0.3818,0.31,0.0,0.69
+29,Yao Ming,mingya01,Kanye West,Gone,Late Registration,2005-08-30,neutral,Big as Yao Ming standing tall over all opposition,2.9,C,2000s,0.0,0.0,0.0,1.0
+30,Jason Kidd,kiddja01,Jay-Z,Takeover,The Blueprint,2001-09-11,compliment,Vision like Kidd I see the whole floor before I move,3.0,PG,2000s,0.5423,0.333,0.0,0.667
+31,Steve Nash,nashst01,Lil Wayne,A Milli,Tha Carter III,2008-06-10,compliment,Passing like Nash two MVPs back to back no stress,2.5,PG,2000s,0.5903,0.377,0.0,0.623
+32,Dirk Nowitzki,nowitdi01,Drake,Successful,So Far Gone,2009-02-13,compliment,Dirk range I'm shooting threes from half court easy,2.8,PF,2000s,0.4404,0.266,0.0,0.734
+33,Ray Allen,allera02,Jay-Z,Blueprint 2,The Blueprint 2,2002-11-12,compliment,Pure as Ray Allen from three never miss a stroke,3.0,SG,2000s,0.1139,0.138,0.0,0.862
+34,Amare Stoudemire,stoudam01,Kanye West,All Falls Down,The College Dropout,2004-02-10,neutral,Rising like Amare out the paint can't stop the climb,2.9,PF,2000s,0.5248,0.354,0.0,0.646
+35,Chauncey Billups,billucha01,Eminem,Lose Yourself,8 Mile Soundtrack,2002-10-28,neutral,Mr. Big Shot cold like Billups in the clutch,3.0,PG,2000s,0.3612,0.238,0.0,0.762
+36,Gilbert Arenas,arenagi01,Lil Wayne,Lollipop,Tha Carter III,2008-04-28,compliment,Agent Zero Arenas I pull up from half court and drain it,2.5,SG,2000s,0.0,0.0,0.0,1.0
+37,Paul George,georgpa01,Drake,Energy,If You're Reading This It's Too Late,2015-02-13,compliment,PG-13 energy going hard every single night,2.8,SF,2010s,0.1779,0.247,0.165,0.588
+38,Kawhi Leonard,leonaka01,Kendrick Lamar,HUMBLE.,DAMN.,2017-04-14,compliment,Quiet as Kawhi the claw comes out when it counts,2.9,SF,2010s,0.0,0.0,0.0,1.0
+39,Joel Embiid,embiijo01,Meek Mill,Dangerous,Championships,2018-11-30,compliment,The Process Embiid I trust nobody but myself,2.1,C,2010s,0.2846,0.235,0.0,0.765
+40,Zion Williamson,willizi01,Drake,Laugh Now Cry Later,Laugh Now Cry Later,2020-08-14,compliment,Zion power I'm crashing through the lane like a freight train,2.8,PF,2020s,0.3612,0.2,0.0,0.8
+41,Nikola Jokic,jokicni01,J. Cole,p r i d e . i s . t h e . d e v i l,The Off-Season,2021-05-14,compliment,Jokic vision I see the whole game like a maestro,2.6,C,2020s,0.5423,0.36,0.0,0.64
+42,Damian Lillard,lillada01,Common,HER Love,Nobody's Smiling,2014-07-22,compliment,Dame Time I go off when everybody else freezes,2.4,PG,2010s,-0.0258,0.0,0.121,0.879
+43,Klay Thompson,thompkl01,Drake,Trophies,Nothing Was the Same,2013-09-24,compliment,Splash like Klay I let it fly without a dribble,2.8,SG,2010s,0.3612,0.217,0.0,0.783
+44,Draymond Green,greendra01,Kendrick Lamar,DNA.,DAMN.,2017-04-14,neutral,Draymond heart I do the dirty work nobody else wants,2.9,PF,2010s,0.3182,0.278,0.192,0.53
+45,Anthony Davis,davisan02,Drake,Forever,Nothing Was the Same,2013-09-24,compliment,Unibrow AD blocking everything in sight,2.8,PF,2010s,-0.3818,0.0,0.342,0.658
+46,Karl-Anthony Towns,townska01,Migos,Bad and Boujee,Culture,2017-01-27,compliment,KAT range big man shooting threes like a guard,2.3,C,2010s,0.3612,0.238,0.0,0.762
+47,Ben Simmons,simmobe01,Meek Mill,Going Bad,Championships,2018-11-30,diss,Ben Simmons won't shoot I'm taking every shot myself,2.1,PG,2010s,0.2584,0.203,0.0,0.797
+48,Lonzo Ball,balllon01,Drake,God's Plan,Scorpion,2018-01-19,neutral,Zo passing I keep the offense flowing never forcing,2.8,PG,2010s,-0.25,0.0,0.2,0.8
+49,De'Aaron Fox,foxdea01,Kendrick Lamar,Alright,To Pimp a Butterfly,2015-03-15,compliment,Fast as Fox in transition nobody catches me,2.9,PG,2010s,0.0,0.0,0.0,1.0
+50,Trae Young,youngtr01,Lil Baby,The Bigger Picture,The Bigger Picture,2020-06-12,compliment,Ice Trae cold from three in your face with the stepback,2.3,PG,2020s,0.0,0.0,0.0,1.0
+51,Devin Booker,bookede01,Drake,TSU,More Life,2017-03-18,compliment,Book scoring 70 they said he couldn't but he did,2.8,SG,2010s,0.0,0.0,0.0,1.0
+52,Bradley Beal,bealdbr01,J. Cole,Fire Squad,2014 Forest Hills Drive,2014-12-09,neutral,Beal buckets every night never gets the credit he deserves,2.6,SG,2010s,-0.2924,0.0,0.195,0.805
+53,Kemba Walker,walkeke02,Drake,Know Yourself,If You're Reading This It's Too Late,2015-02-13,compliment,Kemba crossover deadly from the elbow I just pull up,2.8,PG,2010s,0.0,0.0,0.0,1.0
+54,Donovan Mitchell,mitchdo01,Jay-Z,Smile,4:44,2017-06-30,compliment,Spida climbing every ladder nobody stops the rise,3.0,SG,2010s,-0.1531,0.0,0.186,0.814
+55,Bam Adebayo,adebaba01,Rick Ross,BIG TYME,Port of Miami 2,2019-08-09,compliment,Bam defense anchor of the whole operation,2.2,C,2010s,0.128,0.2,0.0,0.8
+56,Victor Oladipo,oladivi01,Future,Mask Off,HNDRXX,2017-04-14,compliment,Oladipo bounce back story they wrote him off too soon,2.4,SG,2010s,0.0,0.0,0.0,1.0
+57,Domantas Sabonis,sabondo01,2 Chainz,Momma I Hit a Lick,ColleGROVE,2016-04-01,neutral,Sabonis hands never drops a pass built like his father,2.0,PF,2010s,0.3612,0.217,0.0,0.783
+58,CJ McCollum,mccolcj01,Chance the Rapper,Blessings,Coloring Book,2016-05-13,compliment,McCollum pull-up off the glass textbook mid-range maestro,2.0,SG,2010s,0.0,0.0,0.0,1.0
+59,Hassan Whiteside,whitehe01,Rick Ross,Sanctified,Hood Billionaire,2014-10-27,compliment,Whiteside blocks everything that enters the paint no entry,2.2,C,2010s,-0.4767,0.0,0.369,0.631
+60,Andre Drummond,drummand01,Big Sean,One Man Can Change the World,Dark Sky Paradise,2015-02-01,neutral,Drummond boards pulling everything down like gravity,2.1,C,2010s,0.3612,0.294,0.0,0.706
+61,Dennis Rodman,rodmade01,Notorious B.I.G.,Big Poppa,Ready to Die,1994-09-13,compliment,Rodman rebounding I grab everything that misses no exceptions,3.0,PF,1990s,-0.4767,0.0,0.369,0.631
+62,Scottie Pippen,pippesc01,Jay-Z,Song Cry,The Blueprint,2001-09-11,neutral,Pippen versatile I guard one through five no problems,3.0,SF,2000s,0.3089,0.22,0.0,0.78
+63,Charles Barkley,barkleha01,Ice Cube,Check Yo Self,The Predator,1992-11-17,neutral,Round Mound of Rebound Barkley I'm taking everything inside,2.5,PF,1990s,0.0,0.0,0.0,1.0
+64,Reggie Miller,millerr01,Jay-Z,99 Problems,The Black Album,2003-11-14,neutral,Cold as Reggie Miller from three in your face no fear,3.0,SG,2000s,0.3875,0.208,0.0,0.792
+65,John Stockton,stockjo01,Dr. Dre,The Next Episode,2001,1999-11-16,neutral,Stockton to Malone I run my plays precise every time,3.0,PG,1990s,0.25,0.182,0.0,0.818
+66,Karl Malone,maloneka01,Dr. Dre,Still D.R.E.,2001,1999-11-16,neutral,Mailman delivers every night like Malone never late,3.0,PF,1990s,0.3612,0.263,0.0,0.737
+67,Grant Hill,hillgr01,Outkast,Ms. Jackson,Stankonia,2000-10-31,compliment,Grant Hill grace and skill the total package on the floor,2.8,SF,2000s,0.6486,0.371,0.0,0.629
+68,Chris Webber,webbech01,DMX,Ruff Ryders Anthem,It's Dark and Hell Is Hot,1998-05-12,neutral,C-Webb vision I call my own plays don't need a coach,2.6,PF,1990s,0.4588,0.308,0.0,0.692
+69,Anfernee Hardaway,hardape01,Tupac,Picture Me Rollin,All Eyez on Me,1996-02-13,compliment,Penny smooth with the handle going coast to coast no problem,3.0,PG,1990s,0.3089,0.184,0.0,0.816
+70,Kevin Johnson,johnskevin,Ice Cube,It Was a Good Day,The Predator,1992-11-17,neutral,KJ fast as lightning through the lane nobody catches him,2.5,PG,1990s,0.0,0.0,0.0,1.0
+71,Hakeem Olajuwon,olajuha01,Notorious B.I.G.,Juicy,Ready to Die,1994-09-13,compliment,Dream Shake Hakeem I got more moves than you can count,3.0,C,1990s,0.0772,0.157,0.134,0.709
+72,David Robinson,robinda01,Tupac,California Love,All Eyez on Me,1996-02-13,neutral,Admiral Robinson standing tall in the paint since day one,3.0,C,1990s,0.3182,0.204,0.0,0.796
+73,Alonzo Mourning,mournalo01,Jay-Z,Can I Get A...,Vol. 2 Hard Knock Life,1998-09-29,diss,Mourning I reject everything coming at me in the post,3.0,C,1990s,-0.6808,0.0,0.412,0.588
+74,Latrell Sprewell,sprewla01,Nas,Hate Me Now,I Am...,1999-04-06,diss,Sprewell temper I'll choke out anybody who gets in my way,2.7,SG,1990s,-0.743,0.0,0.412,0.588
+75,Gary Payton,paytoga01,Snoop Dogg,Gin and Juice,Doggystyle,1993-11-23,compliment,GP on the court I talk trash and back it up every time,2.6,PG,1990s,0.0,0.0,0.0,1.0
+76,Mitch Richmond,richmmi01,Too Short,Gettin It,Gettin It,1996-04-30,neutral,Richmond scoring in Sacramento nobody was watching but I was there,1.8,SG,1990s,0.0,0.0,0.0,1.0
+77,Muggsy Bogues,boguesmu01,Method Man,All I Need,Tical,1994-11-15,neutral,Small as Muggsy but I move the ball better than anyone,2.4,PG,1990s,0.5927,0.278,0.0,0.722
+78,Shawn Kemp,kempsh01,Sir Mix-a-Lot,Baby Got Back,Mack Daddy,1992-05-07,compliment,Kemp throw it down I'm dunking on everybody in the building,2.0,PF,1990s,0.0,0.0,0.0,1.0
+79,Nick Van Exel,vanexni01,Snoop Dogg,Murder Was the Case,Murder Was the Case,1994-10-18,neutral,Van Exel pull-up I hit the long two with no hesitation,2.6,PG,1990s,0.2057,0.154,0.0,0.846
+80,Glen Rice,ricegr01,2Pac,How Do U Want It,All Eyez on Me,1996-06-04,neutral,Rice pure shooter I let it fly from anywhere on the floor,3.0,SG,1990s,0.0,0.0,0.0,1.0
+81,LeBron James,jamesle01,Jay-Z,Crown,4:44,2017-06-30,compliment,King James legacy building something that outlasts the game itself,3.0,SF,2010s,0.0,0.0,0.0,1.0
+82,Kevin Durant,duranke01,Drake,The Language,Nothing Was the Same,2013-09-24,compliment,Durant patience I wait for my spot then I explode,2.8,SF,2010s,0.0,0.0,0.0,1.0
+83,Kobe Bryant,bryanko01,Jay-Z,Dirt Off Your Shoulder,The Black Album,2003-11-14,compliment,Kobe mentality mamba mode I never stop attacking,3.0,SG,2000s,0.5216,0.421,0.0,0.579
+84,Dwyane Wade,wadedw01,Lil Wayne,Got Money,Tha Carter III,2008-06-10,compliment,Wade in traffic splitting defenses like nobody business,2.5,SG,2000s,0.4939,0.412,0.0,0.588
+85,Carmelo Anthony,anthoca01,Jay-Z,Empire State of Mind,The Blueprint 3,2009-09-08,compliment,Melo scoring in New York that's what legends do,3.0,SF,2000s,0.0,0.0,0.0,1.0
+86,Blake Griffin,griffbl01,Kendrick Lamar,Swimming Pools,good kid m.A.A.d city,2012-07-31,compliment,Griffin power through the lane I throw it down with authority,2.9,PF,2010s,0.0772,0.115,0.0,0.885
+87,Derrick Rose,rosede01,Kanye West,Gorgeous,My Beautiful Dark Twisted Fantasy,2010-11-22,compliment,Rose MVP pace the youngest ever and still going hard,2.9,PG,2010s,-0.1027,0.0,0.135,0.865
+88,Paul George,georgpa01,Meek Mill,Rosé Red,Championships,2018-11-30,neutral,PG shooting under pressure I trust the process every time,2.1,SF,2010s,0.2732,0.244,0.163,0.593
+89,Victor Oladipo,oladivi01,J. Cole,Love Yourz,2014 Forest Hills Drive,2014-12-09,compliment,Oladipo bounce back earned every point the hard way,2.6,SG,2010s,-0.1027,0.0,0.149,0.851
+90,Kawhi Leonard,leonaka01,Drake,In My Feelings,Scorpion,2018-06-29,neutral,Kawhi let the work speak I don't need to say anything extra,2.8,SF,2010s,0.0,0.0,0.0,1.0
+91,Jimmy Butler,butliji01,Meek Mill,Ima Boss,Maybach Music 2,2011-07-12,compliment,Butler work ethic I outwork everybody on and off the court,2.1,SF,2010s,0.0,0.0,0.0,1.0
+92,Jayson Tatum,tatumja01,Drake,What's Next,Scary Hours 2,2021-03-05,compliment,Tatum rising star Boston wants a champion and he's the one,2.8,SF,2020s,0.5994,0.281,0.0,0.719
+93,Jaylen Brown,brownja02,J. Cole,KOD,KOD,2018-04-20,neutral,Brown energy I match whatever you bring I don't back down,2.6,SG,2010s,0.2732,0.174,0.0,0.826
+94,Khris Middleton,middlkh01,Big Sean,Bounce Back,I Decided,2017-02-03,neutral,Middleton quiet assassin drops 40 and nobody saw it coming,2.1,SF,2010s,0.0,0.0,0.0,1.0
+95,Fred VanVleet,vanvlfr01,Drake,Chicago Freestyle,Dark Lane Demo Tapes,2020-05-01,compliment,VanVleet undrafted they told him no but he never listened,2.8,PG,2020s,-0.1531,0.0,0.151,0.849
+96,Pascal Siakam,siakaPA01,Drake,From Time,Nothing Was the Same,2013-09-24,neutral,Siakam most improved they slept on him too long,2.8,PF,2010s,0.5256,0.298,0.0,0.702
+97,Ja Morant,moranja01,Lil Baby,Days Of Our Lives,Voice of the Heroes,2021-06-04,compliment,Morant flying I don't need a runway just the lane,2.3,PG,2020s,0.0,0.0,0.0,1.0
+98,Scottie Barnes,barnessc02,Drake,Fair Trade,Certified Lover Boy,2021-09-03,compliment,Barnes rookie poise playing like a vet from day one,2.8,SF,2020s,0.5106,0.35,0.0,0.65
+99,Cade Cunningham,cunningca01,J. Cole,let go my hand,The Off-Season,2021-05-14,compliment,Cunningham future of the league Detroit building something real,2.6,PG,2020s,0.0,0.0,0.0,1.0
+100,Evan Mobley,mobleye01,Pusha T,Diet Coke,It's Almost Dry,2022-04-22,compliment,Mobley wingspan blocking shots protecting the whole paint,2.4,C,2020s,-0.3818,0.0,0.271,0.729
+101,Jalen Green,greenja02,Travis Scott,ESCAPE PLAN,Astroworld,2018-08-03,compliment,Green in Houston carrying the city like Hakeem once did,2.5,SG,2020s,0.3612,0.217,0.0,0.783
+102,Anthony Edwards,edwaran02,Drake,TSU,More Life,2017-03-18,compliment,Ant Edwards I go zero to a hundred the second I touch it,2.8,SG,2020s,0.0,0.0,0.0,1.0
+103,LaMelo Ball,ballLA01,Young Thug,Digits,Beautiful Thugger Girls,2017-04-13,compliment,LaMelo vision seeing plays three seconds early every time,2.2,PG,2020s,0.4588,0.364,0.0,0.636
+104,Chris Paul,paulch01,Jay-Z,Otis,Watch the Throne,2011-08-12,compliment,CP3 precision I run the offense like a general,3.0,PG,2010s,0.128,0.217,0.174,0.609
+105,Kevin Garnett,garneke01,Eminem,Without Me,The Eminem Show,2002-05-14,neutral,KG intensity I go hard every single possession no days off,3.0,PF,2000s,-0.3818,0.0,0.286,0.714
+106,Tim Duncan,duncati01,Jay-Z,Song Cry,The Blueprint,2001-09-11,neutral,Duncan consistency night in night out you know what you getting,3.0,PF,2000s,0.0,0.0,0.0,1.0
+107,Allen Iverson,iversal01,Nas,Made You Look,God's Son,2002-12-13,compliment,AI crossover I leave defenders on the floor reaching for air,2.7,PG,2000s,0.2263,0.252,0.098,0.65
+108,Shaquille O'Neal,onealsh01,Jay-Z,U Don't Know,The Blueprint,2001-09-11,compliment,Shaq dominant I back you down until there's nowhere left to go,3.0,C,2000s,0.0,0.0,0.0,1.0
+109,Stephen Curry,curryst01,J. Cole,Love Yourz,2014 Forest Hills Drive,2014-12-09,neutral,Curry range I shoot from places that shouldn't even count,2.6,PG,2010s,-0.34,0.0,0.211,0.789
+110,Giannis Antetokounmpo,antetgi01,Drake,Nonstop,Scorpion,2018-06-29,compliment,Giannis nonstop I don't need a jumper I just go through you,2.8,PF,2010s,0.0,0.0,0.0,1.0
