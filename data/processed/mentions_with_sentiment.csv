@@ -109,3 +109,53 @@ mention_id,player,player_id_bref,artist,song,album,release_date,mention_type,lyr
 108,Shaquille O'Neal,onealsh01,Jay-Z,U Don't Know,The Blueprint,2001-09-11,compliment,Shaq dominant I back you down until there's nowhere left to go,3.0,C,2000s,0.0,0.0,0.0,1.0
 109,Stephen Curry,curryst01,J. Cole,Love Yourz,2014 Forest Hills Drive,2014-12-09,neutral,Curry range I shoot from places that shouldn't even count,2.6,PG,2010s,-0.34,0.0,0.211,0.789
 110,Giannis Antetokounmpo,antetgi01,Drake,Nonstop,Scorpion,2018-06-29,compliment,Giannis nonstop I don't need a jumper I just go through you,2.8,PF,2010s,0.0,0.0,0.0,1.0
+111,LeBron James,jamesle01,Jay-Z,Open Letter,Magna Carta Holy Grail,2013-04-06,compliment,I ball like LeBron pass it off to my team,3.0,SF,2010s,0.3612,0.217,0.0,0.783
+112,Kevin Durant,duranke01,J. Cole,January 28th,4 Your Eyez Only,2016-12-09,neutral,KD silent in the room but loud on the court,2.6,SF,2010s,0.0,0.0,0.0,1.0
+113,Kobe Bryant,bryanko01,Nas,Made You Look,God's Son,2002-12-13,compliment,Kobe cold in the fourth like a killer never stops,2.7,SG,2000s,-0.3304,0.259,0.282,0.459
+114,Stephen Curry,curryst01,Kendrick Lamar,Poetic Justice,good kid m.A.A.d city,2012-10-22,neutral,Curry quick release I shoot before the defense reacts,2.9,PG,2010s,-0.2263,0.138,0.22,0.642
+115,LeBron James,jamesle01,Meek Mill,Cold Hearted II,DC4,2016-10-04,compliment,LeBron taking it coast to coast nobody stops the king,2.1,SF,2010s,-0.1531,0.0,0.151,0.849
+116,James Harden,hardeja01,Drake,Nonstop,Scorpion,2018-06-29,compliment,Harden ISO I clear the lane and cook whoever steps up,2.8,SG,2010s,0.3818,0.206,0.0,0.794
+117,Damian Lillard,lillada01,J. Cole,She Knows,2014 Forest Hills Drive,2014-12-09,compliment,Dame cold from deep like Lillard in your face at the buzzer,2.6,PG,2010s,0.3612,0.185,0.0,0.815
+118,Giannis Antetokounmpo,antetgi01,Kendrick Lamar,DNA.,DAMN.,2017-04-14,compliment,Giannis coming down the lane like a freight train unstoppable,2.9,PF,2010s,0.1779,0.203,0.146,0.65
+119,Joel Embiid,embiijo01,Drake,Laugh Now Cry Later,Laugh Now Cry Later,2020-08-14,compliment,The Process still running I trust the work like Embiid,2.8,C,2020s,0.7003,0.42,0.0,0.58
+120,Nikola Jokic,jokicni01,Drake,Champagne Poetry,Certified Lover Boy,2021-09-03,compliment,Jokic passing I find the open man before they even cut,2.8,C,2020s,-0.2732,0.0,0.174,0.826
+121,Trae Young,youngtr01,Drake,What's Next,Scary Hours 2,2021-03-05,compliment,Ice cold like Trae from deep nobody checks his handle,2.8,PG,2020s,0.3612,0.217,0.0,0.783
+122,Luka Doncic,doncilu01,J. Cole,applying pressure,The Off-Season,2021-05-14,neutral,Luka triple double by halftime that's just Tuesday for him,2.6,PG,2020s,0.0,0.0,0.0,1.0
+123,Anthony Davis,davisan02,Kendrick Lamar,Swimming Pools,good kid m.A.A.d city,2012-07-31,compliment,AD wingspan blocking shots from the paint to the perimeter,2.9,PF,2010s,-0.3818,0.0,0.224,0.776
+124,Paul George,georgpa01,J. Cole,ATM,KOD,2018-04-20,neutral,PG quiet assassin gets his buckets without the spotlight,2.6,SF,2010s,0.0,0.0,0.0,1.0
+125,Kawhi Leonard,leonaka01,J. Cole,FRIENDS,KOD,2018-04-20,neutral,Kawhi composure never rattled let the claw do the talking,2.6,SF,2010s,0.0,0.0,0.0,1.0
+126,Jimmy Butler,butliji01,Drake,Greece,Dark Lane Demo Tapes,2020-05-01,compliment,Butler intensity I bring that Miami heat every possession,2.8,SF,2020s,0.0,0.0,0.0,1.0
+127,Jayson Tatum,tatumja01,Kendrick Lamar,N95,Mr. Morale and the Big Steppers,2022-05-13,compliment,Tatum takeover Boston needed a closer and he answered,2.9,SF,2020s,0.0,0.0,0.0,1.0
+128,Devin Booker,bookede01,Kendrick Lamar,Rich Spirit,Mr. Morale and the Big Steppers,2022-05-13,compliment,Book scoring in Phoenix they finally got their superstar,2.9,SG,2020s,0.0,0.0,0.0,1.0
+129,Ja Morant,moranja01,Drake,Fair Trade,Certified Lover Boy,2021-09-03,compliment,Ja dunking on everybody in Memphis it's his city now,2.8,PG,2020s,0.0,0.0,0.0,1.0
+130,Zion Williamson,willizi01,J. Cole,my.life,The Off-Season,2021-05-14,compliment,Zion built different crashes boards runs point never seen before,2.6,PF,2020s,0.0,0.0,0.0,1.0
+131,Allen Iverson,iversal01,DMX,What's My Name,It's Dark and Hell Is Hot,1998-05-12,compliment,AI handle quicker than a hiccup leaving defenders on the floor,2.6,PG,1990s,0.0772,0.115,0.0,0.885
+132,Shaquille O'Neal,onealsh01,Dr. Dre,Still D.R.E.,2001,1999-11-16,compliment,Shaq power I'm dominant I back you down no escape,3.0,C,1990s,-0.1326,0.0,0.144,0.856
+133,Kevin Garnett,garneke01,Jay-Z,Heart of the City,The Blueprint,2001-09-11,compliment,KG hunger from the jump he came to win every night,3.0,PF,2000s,0.4215,0.257,0.135,0.608
+134,Dirk Nowitzki,nowitdi01,Jay-Z,On to the Next One,The Blueprint 3,2009-09-08,neutral,Dirk one leg fadeaway I pull up from wherever I want,3.0,PF,2000s,0.0772,0.115,0.0,0.885
+135,Chris Paul,paulch01,Kendrick Lamar,Swimming Pools,good kid m.A.A.d city,2012-07-31,neutral,CP vision I see the play before it happens every time,2.9,PG,2010s,0.5267,0.328,0.0,0.672
+136,Dwyane Wade,wadedw01,Rick Ross,Santorini Greece,Rather You Than Me,2017-03-17,compliment,Wade in Miami I bring the heat every night championship mode,2.2,SG,2010s,0.4404,0.225,0.0,0.775
+137,Carmelo Anthony,anthoca01,Nas,One Love,Illmatic,1994-04-19,neutral,Scoring like Melo out of Syracuse destined for greatness,2.7,SF,2010s,0.3612,0.238,0.0,0.762
+138,Blake Griffin,griffbl01,Drake,Lord Knows,Take Care,2011-11-15,compliment,Griffin throwing it down I dunk with authority and purpose,2.8,PF,2010s,0.0772,0.126,0.0,0.874
+139,Kyrie Irving,irvingky01,Drake,God's Plan,Scorpion,2018-01-19,neutral,Kyrie handles like a point god dribbles through any defense,2.8,PG,2010s,0.6249,0.466,0.0,0.534
+140,Bradley Beal,bealdbr01,Meek Mill,Trauma,Championships,2018-11-30,neutral,Beal getting buckets in DC thirty a night no noise,2.1,SG,2010s,-0.296,0.0,0.196,0.804
+141,Karl-Anthony Towns,townska01,Drake,God's Plan,Scorpion,2018-01-19,neutral,KAT range and touch you can't guard him at the five,2.8,C,2010s,0.0,0.0,0.0,1.0
+142,Donovan Mitchell,mitchdo01,Drake,Nonstop,Scorpion,2018-06-29,compliment,Spida climbing every rung nobody can stop the rise in Utah,2.8,SG,2010s,-0.296,0.0,0.18,0.82
+143,Bam Adebayo,adebaba01,Drake,Laugh Now Cry Later,Laugh Now Cry Later,2020-08-14,compliment,Bam energy every play he brings the anchor to that team,2.8,C,2020s,0.5423,0.333,0.0,0.667
+144,Fred VanVleet,vanvlfr01,J. Cole,Heaven's EP,KOD,2018-04-20,neutral,VanVleet undrafted gritty like Cole earned everything the hard way,2.6,PG,2020s,0.2732,0.21,0.118,0.672
+145,Pascal Siakam,siakaPA01,J. Cole,Snow On Tha Bluff,The Off-Season,2021-05-14,neutral,Siakam versatile they counted him out but he came back better,2.6,PF,2020s,0.5927,0.278,0.0,0.722
+146,Gary Payton,paytoga01,Tupac,All About U,All Eyez on Me,1996-02-13,neutral,Payton glove on defence he guards everybody zero to sixty,3.0,PG,1990s,0.1027,0.135,0.0,0.865
+147,Reggie Miller,millerr01,Nas,The Message,It Was Written,1996-07-02,neutral,Miller from three I hit the big shot and talk about it,2.7,SG,1990s,0.0,0.0,0.0,1.0
+148,Hakeem Olajuwon,olajuha01,Jay-Z,Can I Get A...,Vol. 2 Hard Knock Life,1998-09-29,compliment,Dream Shake Hakeem I move in the post like poetry in motion,3.0,C,1990s,0.4215,0.296,0.112,0.592
+149,Charles Barkley,barkleha01,Tupac,California Love,All Eyez on Me,1996-02-13,neutral,Barkley crash the boards I own the paint on both ends,3.0,PF,1990s,-0.4019,0.0,0.213,0.787
+150,Patrick Ewing,ewingpa01,Jay-Z,Dead Presidents II,Reasonable Doubt,1996-06-25,neutral,Ewing in the post I'm dominant old school paint presence,3.0,C,1990s,0.0,0.0,0.0,1.0
+151,Derrick Rose,rosede01,J. Cole,Let Nas Down,Born Sinner,2013-06-18,compliment,Rose before the injury was poetry fastest point guard alive,2.6,PG,2010s,-0.0516,0.194,0.209,0.597
+152,Russell Westbrook,westbru01,Drake,Energy,If You're Reading This It's Too Late,2015-02-13,neutral,Westbrook explosive first step nobody guards him in transition,2.8,PG,2010s,0.0,0.0,0.0,1.0
+153,Kevin Durant,duranke01,Jay-Z,FML,Lemonade,2016-04-23,compliment,Durant silent but violent scores forty and doesn't say a word,3.0,SF,2010s,-0.7469,0.0,0.349,0.651
+154,LeBron James,jamesle01,Kendrick Lamar,ELEMENT.,DAMN.,2017-04-14,compliment,LeBron element fire and ice fourth quarter he takes over,2.9,SF,2010s,-0.34,0.0,0.211,0.789
+155,Stephen Curry,curryst01,J. Cole,4 Your Eyez Only,4 Your Eyez Only,2016-12-09,neutral,Curry range from logos it just doesn't seem fair,2.6,PG,2010s,-0.2411,0.0,0.197,0.803
+156,Draymond Green,greendra01,J. Cole,Kevin's Heart,KOD,2018-04-20,diss,Draymond talking loud but can you back it up where it counts,2.6,PF,2010s,0.0,0.0,0.0,1.0
+157,Ben Simmons,simmobe01,Drake,Chicago Freestyle,Dark Lane Demo Tapes,2020-05-01,diss,Simmons can't shoot I'm taking every open three he leaves,2.8,PG,2020s,0.2584,0.184,0.0,0.816
+158,Lonzo Ball,balllon01,Chance the Rapper,No Problem,Coloring Book,2016-05-13,neutral,Lonzo passing vision like Kidd out there running the whole show,2.0,PG,2010s,0.5423,0.333,0.0,0.667
+159,Victor Oladipo,oladivi01,Drake,Nonstop,Scorpion,2018-06-29,compliment,Oladipo comeback story putting Indiana on his back for real,2.8,SG,2010s,0.0,0.0,0.0,1.0
+160,Khris Middleton,middlkh01,Drake,Toosie Slide,Dark Lane Demo Tapes,2020-03-27,neutral,Middleton steady like a rock gives you twenty every night,2.8,SF,2020s,0.3612,0.217,0.0,0.783

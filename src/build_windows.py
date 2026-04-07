@@ -1,22 +1,17 @@
 """
 build_windows.py
-For each mention, finds the player's game logs and slices them into
-before/after windows relative to the song release date.
+Builds before/after stat windows for each mention.
 
-Windows produced:
-  - before_30g : up to 30 games before release date
-  - after_1g   : next 1 game
-  - after_10g  : next ~10 games (approx 2 weeks)
-  - after_30g  : next ~30 games (approx 1 month)
-  - after_season: all remaining games that season
-
-Output: data/processed/windows.csv — one row per mention, one col per stat/window.
+Key improvements:
+- Off-season drops: baseline = last 30 games of PREV season,
+  after windows = from start of NEXT season
+- In-season drops: standard before/after split
+- Uses all 3 fetched seasons so nothing is left on the table
 """
 
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from datetime import datetime
 
 RAW_DIR = Path(__file__).parent.parent / "data" / "raw"
 PROCESSED_DIR = Path(__file__).parent.parent / "data" / "processed"
@@ -24,6 +19,7 @@ GAME_LOG_DIR = RAW_DIR / "game_logs"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 STAT_COLS = ["PTS", "AST", "REB"]
+OFFSEASON_GAP_DAYS = 45  # days gap = off-season
 
 
 def load_game_log(player_name: str) -> pd.DataFrame | None:
@@ -33,49 +29,48 @@ def load_game_log(player_name: str) -> pd.DataFrame | None:
         print(f"  ✗ No game log found for: {player_name}")
         return None
     df = pd.read_csv(path)
-    # nba_api returns GAME_DATE as 'MMM DD, YYYY'
     df["GAME_DATE_parsed"] = pd.to_datetime(df["GAME_DATE"], format="%b %d, %Y", errors="coerce")
+    df = df.dropna(subset=["GAME_DATE_parsed"])
     df = df.sort_values("GAME_DATE_parsed").reset_index(drop=True)
     return df
 
 
 def window_stats(games: pd.DataFrame) -> dict:
-    """Compute mean PTS, AST, REB for a set of games."""
     if games.empty:
         return {f"{s}_mean": np.nan for s in STAT_COLS} | \
                {f"{s}_std": np.nan for s in STAT_COLS} | \
                {"n_games": 0}
     return {
-        **{f"{s}_mean": round(games[s].mean(), 2) for s in STAT_COLS},
-        **{f"{s}_std": round(games[s].std(), 2) for s in STAT_COLS},
+        **{f"{s}_mean": round(float(games[s].mean()), 2) for s in STAT_COLS},
+        **{f"{s}_std": round(float(games[s].std()), 2) for s in STAT_COLS},
         "n_games": len(games),
     }
 
 
-def find_effective_date(release_dt: pd.Timestamp, gl: pd.DataFrame) -> pd.Timestamp:
+def classify_drop(release_dt: pd.Timestamp, gl: pd.DataFrame) -> tuple[str, pd.Timestamp]:
     """
-    If the release date falls in the NBA off-season (no games within 45 days after),
-    shift forward to the first game of the next season.
-    This handles songs dropped in June/July/August/September.
+    Returns (drop_type, effective_date):
+      'in_season'   — drop during active season, use release date
+      'off_season'  — drop in off-season, shift to next season start
+      'end_season'  — drop near playoff/end, shift to next season start
     """
-    nearby_after = gl[gl["GAME_DATE_parsed"] >= release_dt].head(1)
-    if nearby_after.empty:
-        return release_dt
+    after = gl[gl["GAME_DATE_parsed"] >= release_dt]
+    if after.empty:
+        return "no_data", release_dt
 
-    days_gap = (nearby_after.iloc[0]["GAME_DATE_parsed"] - release_dt).days
-    if days_gap > 45:
-        # Off-season drop — use the first game of the next season as event date
-        # but keep the 30 games before the release date as baseline
-        next_game_date = nearby_after.iloc[0]["GAME_DATE_parsed"]
-        print(f"    ↪ Off-season drop ({release_dt.date()}) → shifted to {next_game_date.date()}")
-        return next_game_date
-    return release_dt
+    next_game = after.iloc[0]["GAME_DATE_parsed"]
+    gap = (next_game - release_dt).days
+
+    if gap <= OFFSEASON_GAP_DAYS:
+        return "in_season", release_dt
+    else:
+        return "off_season", next_game
 
 
-def build_windows(mentions_path: str = None) -> pd.DataFrame:
+def build_windows(mentions_path=None) -> pd.DataFrame:
     if mentions_path is None:
         mentions_path = PROCESSED_DIR / "mentions_with_sentiment.csv"
-        if not mentions_path.exists():
+        if not Path(mentions_path).exists():
             mentions_path = RAW_DIR / "mentions.csv"
 
     mentions = pd.read_csv(mentions_path)
@@ -83,6 +78,7 @@ def build_windows(mentions_path: str = None) -> pd.DataFrame:
 
     rows = []
     skipped = 0
+    offseason_count = 0
 
     for _, mention in mentions.iterrows():
         player = mention["player"]
@@ -93,49 +89,57 @@ def build_windows(mentions_path: str = None) -> pd.DataFrame:
             skipped += 1
             continue
 
-        # Shift off-season dates to next season start
-        effective_dt = find_effective_date(release_dt, gl)
+        drop_type, effective_dt = classify_drop(release_dt, gl)
 
-        # Baseline: 30 games before the original release date
-        before_mask = gl["GAME_DATE_parsed"] < release_dt
-        # After windows: from effective date (handles off-season)
-        after_mask  = gl["GAME_DATE_parsed"] >= effective_dt
-
-        before_games = gl[before_mask].tail(30)        # up to 30 games before
-        after_all    = gl[after_mask].reset_index(drop=True)
-        after_1g     = after_all.head(1)
-        after_10g    = after_all.head(10)
-        after_30g    = after_all.head(30)
-        after_season = after_all                        # rest of season
-
-        if before_games.empty or after_all.empty:
-            print(f"  ⚠ Insufficient data for {player} around {release_dt.date()}")
+        if drop_type == "no_data":
+            print(f"  ⚠ No future games found for {player} after {release_dt.date()}")
             skipped += 1
             continue
 
+        if drop_type == "off_season":
+            offseason_count += 1
+            # Baseline: last 30 games BEFORE the release date (end of prev season)
+            before_games = gl[gl["GAME_DATE_parsed"] < release_dt].tail(30)
+            # After windows: from start of NEXT season
+            after_all = gl[gl["GAME_DATE_parsed"] >= effective_dt].reset_index(drop=True)
+        else:
+            # In-season: standard split
+            before_games = gl[gl["GAME_DATE_parsed"] < release_dt].tail(30)
+            after_all = gl[gl["GAME_DATE_parsed"] >= release_dt].reset_index(drop=True)
+
+        if before_games.empty or after_all.empty:
+            print(f"  ⚠ Insufficient data for {player} ({drop_type}) around {release_dt.date()}")
+            skipped += 1
+            continue
+
+        after_1g     = after_all.head(1)
+        after_10g    = after_all.head(10)
+        after_30g    = after_all.head(30)
+        after_season = after_all  # all games in the after window (rest of that season)
+
         row = {
-            "mention_id":   mention["mention_id"],
-            "player":       player,
-            "artist":       mention["artist"],
-            "song":         mention["song"],
-            "release_date": mention["release_date"],
-            "mention_type": mention["mention_type"],
-            "artist_tier":  mention["artist_tier"],
-            "player_position": mention["player_position"],
-            "era":          mention["era"],
+            "mention_id":       mention["mention_id"],
+            "player":           player,
+            "artist":           mention["artist"],
+            "song":             mention["song"],
+            "release_date":     mention["release_date"],
+            "mention_type":     mention["mention_type"],
+            "artist_tier":      mention["artist_tier"],
+            "player_position":  mention["player_position"],
+            "era":              mention["era"],
+            "drop_type":        drop_type,
+            "effective_date":   str(effective_dt.date()),
         }
 
-        # Add sentiment if available
         for col in ["vader_compound", "vader_pos", "vader_neg"]:
             if col in mention.index:
                 row[col] = mention[col]
 
-        # Add windowed stats with prefixes
         for prefix, games in [
-            ("before", before_games),
-            ("after_1g", after_1g),
-            ("after_10g", after_10g),
-            ("after_30g", after_30g),
+            ("before",       before_games),
+            ("after_1g",     after_1g),
+            ("after_10g",    after_10g),
+            ("after_30g",    after_30g),
             ("after_season", after_season),
         ]:
             stats = window_stats(games)
@@ -147,7 +151,7 @@ def build_windows(mentions_path: str = None) -> pd.DataFrame:
     df = pd.DataFrame(rows)
     out_path = PROCESSED_DIR / "windows.csv"
     df.to_csv(out_path, index=False)
-    print(f"\nBuilt {len(df)} mention windows (skipped {skipped})")
+    print(f"\n✓ Built {len(df)} mention windows ({offseason_count} off-season shifts, {skipped} skipped)")
     print(f"Saved to {out_path}")
     return df
 
