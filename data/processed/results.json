@@ -1,170 +1,173 @@
 {
-  "generated_at": "2026-04-07T12:09:42.406637",
-  "n_mentions": 51,
+  "generated_at": "2026-04-07T12:55:36.205913",
+  "n_mentions": 140,
   "key_findings": {
-    "avg_pts_delta_30g": 0.1,
-    "avg_ast_delta_30g": -0.07,
-    "avg_reb_delta_30g": 0.03,
-    "pct_positive_impact": 58.8,
-    "n_total": 51,
-    "n_analyzed": 51,
-    "n_compliment": 28,
-    "n_diss": 3,
-    "n_neutral": 20
+    "avg_pts_delta_30g": 0.5,
+    "avg_ast_delta_30g": 0.05,
+    "avg_reb_delta_30g": 0.27,
+    "pct_positive_impact": 60.0,
+    "n_total": 140,
+    "n_analyzed": 140,
+    "n_compliment": 84,
+    "n_diss": 8,
+    "n_neutral": 48
   },
   "statistical_tests": {
     "PTS": {
       "30g": {
-        "t": 0.262,
-        "p": 0.794,
-        "cohens_d": 0.037,
-        "mean_delta": 0.141,
-        "n": 51,
+        "t": 1.686,
+        "p": 0.094,
+        "cohens_d": 0.143,
+        "mean_delta": 0.513,
+        "n": 140,
         "significant": false
       },
       "10g": {
-        "t": -1.198,
-        "p": 0.2366,
-        "cohens_d": -0.168,
-        "mean_delta": -0.734,
-        "n": 51,
+        "t": -0.571,
+        "p": 0.5688,
+        "cohens_d": -0.048,
+        "mean_delta": -0.197,
+        "n": 140,
         "significant": false
       },
       "season": {
-        "t": 0.996,
-        "p": 0.3239,
-        "cohens_d": 0.139,
-        "mean_delta": 0.548,
-        "n": 51,
-        "significant": false
+        "t": 2.44,
+        "p": 0.016,
+        "cohens_d": 0.206,
+        "mean_delta": 0.761,
+        "n": 140,
+        "significant": true
       }
     },
     "AST": {
       "30g": {
-        "t": -0.445,
-        "p": 0.6581,
-        "cohens_d": -0.062,
-        "mean_delta": -0.073,
-        "n": 51,
+        "t": 0.454,
+        "p": 0.6505,
+        "cohens_d": 0.038,
+        "mean_delta": 0.043,
+        "n": 140,
         "significant": false
       },
       "10g": {
-        "t": -0.368,
-        "p": 0.7148,
-        "cohens_d": -0.051,
-        "mean_delta": -0.068,
-        "n": 51,
+        "t": -0.333,
+        "p": 0.7395,
+        "cohens_d": -0.028,
+        "mean_delta": -0.035,
+        "n": 140,
         "significant": false
       },
       "season": {
-        "t": 0.088,
-        "p": 0.9303,
-        "cohens_d": 0.012,
-        "mean_delta": 0.014,
-        "n": 51,
+        "t": 0.879,
+        "p": 0.3811,
+        "cohens_d": 0.074,
+        "mean_delta": 0.081,
+        "n": 140,
         "significant": false
       }
     },
     "REB": {
       "30g": {
-        "t": 0.286,
-        "p": 0.7761,
-        "cohens_d": 0.04,
-        "mean_delta": 0.035,
-        "n": 51,
-        "significant": false
+        "t": 2.784,
+        "p": 0.0061,
+        "cohens_d": 0.235,
+        "mean_delta": 0.268,
+        "n": 140,
+        "significant": true
       },
       "10g": {
-        "t": -1.929,
-        "p": 0.0594,
-        "cohens_d": -0.27,
-        "mean_delta": -0.331,
-        "n": 51,
+        "t": 0.646,
+        "p": 0.5192,
+        "cohens_d": 0.055,
+        "mean_delta": 0.078,
+        "n": 140,
         "significant": false
       },
       "season": {
-        "t": 0.236,
-        "p": 0.8145,
-        "cohens_d": 0.033,
-        "mean_delta": 0.025,
-        "n": 51,
+        "t": 1.659,
+        "p": 0.0994,
+        "cohens_d": 0.14,
+        "mean_delta": 0.152,
+        "n": 140,
         "significant": false
       }
     },
     "by_type": {
       "compliment": {
         "PTS": {
-          "t": -0.288,
-          "p": 0.7756,
-          "cohens_d": -0.054,
-          "mean_delta": -0.233,
-          "n": 28,
+          "t": 1.113,
+          "p": 0.2688,
+          "cohens_d": 0.121,
+          "mean_delta": 0.464,
+          "n": 84,
           "significant": false
         },
         "AST": {
-          "t": 0.092,
-          "p": 0.9275,
-          "cohens_d": 0.017,
-          "mean_delta": 0.016,
-          "n": 28,
+          "t": -0.017,
+          "p": 0.9864,
+          "cohens_d": -0.002,
+          "mean_delta": -0.002,
+          "n": 84,
           "significant": false
         },
         "REB": {
-          "t": 0.202,
-          "p": 0.8415,
-          "cohens_d": 0.038,
-          "mean_delta": 0.032,
-          "n": 28,
+          "t": 1.614,
+          "p": 0.1104,
+          "cohens_d": 0.176,
+          "mean_delta": 0.21,
+          "n": 84,
           "significant": false
         }
       },
       "diss": {
         "PTS": {
-          "t": null,
-          "p": null,
-          "cohens_d": null,
-          "n": 3,
+          "t": 0.075,
+          "p": 0.9421,
+          "cohens_d": 0.027,
+          "mean_delta": 0.116,
+          "n": 8,
           "significant": false
         },
         "AST": {
-          "t": null,
-          "p": null,
-          "cohens_d": null,
-          "n": 3,
+          "t": -0.268,
+          "p": 0.7964,
+          "cohens_d": -0.095,
+          "mean_delta": -0.054,
+          "n": 8,
           "significant": false
         },
         "REB": {
-          "t": null,
-          "p": null,
-          "cohens_d": null,
-          "n": 3,
+          "t": 1.02,
+          "p": 0.3415,
+          "cohens_d": 0.361,
+          "mean_delta": 0.405,
+          "n": 8,
           "significant": false
         }
       },
       "neutral": {
         "PTS": {
-          "t": 0.372,
-          "p": 0.7142,
-          "cohens_d": 0.083,
-          "mean_delta": 0.228,
-          "n": 20,
+          "t": 1.486,
+          "p": 0.1439,
+          "cohens_d": 0.215,
+          "mean_delta": 0.663,
+          "n": 48,
           "significant": false
         },
         "AST": {
-          "t": -0.468,
-          "p": 0.6448,
-          "cohens_d": -0.105,
-          "mean_delta": -0.159,
-          "n": 20,
+          "t": 0.828,
+          "p": 0.4117,
+          "cohens_d": 0.12,
+          "mean_delta": 0.138,
+          "n": 48,
           "significant": false
         },
         "REB": {
-          "t": -0.436,
-          "p": 0.6677,
-          "cohens_d": -0.098,
-          "mean_delta": -0.079,
-          "n": 20,
-          "significant": false
+          "t": 2.27,
+          "p": 0.0279,
+          "cohens_d": 0.328,
+          "mean_delta": 0.346,
+          "n": 48,
+          "significant": true
         }
       }
     }
@@ -172,214 +175,235 @@
   "correlations": [
     {
       "variable": "Sentiment \u2192 \u0394PTS",
-      "r": -0.072,
-      "p": 0.6176,
-      "n": 51,
+      "r": -0.117,
+      "p": 0.1681,
+      "n": 140,
       "significant": false
     },
     {
       "variable": "Sentiment \u2192 \u0394AST",
-      "r": 0.045,
-      "p": 0.7561,
-      "n": 51,
+      "r": -0.012,
+      "p": 0.8899,
+      "n": 140,
       "significant": false
     },
     {
       "variable": "Sentiment \u2192 \u0394REB",
-      "r": 0.039,
-      "p": 0.7862,
-      "n": 51,
+      "r": -0.117,
+      "p": 0.1671,
+      "n": 140,
       "significant": false
     },
     {
       "variable": "Artist Tier \u2192 \u0394PTS",
-      "r": -0.387,
-      "p": 0.005,
-      "n": 51,
-      "significant": true
+      "r": -0.08,
+      "p": 0.3455,
+      "n": 140,
+      "significant": false
     },
     {
       "variable": "Artist Tier \u2192 \u0394AST",
-      "r": 0.099,
-      "p": 0.4897,
-      "n": 51,
+      "r": 0.022,
+      "p": 0.7993,
+      "n": 140,
       "significant": false
     },
     {
       "variable": "Artist Tier \u2192 \u0394REB",
-      "r": -0.41,
-      "p": 0.0028,
-      "n": 51,
+      "r": -0.211,
+      "p": 0.0123,
+      "n": 140,
       "significant": true
     },
     {
       "variable": "Tier \u00d7 Sentiment \u2192 Composite \u0394",
-      "r": -0.082,
-      "p": 0.5679,
-      "n": 51,
+      "r": -0.127,
+      "p": 0.1339,
+      "n": 140,
       "significant": false
     }
   ],
   "era_breakdown": {
     "1990s": {
-      "n": 11,
-      "mean_composite_delta": -0.18,
-      "mean_pts_delta": -0.31,
-      "mean_ast_delta": 0.04,
-      "mean_reb_delta": -0.22
+      "n": 28,
+      "mean_composite_delta": 0.11,
+      "mean_pts_delta": 0.32,
+      "mean_ast_delta": -0.03,
+      "mean_reb_delta": -0.05
     },
     "2000s": {
-      "n": 16,
-      "mean_composite_delta": -0.52,
-      "mean_pts_delta": -1.27,
-      "mean_ast_delta": 0.05,
-      "mean_reb_delta": -0.08
+      "n": 33,
+      "mean_composite_delta": -0.1,
+      "mean_pts_delta": -0.49,
+      "mean_ast_delta": 0.24,
+      "mean_reb_delta": 0.09
     },
     "2010s": {
-      "n": 20,
-      "mean_composite_delta": 0.26,
-      "mean_pts_delta": 0.7,
-      "mean_ast_delta": -0.19,
-      "mean_reb_delta": 0.13
+      "n": 61,
+      "mean_composite_delta": 0.5,
+      "mean_pts_delta": 0.91,
+      "mean_ast_delta": -0.04,
+      "mean_reb_delta": 0.49
     },
     "2020s": {
-      "n": 4,
-      "mean_composite_delta": 1.59,
-      "mean_pts_delta": 3.65,
-      "mean_ast_delta": -0.22,
-      "mean_reb_delta": 0.64
+      "n": 18,
+      "mean_composite_delta": 0.61,
+      "mean_pts_delta": 1.22,
+      "mean_ast_delta": 0.08,
+      "mean_reb_delta": 0.32
     }
   },
   "type_breakdown": {
     "compliment": {
-      "n": 28,
-      "mean_composite_delta": -0.1,
-      "mean_pts_delta": -0.3,
-      "mean_ast_delta": 0.03,
-      "mean_reb_delta": 0.03
+      "n": 84,
+      "mean_composite_delta": 0.24,
+      "mean_pts_delta": 0.44,
+      "mean_ast_delta": 0.0,
+      "mean_reb_delta": 0.21
     },
     "diss": {
-      "n": 3,
-      "mean_composite_delta": 1.33,
-      "mean_pts_delta": 2.98,
-      "mean_ast_delta": -0.35,
-      "mean_reb_delta": 0.81
+      "n": 8,
+      "mean_composite_delta": 0.15,
+      "mean_pts_delta": 0.09,
+      "mean_ast_delta": -0.04,
+      "mean_reb_delta": 0.41
     },
     "neutral": {
-      "n": 20,
-      "mean_composite_delta": 0.01,
-      "mean_pts_delta": 0.22,
-      "mean_ast_delta": -0.17,
-      "mean_reb_delta": -0.09
+      "n": 48,
+      "mean_composite_delta": 0.42,
+      "mean_pts_delta": 0.68,
+      "mean_ast_delta": 0.14,
+      "mean_reb_delta": 0.35
     }
   },
   "position_breakdown": {
     "C": {
-      "n": 5,
+      "n": 19,
       "mean_composite_delta": 0.49,
-      "mean_pts_delta": 1.28,
-      "mean_ast_delta": -0.02,
-      "mean_reb_delta": -0.03
+      "mean_pts_delta": 1.19,
+      "mean_ast_delta": 0.06,
+      "mean_reb_delta": -0.02
     },
     "PF": {
-      "n": 6,
-      "mean_composite_delta": 0.48,
-      "mean_pts_delta": 0.73,
-      "mean_ast_delta": 0.49,
-      "mean_reb_delta": 0.13
+      "n": 24,
+      "mean_composite_delta": 0.87,
+      "mean_pts_delta": 1.37,
+      "mean_ast_delta": 0.34,
+      "mean_reb_delta": 0.74
     },
     "PG": {
-      "n": 21,
-      "mean_composite_delta": 0.06,
-      "mean_pts_delta": 0.31,
-      "mean_ast_delta": -0.35,
-      "mean_reb_delta": 0.12
+      "n": 44,
+      "mean_composite_delta": 0.01,
+      "mean_pts_delta": 0.15,
+      "mean_ast_delta": -0.33,
+      "mean_reb_delta": 0.17
     },
     "SF": {
-      "n": 10,
-      "mean_composite_delta": -0.79,
-      "mean_pts_delta": -1.7,
-      "mean_ast_delta": -0.15,
-      "mean_reb_delta": -0.2
+      "n": 25,
+      "mean_composite_delta": 0.21,
+      "mean_pts_delta": 0.26,
+      "mean_ast_delta": 0.08,
+      "mean_reb_delta": 0.27
     },
     "SG": {
-      "n": 9,
-      "mean_composite_delta": 0.29,
-      "mean_pts_delta": 0.51,
-      "mean_ast_delta": 0.27,
-      "mean_reb_delta": 0.03
+      "n": 28,
+      "mean_composite_delta": 0.19,
+      "mean_pts_delta": 0.06,
+      "mean_ast_delta": 0.35,
+      "mean_reb_delta": 0.21
     }
   },
   "tier_breakdown": {
+    "1.8": {
+      "n": 1,
+      "mean_composite_delta": 0.55,
+      "mean_pts_delta": 0.75,
+      "mean_ast_delta": 0.47,
+      "mean_reb_delta": 0.37
+    },
+    "1.9": {
+      "n": 1,
+      "mean_composite_delta": 1.55,
+      "mean_pts_delta": 3.28,
+      "mean_ast_delta": 0.36,
+      "mean_reb_delta": 0.43
+    },
+    "2.0": {
+      "n": 3,
+      "mean_composite_delta": -0.6,
+      "mean_pts_delta": -0.61,
+      "mean_ast_delta": -1.21,
+      "mean_reb_delta": 0.02
+    },
     "2.1": {
-      "n": 7,
-      "mean_composite_delta": 1.35,
-      "mean_pts_delta": 2.75,
-      "mean_ast_delta": -0.11,
-      "mean_reb_delta": 0.94
+      "n": 9,
+      "mean_composite_delta": 1.16,
+      "mean_pts_delta": 2.19,
+      "mean_ast_delta": 0.16,
+      "mean_reb_delta": 0.77
     },
     "2.2": {
-      "n": 1,
-      "mean_composite_delta": 2.34,
-      "mean_pts_delta": 5.53,
-      "mean_ast_delta": -0.57,
-      "mean_reb_delta": 0.99
+      "n": 4,
+      "mean_composite_delta": 0.3,
+      "mean_pts_delta": 0.31,
+      "mean_ast_delta": 0.23,
+      "mean_reb_delta": 0.36
     },
     "2.3": {
-      "n": 2,
-      "mean_composite_delta": 1.83,
-      "mean_pts_delta": 5.17,
-      "mean_ast_delta": -0.87,
-      "mean_reb_delta": 0.09
+      "n": 4,
+      "mean_composite_delta": 0.71,
+      "mean_pts_delta": 2.13,
+      "mean_ast_delta": -0.6,
+      "mean_reb_delta": 0.11
     },
     "2.4": {
-      "n": 1,
-      "mean_composite_delta": -0.78,
-      "mean_pts_delta": -1.06,
-      "mean_ast_delta": -0.43,
-      "mean_reb_delta": -0.74
+      "n": 6,
+      "mean_composite_delta": 1.48,
+      "mean_pts_delta": 2.32,
+      "mean_ast_delta": 0.6,
+      "mean_reb_delta": 1.23
     },
     "2.5": {
-      "n": 3,
-      "mean_composite_delta": -0.44,
-      "mean_pts_delta": -0.48,
-      "mean_ast_delta": -0.91,
-      "mean_reb_delta": 0.09
+      "n": 9,
+      "mean_composite_delta": -0.72,
+      "mean_pts_delta": -2.16,
+      "mean_ast_delta": 0.16,
+      "mean_reb_delta": 0.33
     },
     "2.6": {
-      "n": 6,
-      "mean_composite_delta": 0.81,
-      "mean_pts_delta": 1.57,
-      "mean_ast_delta": 0.53,
-      "mean_reb_delta": 0.09
+      "n": 18,
+      "mean_composite_delta": 0.26,
+      "mean_pts_delta": 0.14,
+      "mean_ast_delta": 0.04,
+      "mean_reb_delta": 0.62
     },
     "2.7": {
-      "n": 2,
-      "mean_composite_delta": -1.48,
-      "mean_pts_delta": -3.38,
-      "mean_ast_delta": -0.33,
-      "mean_reb_delta": -0.11
+      "n": 5,
+      "mean_composite_delta": 0.09,
+      "mean_pts_delta": 0.42,
+      "mean_ast_delta": -0.51,
+      "mean_reb_delta": 0.23
     },
     "2.8": {
-      "n": 11,
-      "mean_composite_delta": -0.66,
-      "mean_pts_delta": -1.44,
-      "mean_ast_delta": -0.01,
-      "mean_reb_delta": -0.26
+      "n": 31,
+      "mean_composite_delta": 0.48,
+      "mean_pts_delta": 0.85,
+      "mean_ast_delta": 0.13,
+      "mean_reb_delta": 0.35
     },
     "2.9": {
-      "n": 4,
-      "mean_composite_delta": -1.08,
-      "mean_pts_delta": -2.44,
-      "mean_ast_delta": -0.29,
-      "mean_reb_delta": -0.05
+      "n": 14,
+      "mean_composite_delta": 0.59,
+      "mean_pts_delta": 1.1,
+      "mean_ast_delta": 0.05,
+      "mean_reb_delta": 0.44
     },
     "3.0": {
-      "n": 14,
-      "mean_composite_delta": -0.18,
-      "mean_pts_delta": -0.35,
-      "mean_ast_delta": 0.1,
-      "mean_reb_delta": -0.23
+      "n": 35,
+      "mean_composite_delta": -0.12,
+      "mean_pts_delta": -0.07,
+      "mean_ast_delta": 0.04,
+      "mean_reb_delta": -0.34
     }
   },
   "mentions": [
@@ -402,32 +426,32 @@
           "n": 30.0
         },
         "after_1g": {
-          "pts": 25.0,
-          "ast": 5.0,
-          "reb": 10.0
+          "pts": 38.0,
+          "ast": 8.0,
+          "reb": 4.0
         },
         "after_10g": {
-          "pts": 27.0,
-          "ast": 6.4,
-          "reb": 6.8
+          "pts": 27.5,
+          "ast": 7.6,
+          "reb": 7.2
         },
         "after_30g": {
-          "pts": 25.8,
-          "ast": 5.9,
-          "reb": 7.3
+          "pts": 28.8,
+          "ast": 7.8,
+          "reb": 7.1
         },
         "after_season": {
-          "pts": 25.8,
-          "ast": 7.7,
-          "reb": 8.0
+          "pts": 27.1,
+          "ast": 7.6,
+          "reb": 7.8
         }
       },
       "deltas": {
-        "pts_30g": -2.73,
-        "ast_30g": -1.83,
-        "reb_30g": -0.51,
-        "composite_30g": -1.794,
-        "weighted_impact": -5.023
+        "pts_30g": 0.57,
+        "ast_30g": 0.25,
+        "reb_30g": -0.72,
+        "composite_30g": 0.087,
+        "weighted_impact": 0.244
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -467,9 +491,9 @@
           "reb": 5.4
         },
         "after_season": {
-          "pts": 26.5,
-          "ast": 5.4,
-          "reb": 5.4
+          "pts": 25.8,
+          "ast": 5.0,
+          "reb": 5.3
         }
       },
       "deltas": {
@@ -502,32 +526,32 @@
           "n": 30.0
         },
         "after_1g": {
-          "pts": 23.0,
-          "ast": 1.0,
-          "reb": 13.0
+          "pts": 28.0,
+          "ast": 3.0,
+          "reb": 12.0
         },
         "after_10g": {
-          "pts": 26.9,
-          "ast": 2.3,
-          "reb": 12.4
+          "pts": 31.2,
+          "ast": 3.0,
+          "reb": 11.3
         },
         "after_30g": {
-          "pts": 27.7,
-          "ast": 3.2,
-          "reb": 14.5
+          "pts": 29.9,
+          "ast": 2.6,
+          "reb": 10.5
         },
         "after_season": {
-          "pts": 29.2,
-          "ast": 3.8,
-          "reb": 13.2
+          "pts": 28.4,
+          "ast": 3.2,
+          "reb": 11.9
         }
       },
       "deltas": {
-        "pts_30g": -2.31,
-        "ast_30g": 1.14,
-        "reb_30g": -0.07,
-        "composite_30g": -0.603,
-        "weighted_impact": -1.809
+        "pts_30g": 0.0,
+        "ast_30g": 0.53,
+        "reb_30g": -4.33,
+        "composite_30g": -1.14,
+        "weighted_impact": -3.42
       },
       "sentiment": {
         "vader_compound": 0.361
@@ -567,9 +591,9 @@
           "reb": 4.4
         },
         "after_season": {
-          "pts": 29.8,
-          "ast": 5.2,
-          "reb": 4.2
+          "pts": 29.2,
+          "ast": 5.5,
+          "reb": 4.1
         }
       },
       "deltas": {
@@ -617,9 +641,9 @@
           "reb": 8.0
         },
         "after_season": {
-          "pts": 28.1,
-          "ast": 4.6,
-          "reb": 7.9
+          "pts": 28.0,
+          "ast": 5.0,
+          "reb": 7.6
         }
       },
       "deltas": {
@@ -631,6 +655,206 @@
       },
       "sentiment": {
         "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 6,
+      "player": "Patrick Ewing",
+      "artist": "Notorious B.I.G.",
+      "song": "One More Chance",
+      "release_date": "1994-09-13",
+      "mention_type": "diss",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "C",
+      "lyric": "Never put me on the bench like Pat Ewing I'm too nice",
+      "stats": {
+        "before": {
+          "pts": 24.0,
+          "ast": 2.2,
+          "reb": 11.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 21.0,
+          "ast": 0.0,
+          "reb": 13.0
+        },
+        "after_10g": {
+          "pts": 20.4,
+          "ast": 2.7,
+          "reb": 9.1
+        },
+        "after_30g": {
+          "pts": 21.0,
+          "ast": 2.8,
+          "reb": 10.1
+        },
+        "after_season": {
+          "pts": 22.9,
+          "ast": 2.3,
+          "reb": 10.8
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.23,
+        "ast_30g": 0.67,
+        "reb_30g": -1.7,
+        "composite_30g": -1.601,
+        "weighted_impact": -4.803
+      },
+      "sentiment": {
+        "vader_compound": 0.649
+      }
+    },
+    {
+      "mention_id": 8,
+      "player": "Gary Payton",
+      "artist": "Jay-Z",
+      "song": "D'Evils",
+      "release_date": "1996-06-25",
+      "mention_type": "neutral",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "PG",
+      "lyric": "Glove on the court like Payton I'm grabbing every handle",
+      "stats": {
+        "before": {
+          "pts": 20.0,
+          "ast": 7.6,
+          "reb": 4.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 24.0,
+          "ast": 6.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 20.6,
+          "ast": 7.8,
+          "reb": 4.0
+        },
+        "after_30g": {
+          "pts": 21.9,
+          "ast": 7.2,
+          "reb": 4.0
+        },
+        "after_season": {
+          "pts": 21.8,
+          "ast": 7.1,
+          "reb": 4.6
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.05,
+        "ast_30g": -0.46,
+        "reb_30g": -0.6,
+        "composite_30g": 0.502,
+        "weighted_impact": 1.506
+      },
+      "sentiment": {
+        "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 9,
+      "player": "Vince Carter",
+      "artist": "Ludacris",
+      "song": "Saturday (Oooh Ooooh!)",
+      "release_date": "2000-09-26",
+      "mention_type": "compliment",
+      "artist_tier": 2.3,
+      "era": "2000s",
+      "position": "SG",
+      "lyric": "Dunkin' on fools like Vince Carter in the air",
+      "stats": {
+        "before": {
+          "pts": 27.2,
+          "ast": 3.9,
+          "reb": 5.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 26.0,
+          "ast": 2.0,
+          "reb": 3.0
+        },
+        "after_10g": {
+          "pts": 30.4,
+          "ast": 3.3,
+          "reb": 4.9
+        },
+        "after_30g": {
+          "pts": 28.3,
+          "ast": 3.9,
+          "reb": 5.7
+        },
+        "after_season": {
+          "pts": 27.6,
+          "ast": 3.9,
+          "reb": 5.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.15,
+        "ast_30g": -0.06,
+        "reb_30g": 0.29,
+        "composite_30g": 0.529,
+        "weighted_impact": 1.217
+      },
+      "sentiment": {
+        "vader_compound": -0.178
+      }
+    },
+    {
+      "mention_id": 10,
+      "player": "Tim Duncan",
+      "artist": "Common",
+      "song": "The Food",
+      "release_date": "2005-05-24",
+      "mention_type": "compliment",
+      "artist_tier": 2.4,
+      "era": "2000s",
+      "position": "PF",
+      "lyric": "Fundamental like Duncan I lay it off the glass",
+      "stats": {
+        "before": {
+          "pts": 18.4,
+          "ast": 2.8,
+          "reb": 10.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 19.0,
+          "ast": 6.0,
+          "reb": 10.0
+        },
+        "after_10g": {
+          "pts": 21.7,
+          "ast": 3.1,
+          "reb": 11.3
+        },
+        "after_30g": {
+          "pts": 20.8,
+          "ast": 3.3,
+          "reb": 11.5
+        },
+        "after_season": {
+          "pts": 18.6,
+          "ast": 3.2,
+          "reb": 11.0
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.52,
+        "ast_30g": 0.54,
+        "reb_30g": 1.51,
+        "composite_30g": 1.623,
+        "weighted_impact": 3.895
+      },
+      "sentiment": {
+        "vader_compound": 0.361
       }
     },
     {
@@ -667,9 +891,9 @@
           "reb": 4.1
         },
         "after_season": {
-          "pts": 24.6,
-          "ast": 6.9,
-          "reb": 4.2
+          "pts": 20.9,
+          "ast": 5.3,
+          "reb": 4.3
         }
       },
       "deltas": {
@@ -717,9 +941,9 @@
           "reb": 4.4
         },
         "after_season": {
-          "pts": 15.8,
-          "ast": 9.8,
-          "reb": 4.1
+          "pts": 17.4,
+          "ast": 9.5,
+          "reb": 3.8
         }
       },
       "deltas": {
@@ -767,9 +991,9 @@
           "reb": 13.0
         },
         "after_season": {
-          "pts": 22.5,
-          "ast": 4.2,
-          "reb": 12.9
+          "pts": 20.6,
+          "ast": 3.8,
+          "reb": 11.0
         }
       },
       "deltas": {
@@ -781,6 +1005,56 @@
       },
       "sentiment": {
         "vader_compound": 0.637
+      }
+    },
+    {
+      "mention_id": 14,
+      "player": "James Harden",
+      "artist": "Travis Scott",
+      "song": "Goosebumps",
+      "release_date": "2016-09-16",
+      "mention_type": "compliment",
+      "artist_tier": 2.5,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Stepback like Harden they can't guard me in the paint",
+      "stats": {
+        "before": {
+          "pts": 31.3,
+          "ast": 8.1,
+          "reb": 5.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 34.0,
+          "ast": 17.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 30.3,
+          "ast": 12.6,
+          "reb": 7.8
+        },
+        "after_30g": {
+          "pts": 27.8,
+          "ast": 11.8,
+          "reb": 8.0
+        },
+        "after_season": {
+          "pts": 31.9,
+          "ast": 9.2,
+          "reb": 6.8
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.5,
+        "ast_30g": 3.64,
+        "reb_30g": 2.17,
+        "composite_30g": 0.343,
+        "weighted_impact": 0.858
+      },
+      "sentiment": {
+        "vader_compound": 0.361
       }
     },
     {
@@ -812,22 +1086,22 @@
           "reb": 4.5
         },
         "after_30g": {
-          "pts": 24.4,
-          "ast": 5.5,
-          "reb": 4.8
+          "pts": 27.1,
+          "ast": 5.7,
+          "reb": 5.0
         },
         "after_season": {
-          "pts": 24.4,
-          "ast": 5.5,
-          "reb": 4.8
+          "pts": 26.6,
+          "ast": 5.3,
+          "reb": 5.2
         }
       },
       "deltas": {
-        "pts_30g": -3.55,
-        "ast_30g": -1.03,
-        "reb_30g": -0.45,
-        "composite_30g": -1.864,
-        "weighted_impact": -5.219
+        "pts_30g": -0.83,
+        "ast_30g": -0.86,
+        "reb_30g": -0.27,
+        "composite_30g": -0.671,
+        "weighted_impact": -1.879
       },
       "sentiment": {
         "vader_compound": 0.361
@@ -867,9 +1141,9 @@
           "reb": 3.2
         },
         "after_season": {
-          "pts": 21.9,
-          "ast": 5.3,
-          "reb": 3.1
+          "pts": 23.2,
+          "ast": 5.6,
+          "reb": 3.6
         }
       },
       "deltas": {
@@ -881,6 +1155,56 @@
       },
       "sentiment": {
         "vader_compound": -0.361
+      }
+    },
+    {
+      "mention_id": 17,
+      "player": "Giannis Antetokounmpo",
+      "artist": "Pusha T",
+      "song": "Santeria",
+      "release_date": "2018-05-25",
+      "mention_type": "compliment",
+      "artist_tier": 2.4,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Greek freak energy I'm unstoppable in the lane",
+      "stats": {
+        "before": {
+          "pts": 24.4,
+          "ast": 4.9,
+          "reb": 9.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 25.0,
+          "ast": 8.0,
+          "reb": 18.0
+        },
+        "after_10g": {
+          "pts": 25.6,
+          "ast": 5.7,
+          "reb": 12.9
+        },
+        "after_30g": {
+          "pts": 26.2,
+          "ast": 6.0,
+          "reb": 12.8
+        },
+        "after_season": {
+          "pts": 27.7,
+          "ast": 5.9,
+          "reb": 12.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.83,
+        "ast_30g": 1.04,
+        "reb_30g": 3.14,
+        "composite_30g": 1.986,
+        "weighted_impact": 4.766
+      },
+      "sentiment": {
+        "vader_compound": -0.382
       }
     },
     {
@@ -917,9 +1241,9 @@
           "reb": 5.7
         },
         "after_season": {
-          "pts": 27.4,
-          "ast": 6.7,
-          "reb": 5.7
+          "pts": 26.8,
+          "ast": 7.4,
+          "reb": 5.8
         }
       },
       "deltas": {
@@ -928,6 +1252,56 @@
         "reb_30g": 0.99,
         "composite_30g": 2.338,
         "weighted_impact": 5.144
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 20,
+      "player": "Dwight Howard",
+      "artist": "Lil Wayne",
+      "song": "Right Above It",
+      "release_date": "2010-09-17",
+      "mention_type": "diss",
+      "artist_tier": 2.5,
+      "era": "2010s",
+      "position": "C",
+      "lyric": "Superman couldn't guard me I'm taller than Howard's ego",
+      "stats": {
+        "before": {
+          "pts": 19.0,
+          "ast": 2.0,
+          "reb": 12.9,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 23.0,
+          "ast": 1.0,
+          "reb": 10.0
+        },
+        "after_10g": {
+          "pts": 21.2,
+          "ast": 1.5,
+          "reb": 10.9
+        },
+        "after_30g": {
+          "pts": 21.0,
+          "ast": 1.1,
+          "reb": 12.9
+        },
+        "after_season": {
+          "pts": 22.9,
+          "ast": 1.4,
+          "reb": 14.1
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.03,
+        "ast_30g": -0.96,
+        "reb_30g": -0.03,
+        "composite_30g": 0.515,
+        "weighted_impact": 1.288
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -967,9 +1341,9 @@
           "reb": 10.5
         },
         "after_season": {
-          "pts": 31.6,
-          "ast": 10.4,
-          "reb": 10.7
+          "pts": 28.5,
+          "ast": 10.3,
+          "reb": 10.4
         }
       },
       "deltas": {
@@ -1002,35 +1376,285 @@
           "n": 30.0
         },
         "after_1g": {
-          "pts": 32.0,
-          "ast": 5.0,
+          "pts": 20.0,
+          "ast": 4.0,
           "reb": 5.0
         },
         "after_10g": {
-          "pts": 25.5,
-          "ast": 5.3,
-          "reb": 4.8
-        },
-        "after_30g": {
-          "pts": 25.7,
-          "ast": 3.6,
+          "pts": 21.4,
+          "ast": 3.1,
           "reb": 6.7
         },
+        "after_30g": {
+          "pts": 20.8,
+          "ast": 3.2,
+          "reb": 5.9
+        },
         "after_season": {
-          "pts": 24.4,
-          "ast": 3.4,
-          "reb": 7.1
+          "pts": 24.3,
+          "ast": 3.1,
+          "reb": 6.6
         }
       },
       "deltas": {
-        "pts_30g": 1.55,
-        "ast_30g": 0.72,
-        "reb_30g": 0.78,
-        "composite_30g": 1.07,
-        "weighted_impact": 2.247
+        "pts_30g": -3.74,
+        "ast_30g": 0.32,
+        "reb_30g": -0.08,
+        "composite_30g": -1.424,
+        "weighted_impact": -2.99
       },
       "sentiment": {
         "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 23,
+      "player": "Derrick Rose",
+      "artist": "Chance the Rapper",
+      "song": "Paranoia",
+      "release_date": "2013-05-18",
+      "mention_type": "compliment",
+      "artist_tier": 2.0,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Rose before the fall MVP in the Chi",
+      "stats": {
+        "before": {
+          "pts": 22.6,
+          "ast": 7.7,
+          "reb": 3.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 12.0,
+          "ast": 4.0,
+          "reb": 1.0
+        },
+        "after_10g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_30g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_season": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -6.67,
+        "ast_30g": -3.4,
+        "reb_30g": -0.07,
+        "composite_30g": -3.709,
+        "weighted_impact": -7.418
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 24,
+      "player": "Baron Davis",
+      "artist": "E-40",
+      "song": "Tell Me When to Go",
+      "release_date": "2006-03-28",
+      "mention_type": "compliment",
+      "artist_tier": 1.9,
+      "era": "2000s",
+      "position": "PG",
+      "lyric": "BD in the building hitting threes from the parking lot",
+      "stats": {
+        "before": {
+          "pts": 18.3,
+          "ast": 8.2,
+          "reb": 4.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 18.0,
+          "ast": 6.0,
+          "reb": 4.0
+        },
+        "after_10g": {
+          "pts": 20.7,
+          "ast": 8.3,
+          "reb": 3.9
+        },
+        "after_30g": {
+          "pts": 21.3,
+          "ast": 8.6,
+          "reb": 4.7
+        },
+        "after_season": {
+          "pts": 20.1,
+          "ast": 8.1,
+          "reb": 4.4
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.28,
+        "ast_30g": 0.36,
+        "reb_30g": 0.43,
+        "composite_30g": 1.549,
+        "weighted_impact": 2.943
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 25,
+      "player": "Penny Hardaway",
+      "artist": "Nas",
+      "song": "Street Dreams",
+      "release_date": "1996-07-02",
+      "mention_type": "compliment",
+      "artist_tier": 2.7,
+      "era": "1990s",
+      "position": "PG",
+      "lyric": "Penny Hardaway with the rock I'm movin through the lane",
+      "stats": {
+        "before": {
+          "pts": 19.7,
+          "ast": 7.2,
+          "reb": 4.0,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 19.0,
+          "ast": 6.0,
+          "reb": 3.0
+        },
+        "after_10g": {
+          "pts": 17.7,
+          "ast": 6.1,
+          "reb": 5.9
+        },
+        "after_30g": {
+          "pts": 19.8,
+          "ast": 5.4,
+          "reb": 5.0
+        },
+        "after_season": {
+          "pts": 20.5,
+          "ast": 5.6,
+          "reb": 4.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.07,
+        "ast_30g": -1.92,
+        "reb_30g": 1.07,
+        "composite_30g": -0.227,
+        "weighted_impact": -0.613
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 26,
+      "player": "Stephon Marbury",
+      "artist": "Cam'ron",
+      "song": "Dipset Anthem",
+      "release_date": "2002-05-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.2,
+      "era": "2000s",
+      "position": "PG",
+      "lyric": "Steppin like Marbury down the lane",
+      "stats": {
+        "before": {
+          "pts": 22.0,
+          "ast": 8.0,
+          "reb": 3.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 15.0,
+          "ast": 10.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 18.1,
+          "ast": 8.9,
+          "reb": 2.4
+        },
+        "after_30g": {
+          "pts": 19.5,
+          "ast": 7.9,
+          "reb": 2.7
+        },
+        "after_season": {
+          "pts": 22.3,
+          "ast": 8.1,
+          "reb": 3.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.76,
+        "ast_30g": -0.11,
+        "reb_30g": -0.87,
+        "composite_30g": -1.398,
+        "weighted_impact": -3.076
+      },
+      "sentiment": {
+        "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 27,
+      "player": "Tracy McGrady",
+      "artist": "Lil Wayne",
+      "song": "Mr. Carter",
+      "release_date": "2008-06-10",
+      "mention_type": "compliment",
+      "artist_tier": 2.5,
+      "era": "2000s",
+      "position": "SG",
+      "lyric": "T-Mac numbers in my sleep dropping 30 easy",
+      "stats": {
+        "before": {
+          "pts": 21.8,
+          "ast": 6.4,
+          "reb": 5.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 16.0,
+          "ast": 5.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 16.7,
+          "ast": 4.8,
+          "reb": 4.8
+        },
+        "after_30g": {
+          "pts": 15.5,
+          "ast": 5.0,
+          "reb": 4.5
+        },
+        "after_season": {
+          "pts": 15.6,
+          "ast": 5.0,
+          "reb": 4.4
+        }
+      },
+      "deltas": {
+        "pts_30g": -6.8,
+        "ast_30g": -1.48,
+        "reb_30g": -0.86,
+        "composite_30g": -3.422,
+        "weighted_impact": -8.555
+      },
+      "sentiment": {
+        "vader_compound": 0.44
       }
     },
     {
@@ -1067,9 +1691,9 @@
           "reb": 7.3
         },
         "after_season": {
-          "pts": 23.2,
-          "ast": 5.1,
-          "reb": 6.4
+          "pts": 22.3,
+          "ast": 4.6,
+          "reb": 6.5
         }
       },
       "deltas": {
@@ -1081,6 +1705,156 @@
       },
       "sentiment": {
         "vader_compound": 0.382
+      }
+    },
+    {
+      "mention_id": 29,
+      "player": "Yao Ming",
+      "artist": "Kanye West",
+      "song": "Gone",
+      "release_date": "2005-08-30",
+      "mention_type": "neutral",
+      "artist_tier": 2.9,
+      "era": "2000s",
+      "position": "C",
+      "lyric": "Big as Yao Ming standing tall over all opposition",
+      "stats": {
+        "before": {
+          "pts": 18.3,
+          "ast": 0.8,
+          "reb": 8.2,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 22.0,
+          "ast": 4.0,
+          "reb": 10.0
+        },
+        "after_10g": {
+          "pts": 19.1,
+          "ast": 1.5,
+          "reb": 9.2
+        },
+        "after_30g": {
+          "pts": 20.2,
+          "ast": 1.2,
+          "reb": 9.3
+        },
+        "after_season": {
+          "pts": 22.3,
+          "ast": 1.5,
+          "reb": 10.2
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.02,
+        "ast_30g": 0.5,
+        "reb_30g": 1.19,
+        "composite_30g": 1.315,
+        "weighted_impact": 3.814
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 30,
+      "player": "Jason Kidd",
+      "artist": "Jay-Z",
+      "song": "Takeover",
+      "release_date": "2001-09-11",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2000s",
+      "position": "PG",
+      "lyric": "Vision like Kidd I see the whole floor before I move",
+      "stats": {
+        "before": {
+          "pts": 18.1,
+          "ast": 9.6,
+          "reb": 6.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 9.0,
+          "reb": 10.0
+        },
+        "after_10g": {
+          "pts": 12.1,
+          "ast": 9.9,
+          "reb": 7.1
+        },
+        "after_30g": {
+          "pts": 13.8,
+          "ast": 10.3,
+          "reb": 7.1
+        },
+        "after_season": {
+          "pts": 14.7,
+          "ast": 9.8,
+          "reb": 7.3
+        }
+      },
+      "deltas": {
+        "pts_30g": -4.64,
+        "ast_30g": 0.75,
+        "reb_30g": 0.3,
+        "composite_30g": -1.541,
+        "weighted_impact": -4.623
+      },
+      "sentiment": {
+        "vader_compound": 0.542
+      }
+    },
+    {
+      "mention_id": 31,
+      "player": "Steve Nash",
+      "artist": "Lil Wayne",
+      "song": "A Milli",
+      "release_date": "2008-06-10",
+      "mention_type": "compliment",
+      "artist_tier": 2.5,
+      "era": "2000s",
+      "position": "PG",
+      "lyric": "Passing like Nash two MVPs back to back no stress",
+      "stats": {
+        "before": {
+          "pts": 16.3,
+          "ast": 10.0,
+          "reb": 3.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 13.0,
+          "ast": 13.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 13.7,
+          "ast": 7.4,
+          "reb": 2.8
+        },
+        "after_30g": {
+          "pts": 14.4,
+          "ast": 8.7,
+          "reb": 3.0
+        },
+        "after_season": {
+          "pts": 15.7,
+          "ast": 9.7,
+          "reb": 3.0
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.99,
+        "ast_30g": -1.41,
+        "reb_30g": -0.54,
+        "composite_30g": -1.381,
+        "weighted_impact": -3.452
+      },
+      "sentiment": {
+        "vader_compound": 0.59
       }
     },
     {
@@ -1117,9 +1891,9 @@
           "reb": 8.6
         },
         "after_season": {
-          "pts": 25.8,
+          "pts": 25.2,
           "ast": 2.7,
-          "reb": 8.6
+          "reb": 7.9
         }
       },
       "deltas": {
@@ -1167,8 +1941,8 @@
           "reb": 4.7
         },
         "after_season": {
-          "pts": 22.6,
-          "ast": 4.6,
+          "pts": 22.8,
+          "ast": 4.7,
           "reb": 5.1
         }
       },
@@ -1181,6 +1955,56 @@
       },
       "sentiment": {
         "vader_compound": 0.114
+      }
+    },
+    {
+      "mention_id": 34,
+      "player": "Amare Stoudemire",
+      "artist": "Kanye West",
+      "song": "All Falls Down",
+      "release_date": "2004-02-10",
+      "mention_type": "neutral",
+      "artist_tier": 2.9,
+      "era": "2000s",
+      "position": "PF",
+      "lyric": "Rising like Amare out the paint can't stop the climb",
+      "stats": {
+        "before": {
+          "pts": 16.0,
+          "ast": 1.0,
+          "reb": 8.0,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 23.0,
+          "ast": 0.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 26.9,
+          "ast": 1.6,
+          "reb": 9.8
+        },
+        "after_30g": {
+          "pts": 24.7,
+          "ast": 1.7,
+          "reb": 9.7
+        },
+        "after_season": {
+          "pts": 25.7,
+          "ast": 1.7,
+          "reb": 9.2
+        }
+      },
+      "deltas": {
+        "pts_30g": 9.4,
+        "ast_30g": 0.76,
+        "reb_30g": 1.83,
+        "composite_30g": 4.537,
+        "weighted_impact": 13.157
+      },
+      "sentiment": {
+        "vader_compound": 0.525
       }
     },
     {
@@ -1217,9 +2041,9 @@
           "reb": 3.1
         },
         "after_season": {
-          "pts": 16.2,
-          "ast": 3.9,
-          "reb": 3.7
+          "pts": 16.6,
+          "ast": 4.8,
+          "reb": 3.6
         }
       },
       "deltas": {
@@ -1231,6 +2055,56 @@
       },
       "sentiment": {
         "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 36,
+      "player": "Gilbert Arenas",
+      "artist": "Lil Wayne",
+      "song": "Lollipop",
+      "release_date": "2008-04-28",
+      "mention_type": "compliment",
+      "artist_tier": 2.5,
+      "era": "2000s",
+      "position": "SG",
+      "lyric": "Agent Zero Arenas I pull up from half court and drain it",
+      "stats": {
+        "before": {
+          "pts": 23.9,
+          "ast": 5.8,
+          "reb": 3.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 15.0,
+          "ast": 10.0,
+          "reb": 3.0
+        },
+        "after_10g": {
+          "pts": 13.0,
+          "ast": 10.0,
+          "reb": 4.5
+        },
+        "after_30g": {
+          "pts": 13.0,
+          "ast": 10.0,
+          "reb": 4.5
+        },
+        "after_season": {
+          "pts": 13.0,
+          "ast": 10.0,
+          "reb": 4.5
+        }
+      },
+      "deltas": {
+        "pts_30g": -11.8,
+        "ast_30g": 4.51,
+        "reb_30g": 0.9,
+        "composite_30g": -3.097,
+        "weighted_impact": -7.742
+      },
+      "sentiment": {
+        "vader_compound": 0.0
       }
     },
     {
@@ -1257,27 +2131,27 @@
           "reb": 2.0
         },
         "after_10g": {
-          "pts": 12.7,
-          "ast": 1.7,
-          "reb": 4.0
+          "pts": 12.0,
+          "ast": 2.6,
+          "reb": 5.4
         },
         "after_30g": {
-          "pts": 18.3,
-          "ast": 2.8,
-          "reb": 5.3
+          "pts": 22.7,
+          "ast": 3.5,
+          "reb": 7.0
         },
         "after_season": {
-          "pts": 24.4,
-          "ast": 3.6,
-          "reb": 6.8
+          "pts": 23.6,
+          "ast": 3.7,
+          "reb": 6.6
         }
       },
       "deltas": {
-        "pts_30g": -1.9,
-        "ast_30g": -0.9,
-        "reb_30g": -2.07,
-        "composite_30g": -1.651,
-        "weighted_impact": -4.623
+        "pts_30g": 2.56,
+        "ast_30g": -0.2,
+        "reb_30g": -0.43,
+        "composite_30g": 0.835,
+        "weighted_impact": 2.338
       },
       "sentiment": {
         "vader_compound": 0.178
@@ -1307,27 +2181,27 @@
           "reb": 6.0
         },
         "after_10g": {
-          "pts": 16.2,
+          "pts": 17.0,
           "ast": 2.3,
-          "reb": 4.7
+          "reb": 5.4
         },
         "after_30g": {
-          "pts": 16.2,
-          "ast": 2.3,
-          "reb": 4.7
+          "pts": 23.3,
+          "ast": 2.8,
+          "reb": 7.2
         },
         "after_season": {
-          "pts": 16.2,
-          "ast": 2.3,
-          "reb": 4.7
+          "pts": 25.2,
+          "ast": 3.2,
+          "reb": 7.0
         }
       },
       "deltas": {
-        "pts_30g": -9.15,
-        "ast_30g": -1.6,
-        "reb_30g": -1.16,
-        "composite_30g": -4.488,
-        "weighted_impact": -13.015
+        "pts_30g": -2.04,
+        "ast_30g": -1.16,
+        "reb_30g": 1.37,
+        "composite_30g": -0.753,
+        "weighted_impact": -2.184
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -1367,9 +2241,9 @@
           "reb": 13.6
         },
         "after_season": {
-          "pts": 27.2,
-          "ast": 3.6,
-          "reb": 13.8
+          "pts": 26.1,
+          "ast": 3.1,
+          "reb": 11.9
         }
       },
       "deltas": {
@@ -1381,6 +2255,256 @@
       },
       "sentiment": {
         "vader_compound": 0.285
+      }
+    },
+    {
+      "mention_id": 40,
+      "player": "Zion Williamson",
+      "artist": "Drake",
+      "song": "Laugh Now Cry Later",
+      "release_date": "2020-08-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "PF",
+      "lyric": "Zion power I'm crashing through the lane like a freight train",
+      "stats": {
+        "before": {
+          "pts": 22.5,
+          "ast": 2.1,
+          "reb": 6.2,
+          "n": 24.0
+        },
+        "after_1g": {
+          "pts": 15.0,
+          "ast": 3.0,
+          "reb": 10.0
+        },
+        "after_10g": {
+          "pts": 21.8,
+          "ast": 1.6,
+          "reb": 8.5
+        },
+        "after_30g": {
+          "pts": 25.3,
+          "ast": 3.2,
+          "reb": 6.8
+        },
+        "after_season": {
+          "pts": 27.0,
+          "ast": 3.7,
+          "reb": 7.2
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.69,
+        "ast_30g": 1.08,
+        "reb_30g": 0.53,
+        "composite_30g": 1.559,
+        "weighted_impact": 4.365
+      },
+      "sentiment": {
+        "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 42,
+      "player": "Damian Lillard",
+      "artist": "Common",
+      "song": "HER Love",
+      "release_date": "2014-07-22",
+      "mention_type": "compliment",
+      "artist_tier": 2.4,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Dame Time I go off when everybody else freezes",
+      "stats": {
+        "before": {
+          "pts": 20.7,
+          "ast": 5.3,
+          "reb": 3.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 10.0,
+          "ast": 5.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 20.6,
+          "ast": 6.6,
+          "reb": 5.2
+        },
+        "after_30g": {
+          "pts": 21.9,
+          "ast": 6.3,
+          "reb": 5.0
+        },
+        "after_season": {
+          "pts": 22.9,
+          "ast": 6.5,
+          "reb": 4.3
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.26,
+        "ast_30g": 1.0,
+        "reb_30g": 1.7,
+        "composite_30g": 1.314,
+        "weighted_impact": 3.154
+      },
+      "sentiment": {
+        "vader_compound": -0.026
+      }
+    },
+    {
+      "mention_id": 43,
+      "player": "Klay Thompson",
+      "artist": "Drake",
+      "song": "Trophies",
+      "release_date": "2013-09-24",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Splash like Klay I let it fly without a dribble",
+      "stats": {
+        "before": {
+          "pts": 16.9,
+          "ast": 2.0,
+          "reb": 3.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 38.0,
+          "ast": 1.0,
+          "reb": 3.0
+        },
+        "after_10g": {
+          "pts": 20.9,
+          "ast": 1.8,
+          "reb": 2.9
+        },
+        "after_30g": {
+          "pts": 19.6,
+          "ast": 2.7,
+          "reb": 3.3
+        },
+        "after_season": {
+          "pts": 18.4,
+          "ast": 2.2,
+          "reb": 3.1
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.7,
+        "ast_30g": 0.64,
+        "reb_30g": -0.17,
+        "composite_30g": 1.221,
+        "weighted_impact": 3.419
+      },
+      "sentiment": {
+        "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 44,
+      "player": "Draymond Green",
+      "artist": "Kendrick Lamar",
+      "song": "DNA.",
+      "release_date": "2017-04-14",
+      "mention_type": "neutral",
+      "artist_tier": 2.9,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Draymond heart I do the dirty work nobody else wants",
+      "stats": {
+        "before": {
+          "pts": 9.9,
+          "ast": 6.4,
+          "reb": 7.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 9.0,
+          "ast": 13.0,
+          "reb": 11.0
+        },
+        "after_10g": {
+          "pts": 9.7,
+          "ast": 7.2,
+          "reb": 7.8
+        },
+        "after_30g": {
+          "pts": 10.3,
+          "ast": 7.7,
+          "reb": 7.6
+        },
+        "after_season": {
+          "pts": 9.3,
+          "ast": 7.1,
+          "reb": 7.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.4,
+        "ast_30g": 1.33,
+        "reb_30g": 0.47,
+        "composite_30g": 0.7,
+        "weighted_impact": 2.03
+      },
+      "sentiment": {
+        "vader_compound": 0.318
+      }
+    },
+    {
+      "mention_id": 45,
+      "player": "Anthony Davis",
+      "artist": "Drake",
+      "song": "Forever",
+      "release_date": "2013-09-24",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Unibrow AD blocking everything in sight",
+      "stats": {
+        "before": {
+          "pts": 14.2,
+          "ast": 1.2,
+          "reb": 8.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 20.0,
+          "ast": 0.0,
+          "reb": 12.0
+        },
+        "after_10g": {
+          "pts": 20.9,
+          "ast": 1.5,
+          "reb": 11.0
+        },
+        "after_30g": {
+          "pts": 19.6,
+          "ast": 1.3,
+          "reb": 10.3
+        },
+        "after_season": {
+          "pts": 20.8,
+          "ast": 1.6,
+          "reb": 10.0
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.43,
+        "ast_30g": 0.1,
+        "reb_30g": 1.63,
+        "composite_30g": 2.691,
+        "weighted_impact": 7.535
+      },
+      "sentiment": {
+        "vader_compound": -0.382
       }
     },
     {
@@ -1417,9 +2541,9 @@
           "reb": 12.4
         },
         "after_season": {
-          "pts": 28.3,
-          "ast": 2.2,
-          "reb": 12.8
+          "pts": 23.8,
+          "ast": 2.8,
+          "reb": 12.4
         }
       },
       "deltas": {
@@ -1467,9 +2591,9 @@
           "reb": 10.0
         },
         "after_season": {
-          "pts": 17.5,
-          "ast": 7.7,
-          "reb": 8.9
+          "pts": 16.1,
+          "ast": 7.5,
+          "reb": 8.0
         }
       },
       "deltas": {
@@ -1512,25 +2636,75 @@
           "reb": 6.1
         },
         "after_30g": {
-          "pts": 10.1,
-          "ast": 7.6,
-          "reb": 6.4
+          "pts": 9.4,
+          "ast": 6.3,
+          "reb": 5.7
         },
         "after_season": {
-          "pts": 10.1,
-          "ast": 7.6,
-          "reb": 6.4
+          "pts": 9.9,
+          "ast": 6.0,
+          "reb": 5.6
         }
       },
       "deltas": {
-        "pts_30g": -0.17,
-        "ast_30g": 0.59,
-        "reb_30g": -0.63,
-        "composite_30g": -0.08,
-        "weighted_impact": -0.224
+        "pts_30g": -0.8,
+        "ast_30g": -0.7,
+        "reb_30g": -1.37,
+        "composite_30g": -0.941,
+        "weighted_impact": -2.635
       },
       "sentiment": {
         "vader_compound": -0.25
+      }
+    },
+    {
+      "mention_id": 50,
+      "player": "Trae Young",
+      "artist": "Lil Baby",
+      "song": "The Bigger Picture",
+      "release_date": "2020-06-12",
+      "mention_type": "compliment",
+      "artist_tier": 2.3,
+      "era": "2020s",
+      "position": "PG",
+      "lyric": "Ice Trae cold from three in your face with the stepback",
+      "stats": {
+        "before": {
+          "pts": 30.2,
+          "ast": 10.2,
+          "reb": 4.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 37.0,
+          "ast": 7.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 24.8,
+          "ast": 8.5,
+          "reb": 3.9
+        },
+        "after_30g": {
+          "pts": 27.2,
+          "ast": 9.5,
+          "reb": 4.0
+        },
+        "after_season": {
+          "pts": 27.0,
+          "ast": 9.6,
+          "reb": 3.8
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.94,
+        "ast_30g": -0.61,
+        "reb_30g": -0.04,
+        "composite_30g": -1.371,
+        "weighted_impact": -3.153
+      },
+      "sentiment": {
+        "vader_compound": 0.0
       }
     },
     {
@@ -1562,22 +2736,22 @@
           "reb": 3.8
         },
         "after_30g": {
-          "pts": 30.2,
-          "ast": 5.3,
-          "reb": 3.8
+          "pts": 25.1,
+          "ast": 4.6,
+          "reb": 4.1
         },
         "after_season": {
-          "pts": 30.2,
-          "ast": 5.3,
-          "reb": 3.8
+          "pts": 26.4,
+          "ast": 4.8,
+          "reb": 4.5
         }
       },
       "deltas": {
-        "pts_30g": 7.77,
-        "ast_30g": 2.1,
-        "reb_30g": 0.33,
-        "composite_30g": 3.837,
-        "weighted_impact": 10.744
+        "pts_30g": 2.64,
+        "ast_30g": 1.37,
+        "reb_30g": 0.6,
+        "composite_30g": 1.647,
+        "weighted_impact": 4.612
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -1617,9 +2791,9 @@
           "reb": 4.3
         },
         "after_season": {
-          "pts": 15.5,
-          "ast": 3.1,
-          "reb": 4.1
+          "pts": 22.8,
+          "ast": 4.5,
+          "reb": 4.3
         }
       },
       "deltas": {
@@ -1662,22 +2836,172 @@
           "reb": 3.3
         },
         "after_30g": {
-          "pts": 14.3,
-          "ast": 4.9,
-          "reb": 3.1
+          "pts": 14.5,
+          "ast": 5.0,
+          "reb": 3.2
         },
         "after_season": {
-          "pts": 14.3,
-          "ast": 4.9,
-          "reb": 3.1
+          "pts": 19.6,
+          "ast": 5.1,
+          "reb": 4.2
         }
       },
       "deltas": {
-        "pts_30g": -6.2,
-        "ast_30g": -0.53,
-        "reb_30g": -0.57,
-        "composite_30g": -2.81,
-        "weighted_impact": -7.868
+        "pts_30g": -6.0,
+        "ast_30g": -0.4,
+        "reb_30g": -0.47,
+        "composite_30g": -2.661,
+        "weighted_impact": -7.451
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 55,
+      "player": "Bam Adebayo",
+      "artist": "Rick Ross",
+      "song": "BIG TYME",
+      "release_date": "2019-08-09",
+      "mention_type": "compliment",
+      "artist_tier": 2.2,
+      "era": "2010s",
+      "position": "C",
+      "lyric": "Bam defense anchor of the whole operation",
+      "stats": {
+        "before": {
+          "pts": 10.4,
+          "ast": 2.7,
+          "reb": 8.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 3.0,
+          "reb": 11.0
+        },
+        "after_10g": {
+          "pts": 13.3,
+          "ast": 4.6,
+          "reb": 9.8
+        },
+        "after_30g": {
+          "pts": 15.7,
+          "ast": 4.6,
+          "reb": 10.6
+        },
+        "after_season": {
+          "pts": 17.2,
+          "ast": 5.2,
+          "reb": 9.6
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.3,
+        "ast_30g": 1.9,
+        "reb_30g": 2.26,
+        "composite_30g": 3.368,
+        "weighted_impact": 7.41
+      },
+      "sentiment": {
+        "vader_compound": 0.128
+      }
+    },
+    {
+      "mention_id": 56,
+      "player": "Victor Oladipo",
+      "artist": "Future",
+      "song": "Mask Off",
+      "release_date": "2017-04-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.4,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Oladipo bounce back story they wrote him off too soon",
+      "stats": {
+        "before": {
+          "pts": 15.6,
+          "ast": 2.7,
+          "reb": 4.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 22.0,
+          "ast": 4.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 23.8,
+          "ast": 3.8,
+          "reb": 4.3
+        },
+        "after_30g": {
+          "pts": 24.9,
+          "ast": 3.9,
+          "reb": 5.5
+        },
+        "after_season": {
+          "pts": 21.7,
+          "ast": 4.6,
+          "reb": 5.3
+        }
+      },
+      "deltas": {
+        "pts_30g": 9.3,
+        "ast_30g": 1.26,
+        "reb_30g": 0.94,
+        "composite_30g": 4.38,
+        "weighted_impact": 10.512
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 58,
+      "player": "CJ McCollum",
+      "artist": "Chance the Rapper",
+      "song": "Blessings",
+      "release_date": "2016-05-13",
+      "mention_type": "compliment",
+      "artist_tier": 2.0,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "McCollum pull-up off the glass textbook mid-range maestro",
+      "stats": {
+        "before": {
+          "pts": 20.9,
+          "ast": 4.3,
+          "reb": 2.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 25.0,
+          "ast": 3.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 22.2,
+          "ast": 3.0,
+          "reb": 4.4
+        },
+        "after_30g": {
+          "pts": 22.5,
+          "ast": 3.6,
+          "reb": 3.6
+        },
+        "after_season": {
+          "pts": 23.0,
+          "ast": 3.6,
+          "reb": 3.6
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.6,
+        "ast_30g": -0.67,
+        "reb_30g": 1.04,
+        "composite_30g": 0.751,
+        "weighted_impact": 1.502
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -1717,9 +3041,9 @@
           "reb": 14.4
         },
         "after_season": {
-          "pts": 15.8,
-          "ast": 0.9,
-          "reb": 14.3
+          "pts": 16.1,
+          "ast": 0.8,
+          "reb": 14.6
         }
       },
       "deltas": {
@@ -1731,6 +3055,106 @@
       },
       "sentiment": {
         "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 61,
+      "player": "Dennis Rodman",
+      "artist": "Notorious B.I.G.",
+      "song": "Big Poppa",
+      "release_date": "1994-09-13",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "PF",
+      "lyric": "Rodman rebounding I grab everything that misses no exceptions",
+      "stats": {
+        "before": {
+          "pts": 6.0,
+          "ast": 2.5,
+          "reb": 16.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 6.0,
+          "ast": 3.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 5.2,
+          "ast": 2.0,
+          "reb": 12.9
+        },
+        "after_30g": {
+          "pts": 7.0,
+          "ast": 1.8,
+          "reb": 16.2
+        },
+        "after_season": {
+          "pts": 7.1,
+          "ast": 2.0,
+          "reb": 16.8
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.07,
+        "ast_30g": -0.74,
+        "reb_30g": -0.64,
+        "composite_30g": 0.014,
+        "weighted_impact": 0.042
+      },
+      "sentiment": {
+        "vader_compound": -0.477
+      }
+    },
+    {
+      "mention_id": 62,
+      "player": "Scottie Pippen",
+      "artist": "Jay-Z",
+      "song": "Song Cry",
+      "release_date": "2001-09-11",
+      "mention_type": "neutral",
+      "artist_tier": 3.0,
+      "era": "2000s",
+      "position": "SF",
+      "lyric": "Pippen versatile I guard one through five no problems",
+      "stats": {
+        "before": {
+          "pts": 12.2,
+          "ast": 4.6,
+          "reb": 5.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 2.0,
+          "ast": 5.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 9.8,
+          "ast": 5.9,
+          "reb": 5.8
+        },
+        "after_30g": {
+          "pts": 9.5,
+          "ast": 5.9,
+          "reb": 5.2
+        },
+        "after_season": {
+          "pts": 10.6,
+          "ast": 5.8,
+          "reb": 5.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.94,
+        "ast_30g": 1.4,
+        "reb_30g": -0.25,
+        "composite_30g": -0.831,
+        "weighted_impact": -2.493
+      },
+      "sentiment": {
+        "vader_compound": 0.309
       }
     },
     {
@@ -1767,9 +3191,9 @@
           "reb": 12.3
         },
         "after_season": {
-          "pts": 25.5,
-          "ast": 5.1,
-          "reb": 12.0
+          "pts": 22.7,
+          "ast": 4.4,
+          "reb": 11.8
         }
       },
       "deltas": {
@@ -1817,9 +3241,9 @@
           "reb": 2.7
         },
         "after_season": {
-          "pts": 10.1,
-          "ast": 3.0,
-          "reb": 2.3
+          "pts": 12.3,
+          "ast": 2.6,
+          "reb": 2.4
         }
       },
       "deltas": {
@@ -1867,9 +3291,9 @@
           "reb": 2.4
         },
         "after_season": {
-          "pts": 12.0,
+          "pts": 11.7,
           "ast": 8.7,
-          "reb": 2.6
+          "reb": 2.7
         }
       },
       "deltas": {
@@ -1917,9 +3341,9 @@
           "reb": 10.0
         },
         "after_season": {
-          "pts": 25.9,
-          "ast": 3.7,
-          "reb": 9.6
+          "pts": 24.5,
+          "ast": 4.1,
+          "reb": 8.9
         }
       },
       "deltas": {
@@ -1957,30 +3381,80 @@
           "reb": 5.0
         },
         "after_10g": {
-          "pts": 13.8,
-          "ast": 6.2,
-          "reb": 6.2
+          "pts": 16.3,
+          "ast": 4.9,
+          "reb": 8.3
         },
         "after_30g": {
-          "pts": 13.8,
-          "ast": 6.2,
-          "reb": 6.2
+          "pts": 16.1,
+          "ast": 4.9,
+          "reb": 8.3
         },
         "after_season": {
-          "pts": 13.8,
-          "ast": 6.2,
-          "reb": 6.2
+          "pts": 16.1,
+          "ast": 4.9,
+          "reb": 8.3
         }
       },
       "deltas": {
-        "pts_30g": -10.82,
-        "ast_30g": 1.57,
-        "reb_30g": -0.59,
-        "composite_30g": -4.034,
-        "weighted_impact": -11.295
+        "pts_30g": -8.27,
+        "ast_30g": 0.15,
+        "reb_30g": 1.65,
+        "composite_30g": -2.768,
+        "weighted_impact": -7.75
       },
       "sentiment": {
         "vader_compound": 0.649
+      }
+    },
+    {
+      "mention_id": 68,
+      "player": "Chris Webber",
+      "artist": "DMX",
+      "song": "Ruff Ryders Anthem",
+      "release_date": "1998-05-12",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "1990s",
+      "position": "PF",
+      "lyric": "C-Webb vision I call my own plays don't need a coach",
+      "stats": {
+        "before": {
+          "pts": 22.0,
+          "ast": 4.1,
+          "reb": 9.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 20.0,
+          "ast": 3.0,
+          "reb": 12.0
+        },
+        "after_10g": {
+          "pts": 22.1,
+          "ast": 3.9,
+          "reb": 14.1
+        },
+        "after_30g": {
+          "pts": 19.8,
+          "ast": 4.0,
+          "reb": 12.9
+        },
+        "after_season": {
+          "pts": 20.0,
+          "ast": 4.1,
+          "reb": 13.0
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.35,
+        "ast_30g": -0.17,
+        "reb_30g": 3.33,
+        "composite_30g": 0.008,
+        "weighted_impact": 0.021
+      },
+      "sentiment": {
+        "vader_compound": 0.459
       }
     },
     {
@@ -2017,9 +3491,9 @@
           "reb": 4.2
         },
         "after_season": {
-          "pts": 19.4,
-          "ast": 7.3,
-          "reb": 3.9
+          "pts": 20.1,
+          "ast": 6.2,
+          "reb": 4.3
         }
       },
       "deltas": {
@@ -2067,9 +3541,9 @@
           "reb": 1.9
         },
         "after_season": {
-          "pts": 16.1,
-          "ast": 7.8,
-          "reb": 2.1
+          "pts": 18.4,
+          "ast": 8.8,
+          "reb": 2.3
         }
       },
       "deltas": {
@@ -2081,6 +3555,56 @@
       },
       "sentiment": {
         "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 71,
+      "player": "Hakeem Olajuwon",
+      "artist": "Notorious B.I.G.",
+      "song": "Juicy",
+      "release_date": "1994-09-13",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "C",
+      "lyric": "Dream Shake Hakeem I got more moves than you can count",
+      "stats": {
+        "before": {
+          "pts": 28.3,
+          "ast": 3.7,
+          "reb": 11.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 19.0,
+          "ast": 0.0,
+          "reb": 8.0
+        },
+        "after_10g": {
+          "pts": 27.3,
+          "ast": 2.7,
+          "reb": 11.5
+        },
+        "after_30g": {
+          "pts": 27.0,
+          "ast": 3.6,
+          "reb": 11.5
+        },
+        "after_season": {
+          "pts": 22.4,
+          "ast": 2.9,
+          "reb": 9.8
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.39,
+        "ast_30g": -0.14,
+        "reb_30g": -0.32,
+        "composite_30g": -0.694,
+        "weighted_impact": -2.082
+      },
+      "sentiment": {
+        "vader_compound": 0.077
       }
     },
     {
@@ -2117,9 +3641,9 @@
           "reb": 11.9
         },
         "after_season": {
-          "pts": 24.8,
-          "ast": 2.8,
-          "reb": 11.8
+          "pts": 23.8,
+          "ast": 2.6,
+          "reb": 11.3
         }
       },
       "deltas": {
@@ -2131,6 +3655,56 @@
       },
       "sentiment": {
         "vader_compound": 0.318
+      }
+    },
+    {
+      "mention_id": 73,
+      "player": "Alonzo Mourning",
+      "artist": "Jay-Z",
+      "song": "Can I Get A...",
+      "release_date": "1998-09-29",
+      "mention_type": "diss",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "C",
+      "lyric": "Mourning I reject everything coming at me in the post",
+      "stats": {
+        "before": {
+          "pts": 21.0,
+          "ast": 1.1,
+          "reb": 9.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 2.0,
+          "reb": 9.0
+        },
+        "after_10g": {
+          "pts": 19.4,
+          "ast": 1.0,
+          "reb": 10.4
+        },
+        "after_30g": {
+          "pts": 20.2,
+          "ast": 1.6,
+          "reb": 11.1
+        },
+        "after_season": {
+          "pts": 20.1,
+          "ast": 1.6,
+          "reb": 11.0
+        }
+      },
+      "deltas": {
+        "pts_30g": -0.85,
+        "ast_30g": 0.53,
+        "reb_30g": 1.46,
+        "composite_30g": 0.257,
+        "weighted_impact": 0.771
+      },
+      "sentiment": {
+        "vader_compound": -0.681
       }
     },
     {
@@ -2162,22 +3736,22 @@
           "reb": 3.6
         },
         "after_30g": {
-          "pts": 15.8,
-          "ast": 2.6,
-          "reb": 3.8
+          "pts": 17.0,
+          "ast": 3.4,
+          "reb": 4.5
         },
         "after_season": {
-          "pts": 15.8,
-          "ast": 2.6,
-          "reb": 3.8
+          "pts": 18.1,
+          "ast": 3.8,
+          "reb": 4.2
         }
       },
       "deltas": {
-        "pts_30g": -2.68,
-        "ast_30g": -0.51,
-        "reb_30g": -0.68,
-        "composite_30g": -1.429,
-        "weighted_impact": -3.858
+        "pts_30g": -1.39,
+        "ast_30g": 0.32,
+        "reb_30g": 0.14,
+        "composite_30g": -0.418,
+        "weighted_impact": -1.129
       },
       "sentiment": {
         "vader_compound": -0.743
@@ -2217,9 +3791,9 @@
           "reb": 3.7
         },
         "after_season": {
-          "pts": 18.9,
-          "ast": 6.9,
-          "reb": 3.6
+          "pts": 19.7,
+          "ast": 7.0,
+          "reb": 3.9
         }
       },
       "deltas": {
@@ -2228,6 +3802,56 @@
         "reb_30g": 0.26,
         "composite_30g": 1.837,
         "weighted_impact": 4.776
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 76,
+      "player": "Mitch Richmond",
+      "artist": "Too Short",
+      "song": "Gettin It",
+      "release_date": "1996-04-30",
+      "mention_type": "neutral",
+      "artist_tier": 1.8,
+      "era": "1990s",
+      "position": "SG",
+      "lyric": "Richmond scoring in Sacramento nobody was watching but I was there",
+      "stats": {
+        "before": {
+          "pts": 22.5,
+          "ast": 3.1,
+          "reb": 3.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 3.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 22.2,
+          "ast": 3.8,
+          "reb": 4.2
+        },
+        "after_30g": {
+          "pts": 23.2,
+          "ast": 3.6,
+          "reb": 3.8
+        },
+        "after_season": {
+          "pts": 25.9,
+          "ast": 4.2,
+          "reb": 3.9
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.75,
+        "ast_30g": 0.47,
+        "reb_30g": 0.37,
+        "composite_30g": 0.552,
+        "weighted_impact": 0.994
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -2267,9 +3891,9 @@
           "reb": 3.3
         },
         "after_season": {
-          "pts": 11.0,
-          "ast": 8.6,
-          "reb": 3.3
+          "pts": 10.3,
+          "ast": 8.2,
+          "reb": 3.1
         }
       },
       "deltas": {
@@ -2281,6 +3905,56 @@
       },
       "sentiment": {
         "vader_compound": 0.593
+      }
+    },
+    {
+      "mention_id": 78,
+      "player": "Shawn Kemp",
+      "artist": "Sir Mix-a-Lot",
+      "song": "Baby Got Back",
+      "release_date": "1992-05-07",
+      "mention_type": "compliment",
+      "artist_tier": 2.0,
+      "era": "1990s",
+      "position": "PF",
+      "lyric": "Kemp throw it down I'm dunking on everybody in the building",
+      "stats": {
+        "before": {
+          "pts": 15.7,
+          "ast": 1.2,
+          "reb": 11.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 29.0,
+          "ast": 2.0,
+          "reb": 20.0
+        },
+        "after_10g": {
+          "pts": 20.6,
+          "ast": 1.2,
+          "reb": 10.4
+        },
+        "after_30g": {
+          "pts": 18.7,
+          "ast": 1.6,
+          "reb": 10.5
+        },
+        "after_season": {
+          "pts": 17.8,
+          "ast": 2.0,
+          "reb": 10.7
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.23,
+        "ast_30g": 0.45,
+        "reb_30g": -0.92,
+        "composite_30g": 1.151,
+        "weighted_impact": 2.302
+      },
+      "sentiment": {
+        "vader_compound": 0.0
       }
     },
     {
@@ -2317,9 +3991,9 @@
           "reb": 2.8
         },
         "after_season": {
-          "pts": 16.9,
-          "ast": 8.2,
-          "reb": 2.8
+          "pts": 15.9,
+          "ast": 7.6,
+          "reb": 2.6
         }
       },
       "deltas": {
@@ -2331,6 +4005,156 @@
       },
       "sentiment": {
         "vader_compound": 0.206
+      }
+    },
+    {
+      "mention_id": 80,
+      "player": "Glen Rice",
+      "artist": "2Pac",
+      "song": "How Do U Want It",
+      "release_date": "1996-06-04",
+      "mention_type": "neutral",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "SG",
+      "lyric": "Rice pure shooter I let it fly from anywhere on the floor",
+      "stats": {
+        "before": {
+          "pts": 19.5,
+          "ast": 2.9,
+          "reb": 4.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 7.0,
+          "ast": 3.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 19.3,
+          "ast": 2.2,
+          "reb": 2.6
+        },
+        "after_30g": {
+          "pts": 22.3,
+          "ast": 2.1,
+          "reb": 3.9
+        },
+        "after_season": {
+          "pts": 26.8,
+          "ast": 2.0,
+          "reb": 4.0
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.95,
+        "ast_30g": -0.85,
+        "reb_30g": -0.51,
+        "composite_30g": 0.772,
+        "weighted_impact": 2.316
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 81,
+      "player": "LeBron James",
+      "artist": "Jay-Z",
+      "song": "Crown",
+      "release_date": "2017-06-30",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "King James legacy building something that outlasts the game itself",
+      "stats": {
+        "before": {
+          "pts": 27.5,
+          "ast": 9.1,
+          "reb": 9.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 29.0,
+          "ast": 9.0,
+          "reb": 16.0
+        },
+        "after_10g": {
+          "pts": 28.8,
+          "ast": 9.1,
+          "reb": 7.2
+        },
+        "after_30g": {
+          "pts": 28.1,
+          "ast": 9.1,
+          "reb": 8.4
+        },
+        "after_season": {
+          "pts": 27.4,
+          "ast": 9.1,
+          "reb": 8.7
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.57,
+        "ast_30g": 0.03,
+        "reb_30g": -1.14,
+        "composite_30g": -0.105,
+        "weighted_impact": -0.315
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 82,
+      "player": "Kevin Durant",
+      "artist": "Drake",
+      "song": "The Language",
+      "release_date": "2013-09-24",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "Durant patience I wait for my spot then I explode",
+      "stats": {
+        "before": {
+          "pts": 26.8,
+          "ast": 5.1,
+          "reb": 8.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 42.0,
+          "ast": 1.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 29.6,
+          "ast": 5.2,
+          "reb": 7.0
+        },
+        "after_30g": {
+          "pts": 28.5,
+          "ast": 4.8,
+          "reb": 8.3
+        },
+        "after_season": {
+          "pts": 27.9,
+          "ast": 5.1,
+          "reb": 7.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.67,
+        "ast_30g": -0.24,
+        "reb_30g": -0.34,
+        "composite_30g": 0.494,
+        "weighted_impact": 1.383
+      },
+      "sentiment": {
+        "vader_compound": 0.0
       }
     },
     {
@@ -2368,7 +4192,7 @@
         },
         "after_season": {
           "pts": 26.2,
-          "ast": 5.0,
+          "ast": 5.1,
           "reb": 5.4
         }
       },
@@ -2381,6 +4205,156 @@
       },
       "sentiment": {
         "vader_compound": 0.522
+      }
+    },
+    {
+      "mention_id": 84,
+      "player": "Dwyane Wade",
+      "artist": "Lil Wayne",
+      "song": "Got Money",
+      "release_date": "2008-06-10",
+      "mention_type": "compliment",
+      "artist_tier": 2.5,
+      "era": "2000s",
+      "position": "SG",
+      "lyric": "Wade in traffic splitting defenses like nobody business",
+      "stats": {
+        "before": {
+          "pts": 24.9,
+          "ast": 7.2,
+          "reb": 4.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 26.0,
+          "ast": 9.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 27.9,
+          "ast": 7.3,
+          "reb": 5.2
+        },
+        "after_30g": {
+          "pts": 28.7,
+          "ast": 7.0,
+          "reb": 5.1
+        },
+        "after_season": {
+          "pts": 20.2,
+          "ast": 5.0,
+          "reb": 4.4
+        }
+      },
+      "deltas": {
+        "pts_30g": 4.1,
+        "ast_30g": -0.15,
+        "reb_30g": 1.01,
+        "composite_30g": 1.898,
+        "weighted_impact": 4.745
+      },
+      "sentiment": {
+        "vader_compound": 0.494
+      }
+    },
+    {
+      "mention_id": 85,
+      "player": "Carmelo Anthony",
+      "artist": "Jay-Z",
+      "song": "Empire State of Mind",
+      "release_date": "2009-09-08",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2000s",
+      "position": "SF",
+      "lyric": "Melo scoring in New York that's what legends do",
+      "stats": {
+        "before": {
+          "pts": 24.2,
+          "ast": 2.9,
+          "reb": 6.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 30.0,
+          "ast": 5.0,
+          "reb": 8.0
+        },
+        "after_10g": {
+          "pts": 29.7,
+          "ast": 2.8,
+          "reb": 6.3
+        },
+        "after_30g": {
+          "pts": 30.4,
+          "ast": 3.3,
+          "reb": 6.2
+        },
+        "after_season": {
+          "pts": 28.2,
+          "ast": 3.2,
+          "reb": 6.6
+        }
+      },
+      "deltas": {
+        "pts_30g": 6.7,
+        "ast_30g": 0.5,
+        "reb_30g": -0.54,
+        "composite_30g": 2.668,
+        "weighted_impact": 8.004
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 86,
+      "player": "Blake Griffin",
+      "artist": "Kendrick Lamar",
+      "song": "Swimming Pools",
+      "release_date": "2012-07-31",
+      "mention_type": "compliment",
+      "artist_tier": 2.9,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Griffin power through the lane I throw it down with authority",
+      "stats": {
+        "before": {
+          "pts": 20.1,
+          "ast": 3.5,
+          "reb": 10.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 11.0,
+          "ast": 2.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 17.2,
+          "ast": 3.3,
+          "reb": 9.4
+        },
+        "after_30g": {
+          "pts": 18.2,
+          "ast": 3.1,
+          "reb": 8.9
+        },
+        "after_season": {
+          "pts": 18.0,
+          "ast": 3.7,
+          "reb": 8.3
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.96,
+        "ast_30g": -0.37,
+        "reb_30g": -1.76,
+        "composite_30g": -1.423,
+        "weighted_impact": -4.127
+      },
+      "sentiment": {
+        "vader_compound": 0.077
       }
     },
     {
@@ -2417,9 +4391,9 @@
           "reb": 5.1
         },
         "after_season": {
-          "pts": 23.9,
-          "ast": 7.7,
-          "reb": 3.9
+          "pts": 23.2,
+          "ast": 7.4,
+          "reb": 3.8
         }
       },
       "deltas": {
@@ -2467,9 +4441,9 @@
           "reb": 8.1
         },
         "after_season": {
-          "pts": 29.6,
+          "pts": 25.9,
           "ast": 4.0,
-          "reb": 8.3
+          "reb": 7.1
         }
       },
       "deltas": {
@@ -2517,9 +4491,9 @@
           "reb": 4.1
         },
         "after_season": {
-          "pts": 16.8,
-          "ast": 3.6,
-          "reb": 4.5
+          "pts": 18.6,
+          "ast": 3.9,
+          "reb": 4.8
         }
       },
       "deltas": {
@@ -2531,6 +4505,56 @@
       },
       "sentiment": {
         "vader_compound": -0.103
+      }
+    },
+    {
+      "mention_id": 90,
+      "player": "Kawhi Leonard",
+      "artist": "Drake",
+      "song": "In My Feelings",
+      "release_date": "2018-06-29",
+      "mention_type": "neutral",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "Kawhi let the work speak I don't need to say anything extra",
+      "stats": {
+        "before": {
+          "pts": 22.3,
+          "ast": 3.5,
+          "reb": 5.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 24.0,
+          "ast": 2.0,
+          "reb": 12.0
+        },
+        "after_10g": {
+          "pts": 24.0,
+          "ast": 3.1,
+          "reb": 7.7
+        },
+        "after_30g": {
+          "pts": 27.3,
+          "ast": 2.8,
+          "reb": 8.2
+        },
+        "after_season": {
+          "pts": 26.6,
+          "ast": 3.3,
+          "reb": 7.3
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.0,
+        "ast_30g": -0.64,
+        "reb_30g": 2.73,
+        "composite_30g": 2.627,
+        "weighted_impact": 7.356
+      },
+      "sentiment": {
+        "vader_compound": 0.0
       }
     },
     {
@@ -2567,9 +4591,9 @@
           "reb": 7.5
         },
         "after_season": {
-          "pts": 27.9,
-          "ast": 4.2,
-          "reb": 7.7
+          "pts": 28.4,
+          "ast": 4.5,
+          "reb": 8.3
         }
       },
       "deltas": {
@@ -2581,6 +4605,56 @@
       },
       "sentiment": {
         "vader_compound": 0.599
+      }
+    },
+    {
+      "mention_id": 93,
+      "player": "Jaylen Brown",
+      "artist": "J. Cole",
+      "song": "KOD",
+      "release_date": "2018-04-20",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Brown energy I match whatever you bring I don't back down",
+      "stats": {
+        "before": {
+          "pts": 14.9,
+          "ast": 2.0,
+          "reb": 4.0,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 12.0,
+          "ast": 2.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 12.0,
+          "ast": 1.4,
+          "reb": 4.6
+        },
+        "after_30g": {
+          "pts": 11.4,
+          "ast": 1.4,
+          "reb": 4.1
+        },
+        "after_season": {
+          "pts": 13.0,
+          "ast": 1.4,
+          "reb": 4.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.44,
+        "ast_30g": -0.57,
+        "reb_30g": 0.04,
+        "composite_30g": -1.535,
+        "weighted_impact": -3.991
+      },
+      "sentiment": {
+        "vader_compound": 0.273
       }
     },
     {
@@ -2613,21 +4687,21 @@
         },
         "after_30g": {
           "pts": 14.7,
-          "ast": 3.4,
-          "reb": 4.2
+          "ast": 3.5,
+          "reb": 4.4
         },
         "after_season": {
-          "pts": 14.7,
-          "ast": 3.4,
-          "reb": 4.2
+          "pts": 19.4,
+          "ast": 4.4,
+          "reb": 5.7
         }
       },
       "deltas": {
-        "pts_30g": -4.28,
-        "ast_30g": -1.09,
-        "reb_30g": 0.17,
-        "composite_30g": -1.988,
-        "weighted_impact": -4.175
+        "pts_30g": -4.27,
+        "ast_30g": -1.0,
+        "reb_30g": 0.33,
+        "composite_30g": -1.909,
+        "weighted_impact": -4.009
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -2657,27 +4731,27 @@
           "reb": 5.0
         },
         "after_10g": {
-          "pts": 17.8,
-          "ast": 6.7,
-          "reb": 3.8
+          "pts": 17.6,
+          "ast": 6.5,
+          "reb": 4.0
         },
         "after_30g": {
-          "pts": 17.8,
-          "ast": 6.7,
-          "reb": 3.8
+          "pts": 20.1,
+          "ast": 6.5,
+          "reb": 4.2
         },
         "after_season": {
-          "pts": 17.8,
-          "ast": 6.7,
-          "reb": 3.8
+          "pts": 19.4,
+          "ast": 6.3,
+          "reb": 4.2
         }
       },
       "deltas": {
-        "pts_30g": 0.73,
-        "ast_30g": 0.46,
-        "reb_30g": 0.15,
-        "composite_30g": 0.475,
-        "weighted_impact": 1.33
+        "pts_30g": 2.95,
+        "ast_30g": 0.26,
+        "reb_30g": 0.54,
+        "composite_30g": 1.42,
+        "weighted_impact": 3.976
       },
       "sentiment": {
         "vader_compound": -0.153
@@ -2717,9 +4791,9 @@
           "reb": 5.7
         },
         "after_season": {
-          "pts": 27.4,
-          "ast": 6.7,
-          "reb": 5.7
+          "pts": 26.8,
+          "ast": 7.4,
+          "reb": 5.8
         }
       },
       "deltas": {
@@ -2731,6 +4805,106 @@
       },
       "sentiment": {
         "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 100,
+      "player": "Evan Mobley",
+      "artist": "Pusha T",
+      "song": "Diet Coke",
+      "release_date": "2022-04-22",
+      "mention_type": "compliment",
+      "artist_tier": 2.4,
+      "era": "2020s",
+      "position": "C",
+      "lyric": "Mobley wingspan blocking shots protecting the whole paint",
+      "stats": {
+        "before": {
+          "pts": 15.0,
+          "ast": 2.4,
+          "reb": 8.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 1.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 15.2,
+          "ast": 2.1,
+          "reb": 6.6
+        },
+        "after_30g": {
+          "pts": 15.1,
+          "ast": 2.6,
+          "reb": 9.4
+        },
+        "after_season": {
+          "pts": 16.2,
+          "ast": 2.8,
+          "reb": 9.0
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.1,
+        "ast_30g": 0.19,
+        "reb_30g": 0.83,
+        "composite_30g": 0.346,
+        "weighted_impact": 0.83
+      },
+      "sentiment": {
+        "vader_compound": -0.382
+      }
+    },
+    {
+      "mention_id": 104,
+      "player": "Chris Paul",
+      "artist": "Jay-Z",
+      "song": "Otis",
+      "release_date": "2011-08-12",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "CP3 precision I run the offense like a general",
+      "stats": {
+        "before": {
+          "pts": 14.6,
+          "ast": 9.9,
+          "reb": 4.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 20.0,
+          "ast": 9.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 16.6,
+          "ast": 8.8,
+          "reb": 3.1
+        },
+        "after_30g": {
+          "pts": 19.7,
+          "ast": 8.4,
+          "reb": 3.5
+        },
+        "after_season": {
+          "pts": 18.3,
+          "ast": 9.4,
+          "reb": 3.6
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.16,
+        "ast_30g": -1.47,
+        "reb_30g": -0.63,
+        "composite_30g": 1.434,
+        "weighted_impact": 4.302
+      },
+      "sentiment": {
+        "vader_compound": 0.128
       }
     },
     {
@@ -2752,32 +4926,32 @@
           "n": 30.0
         },
         "after_1g": {
-          "pts": 18.0,
+          "pts": 13.0,
           "ast": 7.0,
-          "reb": 7.0
+          "reb": 12.0
         },
         "after_10g": {
-          "pts": 21.7,
-          "ast": 5.7,
-          "reb": 10.3
+          "pts": 19.8,
+          "ast": 5.5,
+          "reb": 13.0
         },
         "after_30g": {
-          "pts": 21.8,
-          "ast": 4.9,
-          "reb": 10.9
+          "pts": 21.6,
+          "ast": 5.7,
+          "reb": 13.1
         },
         "after_season": {
-          "pts": 22.1,
-          "ast": 4.1,
-          "reb": 12.8
+          "pts": 21.6,
+          "ast": 4.5,
+          "reb": 12.1
         }
       },
       "deltas": {
-        "pts_30g": 1.19,
-        "ast_30g": 0.4,
-        "reb_30g": -1.8,
-        "composite_30g": 0.056,
-        "weighted_impact": 0.168
+        "pts_30g": 0.94,
+        "ast_30g": 1.26,
+        "reb_30g": 0.54,
+        "composite_30g": 0.916,
+        "weighted_impact": 2.748
       },
       "sentiment": {
         "vader_compound": -0.382
@@ -2802,32 +4976,32 @@
           "n": 30.0
         },
         "after_1g": {
-          "pts": 24.0,
-          "ast": 4.0,
-          "reb": 12.0
-        },
-        "after_10g": {
-          "pts": 21.6,
-          "ast": 2.8,
-          "reb": 12.8
-        },
-        "after_30g": {
-          "pts": 22.1,
-          "ast": 2.8,
+          "pts": 15.0,
+          "ast": 3.0,
           "reb": 13.0
         },
+        "after_10g": {
+          "pts": 23.8,
+          "ast": 3.1,
+          "reb": 12.5
+        },
+        "after_30g": {
+          "pts": 25.3,
+          "ast": 3.7,
+          "reb": 13.1
+        },
         "after_season": {
-          "pts": 21.3,
-          "ast": 2.9,
+          "pts": 21.7,
+          "ast": 3.2,
           "reb": 11.8
         }
       },
       "deltas": {
-        "pts_30g": -2.1,
-        "ast_30g": -0.5,
-        "reb_30g": 0.47,
-        "composite_30g": -0.849,
-        "weighted_impact": -2.547
+        "pts_30g": 1.32,
+        "ast_30g": 0.47,
+        "reb_30g": 0.58,
+        "composite_30g": 0.843,
+        "weighted_impact": 2.529
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -2867,9 +5041,9 @@
           "reb": 4.5
         },
         "after_season": {
-          "pts": 27.3,
-          "ast": 5.8,
-          "reb": 4.2
+          "pts": 26.9,
+          "ast": 6.2,
+          "reb": 4.0
         }
       },
       "deltas": {
@@ -2881,6 +5055,56 @@
       },
       "sentiment": {
         "vader_compound": 0.226
+      }
+    },
+    {
+      "mention_id": 108,
+      "player": "Shaquille O'Neal",
+      "artist": "Jay-Z",
+      "song": "U Don't Know",
+      "release_date": "2001-09-11",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2000s",
+      "position": "C",
+      "lyric": "Shaq dominant I back you down until there's nowhere left to go",
+      "stats": {
+        "before": {
+          "pts": 30.5,
+          "ast": 3.6,
+          "reb": 12.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 29.0,
+          "ast": 5.0,
+          "reb": 18.0
+        },
+        "after_10g": {
+          "pts": 29.2,
+          "ast": 2.7,
+          "reb": 12.2
+        },
+        "after_30g": {
+          "pts": 26.1,
+          "ast": 3.3,
+          "reb": 10.7
+        },
+        "after_season": {
+          "pts": 27.2,
+          "ast": 3.0,
+          "reb": 10.7
+        }
+      },
+      "deltas": {
+        "pts_30g": -4.75,
+        "ast_30g": -0.25,
+        "reb_30g": -2.09,
+        "composite_30g": -2.602,
+        "weighted_impact": -7.806
+      },
+      "sentiment": {
+        "vader_compound": 0.0
       }
     },
     {
@@ -2917,9 +5141,9 @@
           "reb": 4.5
         },
         "after_season": {
-          "pts": 25.2,
-          "ast": 6.8,
-          "reb": 4.5
+          "pts": 26.7,
+          "ast": 6.5,
+          "reb": 4.9
         }
       },
       "deltas": {
@@ -2931,6 +5155,2256 @@
       },
       "sentiment": {
         "vader_compound": -0.34
+      }
+    },
+    {
+      "mention_id": 110,
+      "player": "Giannis Antetokounmpo",
+      "artist": "Drake",
+      "song": "Nonstop",
+      "release_date": "2018-06-29",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Giannis nonstop I don't need a jumper I just go through you",
+      "stats": {
+        "before": {
+          "pts": 24.4,
+          "ast": 4.9,
+          "reb": 9.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 25.0,
+          "ast": 8.0,
+          "reb": 18.0
+        },
+        "after_10g": {
+          "pts": 25.6,
+          "ast": 5.7,
+          "reb": 12.9
+        },
+        "after_30g": {
+          "pts": 26.2,
+          "ast": 6.0,
+          "reb": 12.8
+        },
+        "after_season": {
+          "pts": 27.7,
+          "ast": 5.9,
+          "reb": 12.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.83,
+        "ast_30g": 1.04,
+        "reb_30g": 3.14,
+        "composite_30g": 1.986,
+        "weighted_impact": 5.561
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 111,
+      "player": "LeBron James",
+      "artist": "Jay-Z",
+      "song": "Open Letter",
+      "release_date": "2013-04-06",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "I ball like LeBron pass it off to my team",
+      "stats": {
+        "before": {
+          "pts": 27.5,
+          "ast": 7.6,
+          "reb": 7.9,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 27.0,
+          "ast": 5.0,
+          "reb": 4.0
+        },
+        "after_10g": {
+          "pts": 24.5,
+          "ast": 7.3,
+          "reb": 5.7
+        },
+        "after_30g": {
+          "pts": 24.9,
+          "ast": 6.6,
+          "reb": 6.7
+        },
+        "after_season": {
+          "pts": 26.6,
+          "ast": 7.7,
+          "reb": 7.9
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.57,
+        "ast_30g": -0.97,
+        "reb_30g": -1.17,
+        "composite_30g": -1.67,
+        "weighted_impact": -5.01
+      },
+      "sentiment": {
+        "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 112,
+      "player": "Kevin Durant",
+      "artist": "J. Cole",
+      "song": "January 28th",
+      "release_date": "2016-12-09",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "KD silent in the room but loud on the court",
+      "stats": {
+        "before": {
+          "pts": 27.4,
+          "ast": 4.9,
+          "reb": 8.2,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 21.0,
+          "ast": 1.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 25.7,
+          "ast": 4.2,
+          "reb": 9.6
+        },
+        "after_30g": {
+          "pts": 25.3,
+          "ast": 4.9,
+          "reb": 8.2
+        },
+        "after_season": {
+          "pts": 25.6,
+          "ast": 5.2,
+          "reb": 7.3
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.13,
+        "ast_30g": 0.0,
+        "reb_30g": 0.0,
+        "composite_30g": -0.852,
+        "weighted_impact": -2.215
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 113,
+      "player": "Kobe Bryant",
+      "artist": "Nas",
+      "song": "Made You Look",
+      "release_date": "2002-12-13",
+      "mention_type": "compliment",
+      "artist_tier": 2.7,
+      "era": "2000s",
+      "position": "SG",
+      "lyric": "Kobe cold in the fourth like a killer never stops",
+      "stats": {
+        "before": {
+          "pts": 26.2,
+          "ast": 6.6,
+          "reb": 7.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 16.0,
+          "ast": 5.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 26.4,
+          "ast": 7.0,
+          "reb": 6.3
+        },
+        "after_30g": {
+          "pts": 32.8,
+          "ast": 5.8,
+          "reb": 6.2
+        },
+        "after_season": {
+          "pts": 26.8,
+          "ast": 5.1,
+          "reb": 5.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 7.19,
+        "ast_30g": -0.9,
+        "reb_30g": -1.51,
+        "composite_30g": 2.153,
+        "weighted_impact": 5.813
+      },
+      "sentiment": {
+        "vader_compound": -0.33
+      }
+    },
+    {
+      "mention_id": 114,
+      "player": "Stephen Curry",
+      "artist": "Kendrick Lamar",
+      "song": "Poetic Justice",
+      "release_date": "2012-10-22",
+      "mention_type": "neutral",
+      "artist_tier": 2.9,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Curry quick release I shoot before the defense reacts",
+      "stats": {
+        "before": {
+          "pts": 14.7,
+          "ast": 5.3,
+          "reb": 3.4,
+          "n": 26.0
+        },
+        "after_1g": {
+          "pts": 5.0,
+          "ast": 3.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 17.5,
+          "ast": 5.5,
+          "reb": 4.2
+        },
+        "after_30g": {
+          "pts": 20.0,
+          "ast": 6.4,
+          "reb": 4.4
+        },
+        "after_season": {
+          "pts": 25.6,
+          "ast": 6.9,
+          "reb": 4.7
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.24,
+        "ast_30g": 1.09,
+        "reb_30g": 1.05,
+        "composite_30g": 2.738,
+        "weighted_impact": 7.94
+      },
+      "sentiment": {
+        "vader_compound": -0.226
+      }
+    },
+    {
+      "mention_id": 115,
+      "player": "LeBron James",
+      "artist": "Meek Mill",
+      "song": "Cold Hearted II",
+      "release_date": "2016-10-04",
+      "mention_type": "compliment",
+      "artist_tier": 2.1,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "LeBron taking it coast to coast nobody stops the king",
+      "stats": {
+        "before": {
+          "pts": 25.8,
+          "ast": 7.3,
+          "reb": 7.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 19.0,
+          "ast": 14.0,
+          "reb": 11.0
+        },
+        "after_10g": {
+          "pts": 23.4,
+          "ast": 9.7,
+          "reb": 8.9
+        },
+        "after_30g": {
+          "pts": 25.6,
+          "ast": 8.6,
+          "reb": 7.8
+        },
+        "after_season": {
+          "pts": 27.0,
+          "ast": 8.9,
+          "reb": 8.6
+        }
+      },
+      "deltas": {
+        "pts_30g": -0.2,
+        "ast_30g": 1.24,
+        "reb_30g": 0.0,
+        "composite_30g": 0.292,
+        "weighted_impact": 0.613
+      },
+      "sentiment": {
+        "vader_compound": -0.153
+      }
+    },
+    {
+      "mention_id": 116,
+      "player": "James Harden",
+      "artist": "Drake",
+      "song": "Nonstop",
+      "release_date": "2018-06-29",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Harden ISO I clear the lane and cook whoever steps up",
+      "stats": {
+        "before": {
+          "pts": 28.8,
+          "ast": 8.3,
+          "reb": 5.9,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 18.0,
+          "ast": 10.0,
+          "reb": 9.0
+        },
+        "after_10g": {
+          "pts": 27.3,
+          "ast": 7.7,
+          "reb": 5.6
+        },
+        "after_30g": {
+          "pts": 32.3,
+          "ast": 8.4,
+          "reb": 5.7
+        },
+        "after_season": {
+          "pts": 36.1,
+          "ast": 7.5,
+          "reb": 6.6
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.5,
+        "ast_30g": 0.07,
+        "reb_30g": -0.26,
+        "composite_30g": 1.343,
+        "weighted_impact": 3.76
+      },
+      "sentiment": {
+        "vader_compound": 0.382
+      }
+    },
+    {
+      "mention_id": 117,
+      "player": "Damian Lillard",
+      "artist": "J. Cole",
+      "song": "She Knows",
+      "release_date": "2014-12-09",
+      "mention_type": "compliment",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Dame cold from deep like Lillard in your face at the buzzer",
+      "stats": {
+        "before": {
+          "pts": 19.1,
+          "ast": 6.1,
+          "reb": 4.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 7.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 26.0,
+          "ast": 6.2,
+          "reb": 4.8
+        },
+        "after_30g": {
+          "pts": 22.5,
+          "ast": 6.2,
+          "reb": 4.3
+        },
+        "after_season": {
+          "pts": 23.4,
+          "ast": 6.5,
+          "reb": 4.2
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.4,
+        "ast_30g": 0.16,
+        "reb_30g": -0.17,
+        "composite_30g": 1.357,
+        "weighted_impact": 3.528
+      },
+      "sentiment": {
+        "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 118,
+      "player": "Giannis Antetokounmpo",
+      "artist": "Kendrick Lamar",
+      "song": "DNA.",
+      "release_date": "2017-04-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.9,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Giannis coming down the lane like a freight train unstoppable",
+      "stats": {
+        "before": {
+          "pts": 22.4,
+          "ast": 5.5,
+          "reb": 8.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 37.0,
+          "ast": 3.0,
+          "reb": 13.0
+        },
+        "after_10g": {
+          "pts": 31.9,
+          "ast": 4.8,
+          "reb": 9.8
+        },
+        "after_30g": {
+          "pts": 29.5,
+          "ast": 4.6,
+          "reb": 10.3
+        },
+        "after_season": {
+          "pts": 27.3,
+          "ast": 5.3,
+          "reb": 11.2
+        }
+      },
+      "deltas": {
+        "pts_30g": 7.1,
+        "ast_30g": -0.87,
+        "reb_30g": 1.63,
+        "composite_30g": 3.068,
+        "weighted_impact": 8.897
+      },
+      "sentiment": {
+        "vader_compound": 0.178
+      }
+    },
+    {
+      "mention_id": 119,
+      "player": "Joel Embiid",
+      "artist": "Drake",
+      "song": "Laugh Now Cry Later",
+      "release_date": "2020-08-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "C",
+      "lyric": "The Process still running I trust the work like Embiid",
+      "stats": {
+        "before": {
+          "pts": 24.0,
+          "ast": 3.0,
+          "reb": 11.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 1.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 23.5,
+          "ast": 2.8,
+          "reb": 11.1
+        },
+        "after_30g": {
+          "pts": 29.3,
+          "ast": 3.2,
+          "reb": 11.2
+        },
+        "after_season": {
+          "pts": 28.2,
+          "ast": 2.8,
+          "reb": 10.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.13,
+        "ast_30g": 0.22,
+        "reb_30g": -0.15,
+        "composite_30g": 2.073,
+        "weighted_impact": 5.804
+      },
+      "sentiment": {
+        "vader_compound": 0.7
+      }
+    },
+    {
+      "mention_id": 121,
+      "player": "Trae Young",
+      "artist": "Drake",
+      "song": "What's Next",
+      "release_date": "2021-03-05",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "PG",
+      "lyric": "Ice cold like Trae from deep nobody checks his handle",
+      "stats": {
+        "before": {
+          "pts": 25.5,
+          "ast": 9.6,
+          "reb": 4.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 37.0,
+          "ast": 6.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 22.8,
+          "ast": 9.4,
+          "reb": 3.6
+        },
+        "after_30g": {
+          "pts": 23.9,
+          "ast": 9.6,
+          "reb": 3.5
+        },
+        "after_season": {
+          "pts": 27.2,
+          "ast": 9.6,
+          "reb": 3.7
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.57,
+        "ast_30g": -0.03,
+        "reb_30g": -0.6,
+        "composite_30g": -0.817,
+        "weighted_impact": -2.288
+      },
+      "sentiment": {
+        "vader_compound": 0.361
+      }
+    },
+    {
+      "mention_id": 124,
+      "player": "Paul George",
+      "artist": "J. Cole",
+      "song": "ATM",
+      "release_date": "2018-04-20",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "PG quiet assassin gets his buckets without the spotlight",
+      "stats": {
+        "before": {
+          "pts": 22.2,
+          "ast": 3.9,
+          "reb": 6.0,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 27.0,
+          "ast": 5.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 22.2,
+          "ast": 4.1,
+          "reb": 6.7
+        },
+        "after_30g": {
+          "pts": 25.5,
+          "ast": 4.4,
+          "reb": 7.9
+        },
+        "after_season": {
+          "pts": 25.5,
+          "ast": 4.0,
+          "reb": 7.2
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.27,
+        "ast_30g": 0.47,
+        "reb_30g": 1.93,
+        "composite_30g": 2.028,
+        "weighted_impact": 5.273
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 125,
+      "player": "Kawhi Leonard",
+      "artist": "J. Cole",
+      "song": "FRIENDS",
+      "release_date": "2018-04-20",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "Kawhi composure never rattled let the claw do the talking",
+      "stats": {
+        "before": {
+          "pts": 22.3,
+          "ast": 3.5,
+          "reb": 5.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 24.0,
+          "ast": 2.0,
+          "reb": 12.0
+        },
+        "after_10g": {
+          "pts": 24.0,
+          "ast": 3.1,
+          "reb": 7.7
+        },
+        "after_30g": {
+          "pts": 27.3,
+          "ast": 2.8,
+          "reb": 8.2
+        },
+        "after_season": {
+          "pts": 26.6,
+          "ast": 3.3,
+          "reb": 7.3
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.0,
+        "ast_30g": -0.64,
+        "reb_30g": 2.73,
+        "composite_30g": 2.627,
+        "weighted_impact": 6.83
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 126,
+      "player": "Jimmy Butler",
+      "artist": "Drake",
+      "song": "Greece",
+      "release_date": "2020-05-01",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "SF",
+      "lyric": "Butler intensity I bring that Miami heat every possession",
+      "stats": {
+        "before": {
+          "pts": 19.7,
+          "ast": 5.6,
+          "reb": 6.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 22.0,
+          "ast": 7.0,
+          "reb": 4.0
+        },
+        "after_10g": {
+          "pts": 15.9,
+          "ast": 5.1,
+          "reb": 6.0
+        },
+        "after_30g": {
+          "pts": 20.9,
+          "ast": 7.4,
+          "reb": 7.4
+        },
+        "after_season": {
+          "pts": 21.1,
+          "ast": 6.9,
+          "reb": 6.9
+        }
+      },
+      "deltas": {
+        "pts_30g": 1.16,
+        "ast_30g": 1.73,
+        "reb_30g": 0.61,
+        "composite_30g": 1.166,
+        "weighted_impact": 3.265
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 127,
+      "player": "Jayson Tatum",
+      "artist": "Kendrick Lamar",
+      "song": "N95",
+      "release_date": "2022-05-13",
+      "mention_type": "compliment",
+      "artist_tier": 2.9,
+      "era": "2020s",
+      "position": "SF",
+      "lyric": "Tatum takeover Boston needed a closer and he answered",
+      "stats": {
+        "before": {
+          "pts": 28.5,
+          "ast": 5.1,
+          "reb": 7.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 35.0,
+          "ast": 4.0,
+          "reb": 12.0
+        },
+        "after_10g": {
+          "pts": 31.2,
+          "ast": 4.0,
+          "reb": 7.5
+        },
+        "after_30g": {
+          "pts": 30.6,
+          "ast": 4.1,
+          "reb": 8.1
+        },
+        "after_season": {
+          "pts": 30.1,
+          "ast": 4.6,
+          "reb": 8.8
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.02,
+        "ast_30g": -0.99,
+        "reb_30g": 0.7,
+        "composite_30g": 0.721,
+        "weighted_impact": 2.091
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 128,
+      "player": "Devin Booker",
+      "artist": "Kendrick Lamar",
+      "song": "Rich Spirit",
+      "release_date": "2022-05-13",
+      "mention_type": "compliment",
+      "artist_tier": 2.9,
+      "era": "2020s",
+      "position": "SG",
+      "lyric": "Book scoring in Phoenix they finally got their superstar",
+      "stats": {
+        "before": {
+          "pts": 30.0,
+          "ast": 5.4,
+          "reb": 4.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 28.0,
+          "ast": 9.0,
+          "reb": 4.0
+        },
+        "after_10g": {
+          "pts": 27.1,
+          "ast": 5.1,
+          "reb": 4.2
+        },
+        "after_30g": {
+          "pts": 26.8,
+          "ast": 5.6,
+          "reb": 4.6
+        },
+        "after_season": {
+          "pts": 27.8,
+          "ast": 5.5,
+          "reb": 4.5
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.02,
+        "ast_30g": 0.19,
+        "reb_30g": -0.02,
+        "composite_30g": -1.157,
+        "weighted_impact": -3.355
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 129,
+      "player": "Ja Morant",
+      "artist": "Drake",
+      "song": "Fair Trade",
+      "release_date": "2021-09-03",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "PG",
+      "lyric": "Ja dunking on everybody in Memphis it's his city now",
+      "stats": {
+        "before": {
+          "pts": 19.1,
+          "ast": 7.3,
+          "reb": 4.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 37.0,
+          "ast": 6.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 26.0,
+          "ast": 7.2,
+          "reb": 5.6
+        },
+        "after_30g": {
+          "pts": 24.9,
+          "ast": 6.7,
+          "reb": 5.7
+        },
+        "after_season": {
+          "pts": 26.8,
+          "ast": 7.4,
+          "reb": 5.8
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.53,
+        "ast_30g": -0.57,
+        "reb_30g": 0.99,
+        "composite_30g": 2.338,
+        "weighted_impact": 6.546
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 131,
+      "player": "Allen Iverson",
+      "artist": "DMX",
+      "song": "What's My Name",
+      "release_date": "1998-05-12",
+      "mention_type": "compliment",
+      "artist_tier": 2.6,
+      "era": "1990s",
+      "position": "PG",
+      "lyric": "AI handle quicker than a hiccup leaving defenders on the floor",
+      "stats": {
+        "before": {
+          "pts": 24.2,
+          "ast": 5.3,
+          "reb": 4.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 15.0,
+          "ast": 4.0,
+          "reb": 9.0
+        },
+        "after_10g": {
+          "pts": 27.6,
+          "ast": 5.7,
+          "reb": 6.4
+        },
+        "after_30g": {
+          "pts": 27.4,
+          "ast": 5.1,
+          "reb": 5.1
+        },
+        "after_season": {
+          "pts": 28.7,
+          "ast": 5.2,
+          "reb": 4.1
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.41,
+        "ast_30g": -0.15,
+        "reb_30g": 1.12,
+        "composite_30g": 1.655,
+        "weighted_impact": 4.303
+      },
+      "sentiment": {
+        "vader_compound": 0.077
+      }
+    },
+    {
+      "mention_id": 132,
+      "player": "Shaquille O'Neal",
+      "artist": "Dr. Dre",
+      "song": "Still D.R.E.",
+      "release_date": "1999-11-16",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "C",
+      "lyric": "Shaq power I'm dominant I back you down no escape",
+      "stats": {
+        "before": {
+          "pts": 25.0,
+          "ast": 1.8,
+          "reb": 10.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 36.0,
+          "ast": 6.0,
+          "reb": 8.0
+        },
+        "after_10g": {
+          "pts": 31.6,
+          "ast": 4.1,
+          "reb": 15.3
+        },
+        "after_30g": {
+          "pts": 28.7,
+          "ast": 4.0,
+          "reb": 15.0
+        },
+        "after_season": {
+          "pts": 28.8,
+          "ast": 3.6,
+          "reb": 12.4
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.97,
+        "ast_30g": 2.28,
+        "reb_30g": 4.58,
+        "composite_30g": 3.646,
+        "weighted_impact": 10.938
+      },
+      "sentiment": {
+        "vader_compound": -0.133
+      }
+    },
+    {
+      "mention_id": 133,
+      "player": "Kevin Garnett",
+      "artist": "Jay-Z",
+      "song": "Heart of the City",
+      "release_date": "2001-09-11",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2000s",
+      "position": "PF",
+      "lyric": "KG hunger from the jump he came to win every night",
+      "stats": {
+        "before": {
+          "pts": 20.8,
+          "ast": 5.3,
+          "reb": 12.2,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 12.0,
+          "ast": 5.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 21.6,
+          "ast": 5.5,
+          "reb": 12.4
+        },
+        "after_30g": {
+          "pts": 20.9,
+          "ast": 5.4,
+          "reb": 12.6
+        },
+        "after_season": {
+          "pts": 21.5,
+          "ast": 4.6,
+          "reb": 12.1
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.11,
+        "ast_30g": 0.11,
+        "reb_30g": 0.47,
+        "composite_30g": 0.218,
+        "weighted_impact": 0.654
+      },
+      "sentiment": {
+        "vader_compound": 0.421
+      }
+    },
+    {
+      "mention_id": 134,
+      "player": "Dirk Nowitzki",
+      "artist": "Jay-Z",
+      "song": "On to the Next One",
+      "release_date": "2009-09-08",
+      "mention_type": "neutral",
+      "artist_tier": 3.0,
+      "era": "2000s",
+      "position": "PF",
+      "lyric": "Dirk one leg fadeaway I pull up from wherever I want",
+      "stats": {
+        "before": {
+          "pts": 25.8,
+          "ast": 2.7,
+          "reb": 8.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 34.0,
+          "ast": 1.0,
+          "reb": 9.0
+        },
+        "after_10g": {
+          "pts": 25.7,
+          "ast": 2.8,
+          "reb": 8.8
+        },
+        "after_30g": {
+          "pts": 25.5,
+          "ast": 2.6,
+          "reb": 8.1
+        },
+        "after_season": {
+          "pts": 25.0,
+          "ast": 2.7,
+          "reb": 7.7
+        }
+      },
+      "deltas": {
+        "pts_30g": -0.29,
+        "ast_30g": -0.04,
+        "reb_30g": -0.57,
+        "composite_30g": -0.299,
+        "weighted_impact": -0.897
+      },
+      "sentiment": {
+        "vader_compound": 0.077
+      }
+    },
+    {
+      "mention_id": 135,
+      "player": "Chris Paul",
+      "artist": "Kendrick Lamar",
+      "song": "Swimming Pools",
+      "release_date": "2012-07-31",
+      "mention_type": "neutral",
+      "artist_tier": 2.9,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "CP vision I see the play before it happens every time",
+      "stats": {
+        "before": {
+          "pts": 19.9,
+          "ast": 9.7,
+          "reb": 3.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 12.0,
+          "ast": 12.0,
+          "reb": 4.0
+        },
+        "after_10g": {
+          "pts": 16.3,
+          "ast": 10.0,
+          "reb": 3.3
+        },
+        "after_30g": {
+          "pts": 16.2,
+          "ast": 9.4,
+          "reb": 3.5
+        },
+        "after_season": {
+          "pts": 16.9,
+          "ast": 9.7,
+          "reb": 3.7
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.73,
+        "ast_30g": -0.24,
+        "reb_30g": -0.1,
+        "composite_30g": -1.594,
+        "weighted_impact": -4.623
+      },
+      "sentiment": {
+        "vader_compound": 0.527
+      }
+    },
+    {
+      "mention_id": 136,
+      "player": "Dwyane Wade",
+      "artist": "Rick Ross",
+      "song": "Santorini Greece",
+      "release_date": "2017-03-17",
+      "mention_type": "compliment",
+      "artist_tier": 2.2,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Wade in Miami I bring the heat every night championship mode",
+      "stats": {
+        "before": {
+          "pts": 18.3,
+          "ast": 4.2,
+          "reb": 4.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 2.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 8.8,
+          "ast": 3.5,
+          "reb": 2.8
+        },
+        "after_30g": {
+          "pts": 11.5,
+          "ast": 3.9,
+          "reb": 3.7
+        },
+        "after_season": {
+          "pts": 11.4,
+          "ast": 3.4,
+          "reb": 3.8
+        }
+      },
+      "deltas": {
+        "pts_30g": -6.83,
+        "ast_30g": -0.3,
+        "reb_30g": -0.93,
+        "composite_30g": -3.101,
+        "weighted_impact": -6.822
+      },
+      "sentiment": {
+        "vader_compound": 0.44
+      }
+    },
+    {
+      "mention_id": 138,
+      "player": "Blake Griffin",
+      "artist": "Drake",
+      "song": "Lord Knows",
+      "release_date": "2011-11-15",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Griffin throwing it down I dunk with authority and purpose",
+      "stats": {
+        "before": {
+          "pts": 22.3,
+          "ast": 4.4,
+          "reb": 11.1,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 22.0,
+          "ast": 1.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 23.1,
+          "ast": 2.6,
+          "reb": 11.4
+        },
+        "after_30g": {
+          "pts": 21.2,
+          "ast": 2.9,
+          "reb": 11.3
+        },
+        "after_season": {
+          "pts": 19.2,
+          "ast": 3.5,
+          "reb": 9.4
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.13,
+        "ast_30g": -1.47,
+        "reb_30g": 0.23,
+        "composite_30g": -0.824,
+        "weighted_impact": -2.307
+      },
+      "sentiment": {
+        "vader_compound": 0.077
+      }
+    },
+    {
+      "mention_id": 139,
+      "player": "Kyrie Irving",
+      "artist": "Drake",
+      "song": "God's Plan",
+      "release_date": "2018-01-19",
+      "mention_type": "neutral",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Kyrie handles like a point god dribbles through any defense",
+      "stats": {
+        "before": {
+          "pts": 25.7,
+          "ast": 4.9,
+          "reb": 3.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 40.0,
+          "ast": 5.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 27.4,
+          "ast": 5.3,
+          "reb": 3.4
+        },
+        "after_30g": {
+          "pts": 23.3,
+          "ast": 5.5,
+          "reb": 4.5
+        },
+        "after_season": {
+          "pts": 24.1,
+          "ast": 6.6,
+          "reb": 4.8
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.43,
+        "ast_30g": 0.6,
+        "reb_30g": 0.67,
+        "composite_30g": -0.591,
+        "weighted_impact": -1.655
+      },
+      "sentiment": {
+        "vader_compound": 0.625
+      }
+    },
+    {
+      "mention_id": 140,
+      "player": "Bradley Beal",
+      "artist": "Meek Mill",
+      "song": "Trauma",
+      "release_date": "2018-11-30",
+      "mention_type": "neutral",
+      "artist_tier": 2.1,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Beal getting buckets in DC thirty a night no noise",
+      "stats": {
+        "before": {
+          "pts": 20.9,
+          "ast": 4.3,
+          "reb": 4.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 19.0,
+          "ast": 1.0,
+          "reb": 0.0
+        },
+        "after_10g": {
+          "pts": 26.8,
+          "ast": 4.4,
+          "reb": 5.4
+        },
+        "after_30g": {
+          "pts": 26.8,
+          "ast": 5.6,
+          "reb": 5.5
+        },
+        "after_season": {
+          "pts": 28.7,
+          "ast": 6.0,
+          "reb": 4.8
+        }
+      },
+      "deltas": {
+        "pts_30g": 5.93,
+        "ast_30g": 1.3,
+        "reb_30g": 1.03,
+        "composite_30g": 3.071,
+        "weighted_impact": 6.449
+      },
+      "sentiment": {
+        "vader_compound": -0.296
+      }
+    },
+    {
+      "mention_id": 141,
+      "player": "Karl-Anthony Towns",
+      "artist": "Drake",
+      "song": "God's Plan",
+      "release_date": "2018-01-19",
+      "mention_type": "neutral",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "C",
+      "lyric": "KAT range and touch you can't guard him at the five",
+      "stats": {
+        "before": {
+          "pts": 19.9,
+          "ast": 2.8,
+          "reb": 12.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 22.0,
+          "ast": 2.0,
+          "reb": 10.0
+        },
+        "after_10g": {
+          "pts": 19.8,
+          "ast": 2.3,
+          "reb": 12.6
+        },
+        "after_30g": {
+          "pts": 22.9,
+          "ast": 2.6,
+          "reb": 12.7
+        },
+        "after_season": {
+          "pts": 23.9,
+          "ast": 3.1,
+          "reb": 12.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 2.97,
+        "ast_30g": -0.17,
+        "reb_30g": 0.3,
+        "composite_30g": 1.227,
+        "weighted_impact": 3.436
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 142,
+      "player": "Donovan Mitchell",
+      "artist": "Drake",
+      "song": "Nonstop",
+      "release_date": "2018-06-29",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Spida climbing every rung nobody can stop the rise in Utah",
+      "stats": {
+        "before": {
+          "pts": 21.7,
+          "ast": 4.0,
+          "reb": 4.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 24.0,
+          "ast": 2.0,
+          "reb": 3.0
+        },
+        "after_10g": {
+          "pts": 22.3,
+          "ast": 4.5,
+          "reb": 2.9
+        },
+        "after_30g": {
+          "pts": 20.2,
+          "ast": 3.4,
+          "reb": 3.5
+        },
+        "after_season": {
+          "pts": 23.8,
+          "ast": 4.2,
+          "reb": 4.1
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.5,
+        "ast_30g": -0.6,
+        "reb_30g": -0.8,
+        "composite_30g": -1.02,
+        "weighted_impact": -2.856
+      },
+      "sentiment": {
+        "vader_compound": -0.296
+      }
+    },
+    {
+      "mention_id": 143,
+      "player": "Bam Adebayo",
+      "artist": "Drake",
+      "song": "Laugh Now Cry Later",
+      "release_date": "2020-08-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "C",
+      "lyric": "Bam energy every play he brings the anchor to that team",
+      "stats": {
+        "before": {
+          "pts": 15.7,
+          "ast": 5.8,
+          "reb": 9.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 25.0,
+          "ast": 4.0,
+          "reb": 11.0
+        },
+        "after_10g": {
+          "pts": 19.5,
+          "ast": 5.1,
+          "reb": 9.0
+        },
+        "after_30g": {
+          "pts": 19.6,
+          "ast": 5.5,
+          "reb": 9.6
+        },
+        "after_season": {
+          "pts": 18.7,
+          "ast": 5.4,
+          "reb": 8.9
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.73,
+        "ast_30g": -0.29,
+        "reb_30g": -0.22,
+        "composite_30g": 1.339,
+        "weighted_impact": 3.749
+      },
+      "sentiment": {
+        "vader_compound": 0.542
+      }
+    },
+    {
+      "mention_id": 144,
+      "player": "Fred VanVleet",
+      "artist": "J. Cole",
+      "song": "Heaven's EP",
+      "release_date": "2018-04-20",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "2020s",
+      "position": "PG",
+      "lyric": "VanVleet undrafted gritty like Cole earned everything the hard way",
+      "stats": {
+        "before": {
+          "pts": 10.3,
+          "ast": 3.8,
+          "reb": 2.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 14.0,
+          "ast": 5.0,
+          "reb": 2.0
+        },
+        "after_10g": {
+          "pts": 9.9,
+          "ast": 4.4,
+          "reb": 2.4
+        },
+        "after_30g": {
+          "pts": 10.0,
+          "ast": 4.4,
+          "reb": 2.5
+        },
+        "after_season": {
+          "pts": 15.7,
+          "ast": 5.8,
+          "reb": 3.5
+        }
+      },
+      "deltas": {
+        "pts_30g": -0.35,
+        "ast_30g": 0.6,
+        "reb_30g": -0.22,
+        "composite_30g": -0.026,
+        "weighted_impact": -0.068
+      },
+      "sentiment": {
+        "vader_compound": 0.273
+      }
+    },
+    {
+      "mention_id": 145,
+      "player": "Pascal Siakam",
+      "artist": "J. Cole",
+      "song": "Snow On Tha Bluff",
+      "release_date": "2021-05-14",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "2020s",
+      "position": "PF",
+      "lyric": "Siakam versatile they counted him out but he came back better",
+      "stats": {
+        "before": {
+          "pts": 21.8,
+          "ast": 4.4,
+          "reb": 6.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 15.0,
+          "ast": 1.0,
+          "reb": 4.0
+        },
+        "after_10g": {
+          "pts": 17.7,
+          "ast": 3.6,
+          "reb": 7.2
+        },
+        "after_30g": {
+          "pts": 21.0,
+          "ast": 4.9,
+          "reb": 8.3
+        },
+        "after_season": {
+          "pts": 22.8,
+          "ast": 5.3,
+          "reb": 8.5
+        }
+      },
+      "deltas": {
+        "pts_30g": -0.8,
+        "ast_30g": 0.46,
+        "reb_30g": 1.39,
+        "composite_30g": 0.235,
+        "weighted_impact": 0.611
+      },
+      "sentiment": {
+        "vader_compound": 0.593
+      }
+    },
+    {
+      "mention_id": 146,
+      "player": "Gary Payton",
+      "artist": "Tupac",
+      "song": "All About U",
+      "release_date": "1996-02-13",
+      "mention_type": "neutral",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "PG",
+      "lyric": "Payton glove on defence he guards everybody zero to sixty",
+      "stats": {
+        "before": {
+          "pts": 20.1,
+          "ast": 7.0,
+          "reb": 4.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 23.0,
+          "ast": 10.0,
+          "reb": 3.0
+        },
+        "after_10g": {
+          "pts": 18.2,
+          "ast": 8.1,
+          "reb": 2.8
+        },
+        "after_30g": {
+          "pts": 20.0,
+          "ast": 8.3,
+          "reb": 4.3
+        },
+        "after_season": {
+          "pts": 21.1,
+          "ast": 7.3,
+          "reb": 4.5
+        }
+      },
+      "deltas": {
+        "pts_30g": -0.11,
+        "ast_30g": 1.35,
+        "reb_30g": 0.03,
+        "composite_30g": 0.37,
+        "weighted_impact": 1.11
+      },
+      "sentiment": {
+        "vader_compound": 0.103
+      }
+    },
+    {
+      "mention_id": 147,
+      "player": "Reggie Miller",
+      "artist": "Nas",
+      "song": "The Message",
+      "release_date": "1996-07-02",
+      "mention_type": "neutral",
+      "artist_tier": 2.7,
+      "era": "1990s",
+      "position": "SG",
+      "lyric": "Miller from three I hit the big shot and talk about it",
+      "stats": {
+        "before": {
+          "pts": 21.6,
+          "ast": 3.7,
+          "reb": 3.0,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 17.0,
+          "ast": 6.0,
+          "reb": 4.0
+        },
+        "after_10g": {
+          "pts": 20.3,
+          "ast": 4.5,
+          "reb": 4.4
+        },
+        "after_30g": {
+          "pts": 21.9,
+          "ast": 3.8,
+          "reb": 3.9
+        },
+        "after_season": {
+          "pts": 14.8,
+          "ast": 2.8,
+          "reb": 2.7
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.32,
+        "ast_30g": 0.11,
+        "reb_30g": 0.99,
+        "composite_30g": 0.458,
+        "weighted_impact": 1.237
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 148,
+      "player": "Hakeem Olajuwon",
+      "artist": "Jay-Z",
+      "song": "Can I Get A...",
+      "release_date": "1998-09-29",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "C",
+      "lyric": "Dream Shake Hakeem I move in the post like poetry in motion",
+      "stats": {
+        "before": {
+          "pts": 17.6,
+          "ast": 3.3,
+          "reb": 10.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 11.0,
+          "ast": 0.0,
+          "reb": 7.0
+        },
+        "after_10g": {
+          "pts": 15.5,
+          "ast": 1.9,
+          "reb": 10.1
+        },
+        "after_30g": {
+          "pts": 18.3,
+          "ast": 1.7,
+          "reb": 9.1
+        },
+        "after_season": {
+          "pts": 18.9,
+          "ast": 1.8,
+          "reb": 9.6
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.78,
+        "ast_30g": -1.77,
+        "reb_30g": -1.39,
+        "composite_30g": -0.636,
+        "weighted_impact": -1.908
+      },
+      "sentiment": {
+        "vader_compound": 0.421
+      }
+    },
+    {
+      "mention_id": 149,
+      "player": "Charles Barkley",
+      "artist": "Tupac",
+      "song": "California Love",
+      "release_date": "1996-02-13",
+      "mention_type": "neutral",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "PF",
+      "lyric": "Barkley crash the boards I own the paint on both ends",
+      "stats": {
+        "before": {
+          "pts": 23.2,
+          "ast": 3.8,
+          "reb": 12.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 30.0,
+          "ast": 1.0,
+          "reb": 12.0
+        },
+        "after_10g": {
+          "pts": 23.5,
+          "ast": 4.5,
+          "reb": 11.6
+        },
+        "after_30g": {
+          "pts": 23.2,
+          "ast": 3.7,
+          "reb": 11.0
+        },
+        "after_season": {
+          "pts": 20.5,
+          "ast": 4.3,
+          "reb": 12.5
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.04,
+        "ast_30g": -0.11,
+        "reb_30g": -1.53,
+        "composite_30g": -0.476,
+        "weighted_impact": -1.428
+      },
+      "sentiment": {
+        "vader_compound": -0.402
+      }
+    },
+    {
+      "mention_id": 150,
+      "player": "Patrick Ewing",
+      "artist": "Jay-Z",
+      "song": "Dead Presidents II",
+      "release_date": "1996-06-25",
+      "mention_type": "neutral",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "C",
+      "lyric": "Ewing in the post I'm dominant old school paint presence",
+      "stats": {
+        "before": {
+          "pts": 22.5,
+          "ast": 2.6,
+          "reb": 11.2,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 18.0,
+          "ast": 0.0,
+          "reb": 6.0
+        },
+        "after_10g": {
+          "pts": 23.0,
+          "ast": 1.6,
+          "reb": 11.5
+        },
+        "after_30g": {
+          "pts": 20.8,
+          "ast": 1.7,
+          "reb": 10.5
+        },
+        "after_season": {
+          "pts": 22.4,
+          "ast": 2.0,
+          "reb": 10.7
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.81,
+        "ast_30g": -0.9,
+        "reb_30g": -0.74,
+        "composite_30g": -1.216,
+        "weighted_impact": -3.648
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 151,
+      "player": "Derrick Rose",
+      "artist": "J. Cole",
+      "song": "Let Nas Down",
+      "release_date": "2013-06-18",
+      "mention_type": "compliment",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Rose before the injury was poetry fastest point guard alive",
+      "stats": {
+        "before": {
+          "pts": 22.6,
+          "ast": 7.7,
+          "reb": 3.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 12.0,
+          "ast": 4.0,
+          "reb": 1.0
+        },
+        "after_10g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_30g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_season": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -6.67,
+        "ast_30g": -3.4,
+        "reb_30g": -0.07,
+        "composite_30g": -3.709,
+        "weighted_impact": -9.643
+      },
+      "sentiment": {
+        "vader_compound": -0.052
+      }
+    },
+    {
+      "mention_id": 152,
+      "player": "Russell Westbrook",
+      "artist": "Drake",
+      "song": "Energy",
+      "release_date": "2015-02-13",
+      "mention_type": "neutral",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Westbrook explosive first step nobody guards him in transition",
+      "stats": {
+        "before": {
+          "pts": 25.9,
+          "ast": 7.9,
+          "reb": 6.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 34.0,
+          "ast": 10.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 33.3,
+          "ast": 11.0,
+          "reb": 10.1
+        },
+        "after_30g": {
+          "pts": 32.0,
+          "ast": 9.8,
+          "reb": 8.5
+        },
+        "after_season": {
+          "pts": 27.3,
+          "ast": 10.3,
+          "reb": 9.4
+        }
+      },
+      "deltas": {
+        "pts_30g": 6.1,
+        "ast_30g": 1.93,
+        "reb_30g": 1.9,
+        "composite_30g": 3.589,
+        "weighted_impact": 10.049
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 153,
+      "player": "Kevin Durant",
+      "artist": "Jay-Z",
+      "song": "FML",
+      "release_date": "2016-04-23",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "Durant silent but violent scores forty and doesn't say a word",
+      "stats": {
+        "before": {
+          "pts": 29.6,
+          "ast": 5.7,
+          "reb": 8.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 27.0,
+          "ast": 4.0,
+          "reb": 10.0
+        },
+        "after_10g": {
+          "pts": 27.7,
+          "ast": 3.9,
+          "reb": 7.9
+        },
+        "after_30g": {
+          "pts": 25.7,
+          "ast": 4.6,
+          "reb": 8.4
+        },
+        "after_season": {
+          "pts": 25.8,
+          "ast": 5.1,
+          "reb": 7.5
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.9,
+        "ast_30g": -1.07,
+        "reb_30g": -0.03,
+        "composite_30g": -1.89,
+        "weighted_impact": -5.67
+      },
+      "sentiment": {
+        "vader_compound": -0.747
+      }
+    },
+    {
+      "mention_id": 154,
+      "player": "LeBron James",
+      "artist": "Kendrick Lamar",
+      "song": "ELEMENT.",
+      "release_date": "2017-04-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.9,
+      "era": "2010s",
+      "position": "SF",
+      "lyric": "LeBron element fire and ice fourth quarter he takes over",
+      "stats": {
+        "before": {
+          "pts": 27.5,
+          "ast": 9.1,
+          "reb": 9.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 29.0,
+          "ast": 9.0,
+          "reb": 16.0
+        },
+        "after_10g": {
+          "pts": 28.8,
+          "ast": 9.1,
+          "reb": 7.2
+        },
+        "after_30g": {
+          "pts": 28.1,
+          "ast": 9.1,
+          "reb": 8.4
+        },
+        "after_season": {
+          "pts": 27.4,
+          "ast": 9.1,
+          "reb": 8.7
+        }
+      },
+      "deltas": {
+        "pts_30g": 0.57,
+        "ast_30g": 0.03,
+        "reb_30g": -1.14,
+        "composite_30g": -0.105,
+        "weighted_impact": -0.304
+      },
+      "sentiment": {
+        "vader_compound": -0.34
+      }
+    },
+    {
+      "mention_id": 155,
+      "player": "Stephen Curry",
+      "artist": "J. Cole",
+      "song": "4 Your Eyez Only",
+      "release_date": "2016-12-09",
+      "mention_type": "neutral",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Curry range from logos it just doesn't seem fair",
+      "stats": {
+        "before": {
+          "pts": 27.1,
+          "ast": 6.3,
+          "reb": 4.4,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 17.0,
+          "ast": 3.0,
+          "reb": 8.0
+        },
+        "after_10g": {
+          "pts": 20.4,
+          "ast": 6.2,
+          "reb": 4.7
+        },
+        "after_30g": {
+          "pts": 24.7,
+          "ast": 6.9,
+          "reb": 4.5
+        },
+        "after_season": {
+          "pts": 26.3,
+          "ast": 6.0,
+          "reb": 5.1
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.4,
+        "ast_30g": 0.6,
+        "reb_30g": 0.04,
+        "composite_30g": -0.768,
+        "weighted_impact": -1.997
+      },
+      "sentiment": {
+        "vader_compound": -0.241
+      }
+    },
+    {
+      "mention_id": 156,
+      "player": "Draymond Green",
+      "artist": "J. Cole",
+      "song": "Kevin's Heart",
+      "release_date": "2018-04-20",
+      "mention_type": "diss",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "PF",
+      "lyric": "Draymond talking loud but can you back it up where it counts",
+      "stats": {
+        "before": {
+          "pts": 10.7,
+          "ast": 6.8,
+          "reb": 7.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 2.0,
+          "ast": 5.0,
+          "reb": 13.0
+        },
+        "after_10g": {
+          "pts": 8.4,
+          "ast": 8.5,
+          "reb": 7.5
+        },
+        "after_30g": {
+          "pts": 6.9,
+          "ast": 7.0,
+          "reb": 7.9
+        },
+        "after_season": {
+          "pts": 7.4,
+          "ast": 6.9,
+          "reb": 7.3
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.77,
+        "ast_30g": 0.2,
+        "reb_30g": 0.57,
+        "composite_30g": -1.277,
+        "weighted_impact": -3.32
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 157,
+      "player": "Ben Simmons",
+      "artist": "Drake",
+      "song": "Chicago Freestyle",
+      "release_date": "2020-05-01",
+      "mention_type": "diss",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "PG",
+      "lyric": "Simmons can't shoot I'm taking every open three he leaves",
+      "stats": {
+        "before": {
+          "pts": 19.1,
+          "ast": 8.1,
+          "reb": 8.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 19.0,
+          "ast": 4.0,
+          "reb": 13.0
+        },
+        "after_10g": {
+          "pts": 12.8,
+          "ast": 6.2,
+          "reb": 9.0
+        },
+        "after_30g": {
+          "pts": 15.3,
+          "ast": 7.5,
+          "reb": 8.2
+        },
+        "after_season": {
+          "pts": 14.2,
+          "ast": 6.8,
+          "reb": 7.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -3.68,
+        "ast_30g": -0.55,
+        "reb_30g": -0.29,
+        "composite_30g": -1.724,
+        "weighted_impact": -4.827
+      },
+      "sentiment": {
+        "vader_compound": 0.258
+      }
+    },
+    {
+      "mention_id": 159,
+      "player": "Victor Oladipo",
+      "artist": "Drake",
+      "song": "Nonstop",
+      "release_date": "2018-06-29",
+      "mention_type": "compliment",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Oladipo comeback story putting Indiana on his back for real",
+      "stats": {
+        "before": {
+          "pts": 21.6,
+          "ast": 4.6,
+          "reb": 5.2,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 16.0,
+          "ast": 5.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 22.5,
+          "ast": 4.3,
+          "reb": 7.3
+        },
+        "after_30g": {
+          "pts": 19.9,
+          "ast": 5.1,
+          "reb": 5.9
+        },
+        "after_season": {
+          "pts": 18.8,
+          "ast": 5.2,
+          "reb": 5.6
+        }
+      },
+      "deltas": {
+        "pts_30g": -1.76,
+        "ast_30g": 0.53,
+        "reb_30g": 0.73,
+        "composite_30g": -0.326,
+        "weighted_impact": -0.913
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 160,
+      "player": "Khris Middleton",
+      "artist": "Drake",
+      "song": "Toosie Slide",
+      "release_date": "2020-03-27",
+      "mention_type": "neutral",
+      "artist_tier": 2.8,
+      "era": "2020s",
+      "position": "SF",
+      "lyric": "Middleton steady like a rock gives you twenty every night",
+      "stats": {
+        "before": {
+          "pts": 23.2,
+          "ast": 4.5,
+          "reb": 6.8,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 18.0,
+          "ast": 8.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 21.8,
+          "ast": 5.8,
+          "reb": 6.3
+        },
+        "after_30g": {
+          "pts": 20.3,
+          "ast": 5.8,
+          "reb": 6.0
+        },
+        "after_season": {
+          "pts": 20.3,
+          "ast": 5.5,
+          "reb": 6.0
+        }
+      },
+      "deltas": {
+        "pts_30g": -2.85,
+        "ast_30g": 1.19,
+        "reb_30g": -0.77,
+        "composite_30g": -1.014,
+        "weighted_impact": -2.839
+      },
+      "sentiment": {
+        "vader_compound": 0.361
       }
     }
   ],
@@ -2969,9 +7443,9 @@
           "reb": 1.9
         },
         "after_season": {
-          "pts": 16.1,
-          "ast": 7.8,
-          "reb": 2.1
+          "pts": 18.4,
+          "ast": 8.8,
+          "reb": 2.3
         }
       },
       "deltas": {
@@ -2986,50 +7460,100 @@
       }
     },
     {
-      "mention_id": 38,
-      "player": "Kawhi Leonard",
-      "artist": "Kendrick Lamar",
-      "song": "HUMBLE.",
-      "release_date": "2017-04-14",
-      "mention_type": "compliment",
+      "mention_id": 34,
+      "player": "Amare Stoudemire",
+      "artist": "Kanye West",
+      "song": "All Falls Down",
+      "release_date": "2004-02-10",
+      "mention_type": "neutral",
       "artist_tier": 2.9,
-      "era": "2010s",
-      "position": "SF",
-      "lyric": "Quiet as Kawhi the claw comes out when it counts",
+      "era": "2000s",
+      "position": "PF",
+      "lyric": "Rising like Amare out the paint can't stop the climb",
       "stats": {
         "before": {
-          "pts": 25.4,
-          "ast": 3.9,
-          "reb": 5.8,
+          "pts": 16.0,
+          "ast": 1.0,
+          "reb": 8.0,
           "n": 30.0
         },
         "after_1g": {
-          "pts": 13.0,
-          "ast": 1.0,
+          "pts": 23.0,
+          "ast": 0.0,
           "reb": 6.0
         },
         "after_10g": {
-          "pts": 16.2,
-          "ast": 2.3,
-          "reb": 4.7
+          "pts": 26.9,
+          "ast": 1.6,
+          "reb": 9.8
         },
         "after_30g": {
-          "pts": 16.2,
-          "ast": 2.3,
-          "reb": 4.7
+          "pts": 24.7,
+          "ast": 1.7,
+          "reb": 9.7
         },
         "after_season": {
-          "pts": 16.2,
-          "ast": 2.3,
-          "reb": 4.7
+          "pts": 25.7,
+          "ast": 1.7,
+          "reb": 9.2
         }
       },
       "deltas": {
-        "pts_30g": -9.15,
-        "ast_30g": -1.6,
-        "reb_30g": -1.16,
-        "composite_30g": -4.488,
-        "weighted_impact": -13.015
+        "pts_30g": 9.4,
+        "ast_30g": 0.76,
+        "reb_30g": 1.83,
+        "composite_30g": 4.537,
+        "weighted_impact": 13.157
+      },
+      "sentiment": {
+        "vader_compound": 0.525
+      }
+    },
+    {
+      "mention_id": 56,
+      "player": "Victor Oladipo",
+      "artist": "Future",
+      "song": "Mask Off",
+      "release_date": "2017-04-14",
+      "mention_type": "compliment",
+      "artist_tier": 2.4,
+      "era": "2010s",
+      "position": "SG",
+      "lyric": "Oladipo bounce back story they wrote him off too soon",
+      "stats": {
+        "before": {
+          "pts": 15.6,
+          "ast": 2.7,
+          "reb": 4.5,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 22.0,
+          "ast": 4.0,
+          "reb": 5.0
+        },
+        "after_10g": {
+          "pts": 23.8,
+          "ast": 3.8,
+          "reb": 4.3
+        },
+        "after_30g": {
+          "pts": 24.9,
+          "ast": 3.9,
+          "reb": 5.5
+        },
+        "after_season": {
+          "pts": 21.7,
+          "ast": 4.6,
+          "reb": 5.3
+        }
+      },
+      "deltas": {
+        "pts_30g": 9.3,
+        "ast_30g": 1.26,
+        "reb_30g": 0.94,
+        "composite_30g": 4.38,
+        "weighted_impact": 10.512
       },
       "sentiment": {
         "vader_compound": 0.0
@@ -3069,9 +7593,9 @@
           "reb": 10.5
         },
         "after_season": {
-          "pts": 31.6,
-          "ast": 10.4,
-          "reb": 10.7
+          "pts": 28.5,
+          "ast": 10.3,
+          "reb": 10.4
         }
       },
       "deltas": {
@@ -3086,353 +7610,303 @@
       }
     },
     {
-      "mention_id": 67,
-      "player": "Grant Hill",
-      "artist": "Outkast",
-      "song": "Ms. Jackson",
-      "release_date": "2000-10-31",
+      "mention_id": 23,
+      "player": "Derrick Rose",
+      "artist": "Chance the Rapper",
+      "song": "Paranoia",
+      "release_date": "2013-05-18",
       "mention_type": "compliment",
-      "artist_tier": 2.8,
-      "era": "2000s",
-      "position": "SF",
-      "lyric": "Grant Hill grace and skill the total package on the floor",
+      "artist_tier": 2.0,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Rose before the fall MVP in the Chi",
       "stats": {
         "before": {
-          "pts": 23.8,
-          "ast": 4.8,
-          "reb": 6.8,
+          "pts": 22.6,
+          "ast": 7.7,
+          "reb": 3.3,
           "n": 30.0
         },
         "after_1g": {
-          "pts": 9.0,
+          "pts": 12.0,
+          "ast": 4.0,
+          "reb": 1.0
+        },
+        "after_10g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_30g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_season": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -6.67,
+        "ast_30g": -3.4,
+        "reb_30g": -0.07,
+        "composite_30g": -3.709,
+        "weighted_impact": -7.418
+      },
+      "sentiment": {
+        "vader_compound": 0.0
+      }
+    },
+    {
+      "mention_id": 151,
+      "player": "Derrick Rose",
+      "artist": "J. Cole",
+      "song": "Let Nas Down",
+      "release_date": "2013-06-18",
+      "mention_type": "compliment",
+      "artist_tier": 2.6,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Rose before the injury was poetry fastest point guard alive",
+      "stats": {
+        "before": {
+          "pts": 22.6,
+          "ast": 7.7,
+          "reb": 3.3,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 12.0,
+          "ast": 4.0,
+          "reb": 1.0
+        },
+        "after_10g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_30g": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        },
+        "after_season": {
+          "pts": 15.9,
+          "ast": 4.3,
+          "reb": 3.2
+        }
+      },
+      "deltas": {
+        "pts_30g": -6.67,
+        "ast_30g": -3.4,
+        "reb_30g": -0.07,
+        "composite_30g": -3.709,
+        "weighted_impact": -9.643
+      },
+      "sentiment": {
+        "vader_compound": -0.052
+      }
+    },
+    {
+      "mention_id": 132,
+      "player": "Shaquille O'Neal",
+      "artist": "Dr. Dre",
+      "song": "Still D.R.E.",
+      "release_date": "1999-11-16",
+      "mention_type": "compliment",
+      "artist_tier": 3.0,
+      "era": "1990s",
+      "position": "C",
+      "lyric": "Shaq power I'm dominant I back you down no escape",
+      "stats": {
+        "before": {
+          "pts": 25.0,
+          "ast": 1.8,
+          "reb": 10.7,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 36.0,
+          "ast": 6.0,
+          "reb": 8.0
+        },
+        "after_10g": {
+          "pts": 31.6,
+          "ast": 4.1,
+          "reb": 15.3
+        },
+        "after_30g": {
+          "pts": 28.7,
+          "ast": 4.0,
+          "reb": 15.0
+        },
+        "after_season": {
+          "pts": 28.8,
+          "ast": 3.6,
+          "reb": 12.4
+        }
+      },
+      "deltas": {
+        "pts_30g": 3.97,
+        "ast_30g": 2.28,
+        "reb_30g": 4.58,
+        "composite_30g": 3.646,
+        "weighted_impact": 10.938
+      },
+      "sentiment": {
+        "vader_compound": -0.133
+      }
+    },
+    {
+      "mention_id": 152,
+      "player": "Russell Westbrook",
+      "artist": "Drake",
+      "song": "Energy",
+      "release_date": "2015-02-13",
+      "mention_type": "neutral",
+      "artist_tier": 2.8,
+      "era": "2010s",
+      "position": "PG",
+      "lyric": "Westbrook explosive first step nobody guards him in transition",
+      "stats": {
+        "before": {
+          "pts": 25.9,
+          "ast": 7.9,
+          "reb": 6.6,
+          "n": 30.0
+        },
+        "after_1g": {
+          "pts": 34.0,
           "ast": 10.0,
           "reb": 5.0
         },
         "after_10g": {
-          "pts": 13.8,
-          "ast": 6.2,
-          "reb": 6.2
+          "pts": 33.3,
+          "ast": 11.0,
+          "reb": 10.1
         },
         "after_30g": {
-          "pts": 13.8,
-          "ast": 6.2,
-          "reb": 6.2
+          "pts": 32.0,
+          "ast": 9.8,
+          "reb": 8.5
         },
         "after_season": {
-          "pts": 13.8,
-          "ast": 6.2,
-          "reb": 6.2
+          "pts": 27.3,
+          "ast": 10.3,
+          "reb": 9.4
         }
       },
       "deltas": {
-        "pts_30g": -10.82,
-        "ast_30g": 1.57,
-        "reb_30g": -0.59,
-        "composite_30g": -4.034,
-        "weighted_impact": -11.295
-      },
-      "sentiment": {
-        "vader_compound": 0.649
-      }
-    },
-    {
-      "mention_id": 51,
-      "player": "Devin Booker",
-      "artist": "Drake",
-      "song": "TSU",
-      "release_date": "2017-03-18",
-      "mention_type": "compliment",
-      "artist_tier": 2.8,
-      "era": "2010s",
-      "position": "SG",
-      "lyric": "Book scoring 70 they said he couldn't but he did",
-      "stats": {
-        "before": {
-          "pts": 22.4,
-          "ast": 3.2,
-          "reb": 3.5,
-          "n": 30.0
-        },
-        "after_1g": {
-          "pts": 11.0,
-          "ast": 5.0,
-          "reb": 4.0
-        },
-        "after_10g": {
-          "pts": 30.2,
-          "ast": 5.3,
-          "reb": 3.8
-        },
-        "after_30g": {
-          "pts": 30.2,
-          "ast": 5.3,
-          "reb": 3.8
-        },
-        "after_season": {
-          "pts": 30.2,
-          "ast": 5.3,
-          "reb": 3.8
-        }
-      },
-      "deltas": {
-        "pts_30g": 7.77,
-        "ast_30g": 2.1,
-        "reb_30g": 0.33,
-        "composite_30g": 3.837,
-        "weighted_impact": 10.744
+        "pts_30g": 6.1,
+        "ast_30g": 1.93,
+        "reb_30g": 1.9,
+        "composite_30g": 3.589,
+        "weighted_impact": 10.049
       },
       "sentiment": {
         "vader_compound": 0.0
       }
     },
     {
-      "mention_id": 88,
-      "player": "Paul George",
-      "artist": "Meek Mill",
-      "song": "Ros\u00e9 Red",
-      "release_date": "2018-11-30",
-      "mention_type": "neutral",
-      "artist_tier": 2.1,
-      "era": "2010s",
-      "position": "SF",
-      "lyric": "PG shooting under pressure I trust the process every time",
-      "stats": {
-        "before": {
-          "pts": 23.4,
-          "ast": 3.8,
-          "reb": 7.3,
-          "n": 30.0
-        },
-        "after_1g": {
-          "pts": 20.0,
-          "ast": 3.0,
-          "reb": 5.0
-        },
-        "after_10g": {
-          "pts": 29.1,
-          "ast": 4.5,
-          "reb": 8.1
-        },
-        "after_30g": {
-          "pts": 30.3,
-          "ast": 3.8,
-          "reb": 8.1
-        },
-        "after_season": {
-          "pts": 29.6,
-          "ast": 4.0,
-          "reb": 8.3
-        }
-      },
-      "deltas": {
-        "pts_30g": 6.84,
-        "ast_30g": 0.0,
-        "reb_30g": 0.83,
-        "composite_30g": 2.985,
-        "weighted_impact": 6.268
-      },
-      "sentiment": {
-        "vader_compound": 0.273
-      }
-    },
-    {
-      "mention_id": 53,
-      "player": "Kemba Walker",
-      "artist": "Drake",
-      "song": "Know Yourself",
-      "release_date": "2015-02-13",
+      "mention_id": 27,
+      "player": "Tracy McGrady",
+      "artist": "Lil Wayne",
+      "song": "Mr. Carter",
+      "release_date": "2008-06-10",
       "mention_type": "compliment",
-      "artist_tier": 2.8,
-      "era": "2010s",
-      "position": "PG",
-      "lyric": "Kemba crossover deadly from the elbow I just pull up",
-      "stats": {
-        "before": {
-          "pts": 20.5,
-          "ast": 5.4,
-          "reb": 3.7,
-          "n": 30.0
-        },
-        "after_1g": {
-          "pts": 6.0,
-          "ast": 2.0,
-          "reb": 1.0
-        },
-        "after_10g": {
-          "pts": 14.0,
-          "ast": 4.8,
-          "reb": 3.3
-        },
-        "after_30g": {
-          "pts": 14.3,
-          "ast": 4.9,
-          "reb": 3.1
-        },
-        "after_season": {
-          "pts": 14.3,
-          "ast": 4.9,
-          "reb": 3.1
-        }
-      },
-      "deltas": {
-        "pts_30g": -6.2,
-        "ast_30g": -0.53,
-        "reb_30g": -0.57,
-        "composite_30g": -2.81,
-        "weighted_impact": -7.868
-      },
-      "sentiment": {
-        "vader_compound": 0.0
-      }
-    },
-    {
-      "mention_id": 83,
-      "player": "Kobe Bryant",
-      "artist": "Jay-Z",
-      "song": "Dirt Off Your Shoulder",
-      "release_date": "2003-11-14",
-      "mention_type": "compliment",
-      "artist_tier": 3.0,
+      "artist_tier": 2.5,
       "era": "2000s",
       "position": "SG",
-      "lyric": "Kobe mentality mamba mode I never stop attacking",
+      "lyric": "T-Mac numbers in my sleep dropping 30 easy",
       "stats": {
         "before": {
-          "pts": 26.8,
-          "ast": 4.9,
-          "reb": 6.3,
+          "pts": 21.8,
+          "ast": 6.4,
+          "reb": 5.3,
           "n": 30.0
         },
         "after_1g": {
           "pts": 16.0,
-          "ast": 1.0,
-          "reb": 3.0
+          "ast": 5.0,
+          "reb": 2.0
         },
         "after_10g": {
-          "pts": 21.1,
-          "ast": 3.7,
-          "reb": 3.3
-        },
-        "after_30g": {
-          "pts": 21.7,
-          "ast": 4.5,
+          "pts": 16.7,
+          "ast": 4.8,
           "reb": 4.8
         },
-        "after_season": {
-          "pts": 26.2,
+        "after_30g": {
+          "pts": 15.5,
           "ast": 5.0,
-          "reb": 5.4
+          "reb": 4.5
+        },
+        "after_season": {
+          "pts": 15.6,
+          "ast": 5.0,
+          "reb": 4.4
         }
       },
       "deltas": {
-        "pts_30g": -5.51,
-        "ast_30g": -0.4,
-        "reb_30g": -1.62,
-        "composite_30g": -2.81,
-        "weighted_impact": -8.43
+        "pts_30g": -6.8,
+        "ast_30g": -1.48,
+        "reb_30g": -0.86,
+        "composite_30g": -3.422,
+        "weighted_impact": -8.555
       },
       "sentiment": {
-        "vader_compound": 0.522
+        "vader_compound": 0.44
       }
     },
     {
-      "mention_id": 19,
-      "player": "Ja Morant",
-      "artist": "Young Thug",
-      "song": "Ski",
-      "release_date": "2021-10-15",
+      "mention_id": 55,
+      "player": "Bam Adebayo",
+      "artist": "Rick Ross",
+      "song": "BIG TYME",
+      "release_date": "2019-08-09",
       "mention_type": "compliment",
       "artist_tier": 2.2,
-      "era": "2020s",
-      "position": "PG",
-      "lyric": "Ja Morant altitude I'm always rising above",
+      "era": "2010s",
+      "position": "C",
+      "lyric": "Bam defense anchor of the whole operation",
       "stats": {
         "before": {
-          "pts": 19.1,
-          "ast": 7.3,
-          "reb": 4.7,
+          "pts": 10.4,
+          "ast": 2.7,
+          "reb": 8.4,
           "n": 30.0
         },
         "after_1g": {
-          "pts": 37.0,
-          "ast": 6.0,
-          "reb": 6.0
+          "pts": 14.0,
+          "ast": 3.0,
+          "reb": 11.0
         },
         "after_10g": {
-          "pts": 26.0,
-          "ast": 7.2,
-          "reb": 5.6
+          "pts": 13.3,
+          "ast": 4.6,
+          "reb": 9.8
         },
         "after_30g": {
-          "pts": 24.9,
-          "ast": 6.7,
-          "reb": 5.7
+          "pts": 15.7,
+          "ast": 4.6,
+          "reb": 10.6
         },
         "after_season": {
-          "pts": 27.4,
-          "ast": 6.7,
-          "reb": 5.7
+          "pts": 17.2,
+          "ast": 5.2,
+          "reb": 9.6
         }
       },
       "deltas": {
-        "pts_30g": 5.53,
-        "ast_30g": -0.57,
-        "reb_30g": 0.99,
-        "composite_30g": 2.338,
-        "weighted_impact": 5.144
+        "pts_30g": 5.3,
+        "ast_30g": 1.9,
+        "reb_30g": 2.26,
+        "composite_30g": 3.368,
+        "weighted_impact": 7.41
       },
       "sentiment": {
-        "vader_compound": 0.0
-      }
-    },
-    {
-      "mention_id": 97,
-      "player": "Ja Morant",
-      "artist": "Lil Baby",
-      "song": "Days Of Our Lives",
-      "release_date": "2021-06-04",
-      "mention_type": "compliment",
-      "artist_tier": 2.3,
-      "era": "2020s",
-      "position": "PG",
-      "lyric": "Morant flying I don't need a runway just the lane",
-      "stats": {
-        "before": {
-          "pts": 19.1,
-          "ast": 7.3,
-          "reb": 4.7,
-          "n": 30.0
-        },
-        "after_1g": {
-          "pts": 37.0,
-          "ast": 6.0,
-          "reb": 6.0
-        },
-        "after_10g": {
-          "pts": 26.0,
-          "ast": 7.2,
-          "reb": 5.6
-        },
-        "after_30g": {
-          "pts": 24.9,
-          "ast": 6.7,
-          "reb": 5.7
-        },
-        "after_season": {
-          "pts": 27.4,
-          "ast": 6.7,
-          "reb": 5.7
-        }
-      },
-      "deltas": {
-        "pts_30g": 5.53,
-        "ast_30g": -0.57,
-        "reb_30g": 0.99,
-        "composite_30g": 2.338,
-        "weighted_impact": 5.377
-      },
-      "sentiment": {
-        "vader_compound": 0.0
+        "vader_compound": 0.128
       }
     }
   ]
