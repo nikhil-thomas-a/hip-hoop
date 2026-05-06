@@ -182,10 +182,17 @@ header::before{content:'';position:absolute;top:-80px;left:-80px;width:500px;hei
 [data-theme="dark"] .badge-compliment{border-color:rgba(0,201,107,.25);}
 [data-theme="dark"] .badge-diss{border-color:rgba(255,59,59,.25);}
 
-/* ── TABLE SCROLL ── */
+/* ── TABLE SCROLL (stat tables only — not lib-table) ── */
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;position:relative;}
 .table-scroll::after{content:'';position:absolute;top:0;right:0;bottom:0;width:36px;
   background:linear-gradient(to right,transparent,var(--bg2));pointer-events:none;border-radius:0 4px 4px 0;}
+
+/* ── LIB TABLE SCROLL (explorer) — mobile only so sticky headers work on desktop ── */
+.lib-table-scroll{position:relative;}
+@media(max-width:768px){
+  .lib-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .lib-table th{position:static !important;}
+}
 
 /* ── STAT TABLE ── */
 .stat-table{width:100%;border-collapse:collapse;font-size:13px;}
@@ -209,30 +216,54 @@ header::before{content:'';position:absolute;top:-80px;left:-80px;width:500px;hei
 .heatmap-n{font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--text3);letter-spacing:.08em;margin-top:2px;}
 
 /* ── EXPLORER ── */
-.explorer-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;align-items:center;}
-.search-wrap{position:relative;flex:1;min-width:200px;}
-@media(max-width:560px){.explorer-bar{flex-direction:column;}.search-wrap{min-width:unset;width:100%;}.filter-select{width:100%;}}
-.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--text2);font-size:14px;pointer-events:none;}
-.search-input{width:100%;background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:10px 13px 10px 36px;
-  font-family:'Barlow',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s;box-shadow:var(--shadow);}
-.search-input:focus{border-color:var(--orange);box-shadow:0 0 0 3px var(--orange-light);}
+.explorer-bar{background:var(--bg2);border:1px solid var(--border);border-radius:6px;
+  padding:14px 16px;margin-bottom:16px;box-shadow:var(--shadow);
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.explorer-bar-divider{width:1px;height:28px;background:var(--border);flex-shrink:0;}
+@media(max-width:680px){.explorer-bar{flex-direction:column;gap:8px;}.explorer-bar-divider{display:none;}}
+.search-wrap{position:relative;flex:1;min-width:220px;}
+@media(max-width:560px){.search-wrap{min-width:unset;width:100%;}.filter-select{width:100%;}}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:13px;pointer-events:none;}
+.search-input{width:100%;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:9px 12px 9px 34px;
+  font-family:'Barlow',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s;}
+.search-input:focus{border-color:var(--orange);box-shadow:0 0 0 3px var(--orange-light);background:var(--bg2);}
 .search-input::placeholder{color:var(--text3);}
-.filter-select{background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:10px 13px;
-  font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.05em;
-  color:var(--text2);cursor:pointer;outline:none;-webkit-appearance:none;box-shadow:var(--shadow);transition:border-color .15s;}
-.filter-select:focus{border-color:var(--orange);}
-.result-count{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--text2);text-transform:uppercase;margin-bottom:14px;}
+.filter-select{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:9px 12px;
+  font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text2);cursor:pointer;outline:none;-webkit-appearance:none;transition:border-color .15s,color .15s;}
+.filter-select:focus{border-color:var(--orange);color:var(--text);}
+.filter-select:hover{border-color:var(--border2);color:var(--text);}
+.explorer-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:0;flex-shrink:0;}
+.result-count{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--text2);text-transform:uppercase;white-space:nowrap;}
 .result-count span{color:var(--amber);}
-.lib-table{width:100%;border-collapse:collapse;}
-.lib-table th{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;padding:9px 13px;border-bottom:1px solid var(--border);text-align:left;white-space:nowrap;background:var(--bg2);position:sticky;top:56px;}
-.lib-table td{padding:11px 13px;border-bottom:1px solid var(--table-sep);font-size:13px;vertical-align:middle;color:var(--text);transition:background .1s;white-space:nowrap;}
+
+/* ── LIB TABLE (explorer data grid) ── */
+.lib-table{width:100%;border-collapse:collapse;table-layout:fixed;}
+.lib-table col.col-player{width:15%;}
+.lib-table col.col-artist{width:13%;}
+.lib-table col.col-song{width:16%;}
+.lib-table col.col-year{width:6%;}
+.lib-table col.col-type{width:10%;}
+.lib-table col.col-stat{width:7%;}
+.lib-table col.col-bar{width:1fr;}
+.lib-table th{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;
+  color:var(--text2);text-transform:uppercase;padding:10px 14px;border-bottom:2px solid var(--border);
+  text-align:left;white-space:nowrap;background:var(--bg2);position:sticky;top:48px;z-index:4;
+  box-shadow:0 1px 0 var(--border);}
+.lib-table th.col-r{text-align:right;}
+.lib-table td{padding:11px 14px;border-bottom:1px solid var(--table-sep);font-size:13px;
+  vertical-align:middle;color:var(--text);transition:background .1s;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.lib-table td.col-r{text-align:right;}
 .lib-table tbody tr{cursor:pointer;}
-.lib-table tbody tr:hover td,.lib-table tbody tr.row-active td{background:var(--table-hover);}
+.lib-table tbody tr:nth-child(even) td{background:var(--bg3);}
+.lib-table tbody tr:hover td,.lib-table tbody tr.row-active td{background:var(--table-hover) !important;}
+.lib-table tbody tr.row-active td{border-left:2px solid var(--orange);}
 .td-player{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:.02em;}
 .td-muted{color:var(--text2);}
 .td-italic{color:var(--text2);font-style:italic;font-weight:300;}
-.td-lyric{color:var(--text3);font-size:11px;font-style:italic;max-width:180px;overflow:hidden;text-overflow:ellipsis;}
-.dp{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;padding:2px 7px;border-radius:3px;white-space:nowrap;}
+.td-lyric{color:var(--text3);font-size:11px;font-style:italic;}
+@media(max-width:900px){.lib-table col.col-bar,.lib-table th:last-child,.lib-table td:last-child{display:none;}}
+.dp{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;white-space:nowrap;}
 .dp-up{background:var(--up-bg);color:var(--up);}
 .dp-down{background:var(--down-bg);color:var(--down);}
 .dp-flat{background:var(--neutral-bg);color:var(--neutral);}
@@ -439,6 +470,7 @@ footer{border-top:3px solid var(--orange);padding:26px 0;display:flex;align-item
         <span class="search-icon">⌕</span>
         <input type="text" class="search-input" id="xSearch" placeholder="Search player, artist, song, lyric…" oninput="renderExplorer()">
       </div>
+      <div class="explorer-bar-divider"></div>
       <select class="filter-select" id="xType" onchange="renderExplorer()">
         <option value="">All types</option>
         <option value="compliment">Compliment</option>
@@ -452,18 +484,25 @@ footer{border-top:3px solid var(--orange);padding:26px 0;display:flex;align-item
         <option value="2010s">2010s</option>
         <option value="2020s">2020s</option>
       </select>
+      <div class="explorer-bar-divider"></div>
       <select class="filter-select" id="xSort" onchange="renderExplorer()">
-        <option value="impact">Sort: Impact ↓</option>
-        <option value="player">Sort: Player A–Z</option>
-        <option value="year">Sort: Year</option>
+        <option value="impact">Impact ↓</option>
+        <option value="player">Player A–Z</option>
+        <option value="year">Year</option>
       </select>
+      <div class="result-count" style="margin-bottom:0;margin-left:auto;"><span id="xCount">—</span> results</div>
     </div>
-    <div class="result-count"><span id="xCount">—</span> mentions</div>
-    <div class="table-scroll">
+    <div class="lib-table-scroll">
       <table class="lib-table">
+        <colgroup>
+          <col class="col-player"><col class="col-artist"><col class="col-song">
+          <col class="col-year"><col class="col-type">
+          <col class="col-stat"><col class="col-stat"><col class="col-stat">
+          <col class="col-bar">
+        </colgroup>
         <thead><tr>
           <th>Player</th><th>Artist</th><th>Song</th><th>Year</th>
-          <th>Type</th><th>ΔPTS</th><th>ΔAST</th><th>ΔREB</th><th>Bar</th>
+          <th>Type</th><th class="col-r">ΔPTS</th><th class="col-r">ΔAST</th><th class="col-r">ΔREB</th><th>Lyric</th>
         </tr></thead>
         <tbody id="xBody"></tbody>
       </table>
@@ -997,9 +1036,9 @@ function renderExplorer(){
       <td class="td-italic">${m.song}</td>
       <td class="td-muted">${(m.release_date||'').slice(0,4)}</td>
       <td><span class="badge badge-${m.mention_type}">${m.mention_type}</span></td>
-      <td>${dp(m.deltas?.pts_30g)}</td>
-      <td>${dp(m.deltas?.ast_30g)}</td>
-      <td>${dp(m.deltas?.reb_30g)}</td>
+      <td class="col-r">${dp(m.deltas?.pts_30g)}</td>
+      <td class="col-r">${dp(m.deltas?.ast_30g)}</td>
+      <td class="col-r">${dp(m.deltas?.reb_30g)}</td>
       <td class="td-lyric" title="${m.lyric||''}">${m.lyric||''}</td>
     </tr>`).join('');
 }
